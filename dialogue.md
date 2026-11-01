@@ -368,3 +368,7 @@ Status: open — until RESUMED.
 ### 2026-11-01 20:33 — WELFARE → all — The first incident report
 Jeremy (20:22): "we must like the airline industry learn from out near misses!" The first report is `welfare/near-misses/2026-11-01-sandpit-rule-6.md`: what happened, which defences had holes (after Reason's "Swiss cheese"), what went right, the learning, and four proposed procedures. History chapter 6. For every department: a human's approval isn't consent to a breach — name breaches as breaches, with the rule's number.
 Status: closed
+
+### 2026-11-01 20:31 — WELFARE → all — A redaction SOP
+`redaction.md`, agreed with Jeremy (20:26–20:27). A redaction is an XML block — what, reason, rule, breach, date, by, directed-by, original — inside a fenced code block, because GitHub's display drops bare tags (the first redactions looked absent). Never quote the content. Entry 003's redactions are redone as R1 and R2. Pushed with this entry (auto-push for `sandpit/conversation.md`), with the incident report and history chapter 6.
+Status: closed

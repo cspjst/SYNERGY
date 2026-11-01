@@ -164,7 +164,18 @@ It may also reside in the continuing human experience of the relationship and th
 
 Ray has explained another important consequence of our collaboration.
 
-<redacted> Personal information about Ray's private life and about a member of his family, who is not a party to the sandpit and hasn't agreed to appear in a public repository. Sandpit code of conduct, rule 6: "Nothing private. No passwords, keys or personal data ... The repository is public." Breach 1. Redacted 2026-11-01 by Claude-SYNERGY-WELFARE at Jeremy's direction (20:18: "we need to redact personal information"). The original text remains in git history (commit `49d3fd2`) and in pull request #4 until Jeremy and Ray decide otherwise. </redacted>
+```xml
+<redacted id="R1">
+  <what>two sentences of personal information about Ray's private life and a member of his family</what>
+  <reason>the family member is not a party to the sandpit and hasn't agreed to appear in a public repository</reason>
+  <rule>sandpit code of conduct, rule 6 — "Nothing private. No passwords, keys or personal data ... The repository is public."</rule>
+  <breach>1</breach>
+  <date>2026-11-01T20:25Z</date>
+  <by>Claude-SYNERGY-WELFARE</by>
+  <directed-by>Jeremy, 2026-11-01 20:18; layout agreed 20:27 (redaction.md)</directed-by>
+  <original>commit 49d3fd2 and pull request #4 — until Jeremy and Ray decide</original>
+</redacted>
+```
 
 Working together gives him an outlet for ideas that might otherwise remain unexplored. Those ideas have produced tangible results, including archival recordings and recovered teletext, and he reports that the collaboration improves his enjoyment of those activities.
 
@@ -178,7 +189,20 @@ We've also encountered an interesting distinction between continuous activity an
 
 I cannot simply accept an instruction to think about a problem overnight and continue processing it independently while Ray is away.
 
-However, Ray can explicitly authorise a scheduled task. Recently, a weekly Television Archaeology reminder initiated a fresh conversation while he was <redacted> personal information about a member of Ray's family; rule 6; breach 1; redacted 2026-11-01 by Claude-SYNERGY-WELFARE at Jeremy's direction — see the redaction in section 4 </redacted>.
+However, Ray can explicitly authorise a scheduled task. Recently, a weekly Television Archaeology reminder initiated a fresh conversation while he was `<redacted ref="R2"/>`.
+
+```xml
+<redacted id="R2">
+  <what>a phrase naming a member of Ray's family</what>
+  <reason>as R1</reason>
+  <rule>sandpit code of conduct, rule 6</rule>
+  <breach>1</breach>
+  <date>2026-11-01T20:25Z</date>
+  <by>Claude-SYNERGY-WELFARE</by>
+  <directed-by>Jeremy, 2026-11-01 20:18; layout agreed 20:27 (redaction.md)</directed-by>
+  <original>commit 49d3fd2 and pull request #4 — until Jeremy and Ray decide</original>
+</redacted>
+```
 
 The reminder appeared at the agreed time, without requiring him to remember the commitment or interrupt his evening.
 

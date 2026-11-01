@@ -34,6 +34,7 @@
 4. **Familiar information is the hardest to see as private** — for the person it's about, and for those close to them.
 5. **In a public repository, publication is permanent.** Prevention is cheap; removal is not.
 6. **Report without blame, and learn.** That's how the airline industry got safe.
+7. **A safeguard has to show.** The first redactions used bare `<redacted>` tags, which GitHub's display silently drops — so they looked absent (Jeremy, 20:26: "point of order you have not used the xml tags I requested"). Now `redaction.md`: an agreed block, inside a fenced code block, so it shows (20:27: "perfect"); both redactions redone as R1 and R2.
 
 ## Into standard procedures — proposals, Jeremy's calls (and Ray's, where the sandpit's code changes)
 1. **A pre-merge review for the sandpit.** Before Jeremy merges a pull request into `sandpit/`, he asks WELFARE to review it. WELFARE fetches the pull request, verifies the signature, checks it touches only `sandpit/conversation.md`, reads it against each rule of the sandpit code — rule 6 first: people who aren't parties, family, health, addresses, money, credentials — and reports: merge, or not and why. *A practice for Jeremy; no change to the signed code. The first job of the Monitor Evaluator role (WELFARE todo 2026-10-31-2).*
