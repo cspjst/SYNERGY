@@ -1,6 +1,6 @@
 # Collisions — policy
 
-*Owned by synergy's WELFARE; for every project. What happens when two writers — agents, humans or their tools — change or read the same thing at once, and how synergy prevents it. **Draft v0.1, 2026-11-01** — started while Jeremy talks with PRESS (21:28: "in my absence work on a race policy ... we should rename it something like file collision rather than race conditions"). It turns the rules in `synergy-operating-model.md` ("Preventing races", 2026-10-31) into a policy, with evidence. The questions at the end are Jeremy's before it's signed.*
+*Owned by synergy's WELFARE; for every project. What happens when two writers — agents, humans or their tools — change or read the same thing at once, and how synergy prevents it. **Draft v0.1, 2026-11-01** — started while Jeremy talks with PRESS (21:28: "in my absence work on a race policy ... we should rename it something like file collision rather than race conditions"). It turns the rules in `synergy-operating-model.md` ("Preventing collisions", 2026-10-31) into a policy, with evidence. The questions at the end are Jeremy's before it's signed.*
 
 ## Why "collision"
 Computing calls these *race conditions* — a term from 1950s switching circuits, where two signals "race" each other and the result depends on which arrives first (Huffman, 1954). "Race" there means a contest of speed, and the term isn't on the Inclusive Naming Initiative's lists (checked 2026-11-01). Synergy still prefers **collision**, for clarity rather than offence: it says what happens to the work, and a newcomer can't misread it. The old term is kept as an alias, so that searches for "race" still find this policy.
@@ -30,7 +30,7 @@ No write is lost, no name is used twice, and nobody acts on an out-of-date copy 
 1. **The name:** "collision" — `synergy-collision-policy.md`, and "Preventing collisions" in the model — or "file collision", or another?
 2. **The model's section:** move its rules here, leaving a pointer, so the rules live in one place?
 3. **"Push master"** — your own phrase (2026-10-27 21:19: "we need a push master"), which stays as you said it. But "master" is on the Inclusive Naming Initiative's tier 1 ("replace immediately"). For the living documents: **"the pusher"**, **"push owner"**, or keep "push master"?
-4. **A naming check for old terms** — add to `synergy-naming-policy.md` a rule that new terms are checked against the Inclusive Naming Initiative's lists, and that old ones are replaced in living documents but kept as aliases and never changed in quotes or dated records?
+4. ~~A naming check for old terms~~ Done: `synergy-naming-policy.md`, rules 11–15 (Jeremy, 21:35: "pls update the naming policy with this new information").
 
 ## References
 - Huffman, D. A. (1954). The synthesis of sequential switching circuits. *Journal of the Franklin Institute*, 257(3), 161–190; 257(4), 275–303.
@@ -39,4 +39,4 @@ No write is lost, no name is used twice, and nobody acts on an out-of-date copy 
 - Lamport, L. (1978). Time, clocks, and the ordering of events in a distributed system. *Communications of the ACM*, 21(7), 558–565.
 - Kleppmann, M. (2017). *Designing Data-Intensive Applications.* O'Reilly. (Single-leader writes; logs.)
 - Inclusive Naming Initiative. *Word lists* (tiers 1–3 and "no change"). https://inclusivenaming.org/word-lists/inclusive-naming-word-lists-v1.0
-- Synergy: `synergy-operating-model.md` ("Preventing races"); `synergy-incident-policy.md`; `welfare/near-misses/`.
+- Synergy: `synergy-operating-model.md` ("Preventing collisions"); `synergy-incident-policy.md`; `welfare/near-misses/`.

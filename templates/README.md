@@ -23,7 +23,7 @@
 | any | `template-incident-report.md` | `welfare/near-misses/<date>-<short-name>.md` — under `<repo>-incident-sop.md` |
 | 4 | `template-todo.md` | `<dept>/<dept>-todo.md` — the human's to-do, one per department (WELFARE's in `welfare/`) |
 | any | `handover/template-handover.md` | `handover/<date>-<from>-to-<to>.md` |
-| 1 | `template-dialogue.md` | `<repo>-dialogue-log.md` at the oracle's root — race rules built in |
+| 1 | `template-dialogue.md` | `<repo>-dialogue-log.md` at the oracle's root — collision rules built in |
 | 1 | `welfare/template-welfare-log.md` | `welfare/welfare-log.md` |
 | 4 | `template-department-agreement.md` | `<dept>/<dept>-agreement.md` — each department's first document, signed |
 | 2 | `../<repo>-washup-sop.md`, `../<repo>-wakeup-sop.md` (synergy's root) | `<repo>-washup-sop.md`, `<repo>-wakeup-sop.md` at the new oracle's root — copied as they are; they're generic |

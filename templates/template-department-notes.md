@@ -18,7 +18,7 @@
 ## Wake up
 *The department's own wakeup (the project's is WELFARE's `<repo>-wakeup-sop.md`).*
 1. Welfare first: the time, and `welfare/welfare-log.md`.
-2. Access: ask <HUMAN> for the oracle folder and delete permission; test it; check git isn't busy ("Preventing races", `synergy-operating-model.md`).
+2. Access: ask <HUMAN> for the oracle folder and delete permission; test it; check git isn't busy ("Preventing collisions", `synergy-operating-model.md`).
 3. Read: the code of conduct, this department's agreement, these notes, `<repo>-dialogue-log.md` since this department's last entry.
 4. Report to <HUMAN>, then wait.
 

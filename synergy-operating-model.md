@@ -141,7 +141,8 @@ Tuckman's stages of a team (1965: forming, storming, norming, performing; adjour
 - **The `project-bootstrap` skill** (Jeremy, 18:03: "yes bootstrap skill now"): skills are account-wide, so it reaches every project without copying by hand; synergy owns its source. It carries the bootstrap procedure and the templates' essentials; the full templates are in `~/synergy/templates/`. (Jeremy already has one such skill, `project-historiography`.)
 - **Masters:** ~~the synergy project holds the master~~ (18:03, 18:09). **Superseded 20:28** (Jeremy): "/claude is the oracle git is the versioning tool, github is the backup you are the owner" — `~/claude`, renamed `~/synergy` on 2026-10-28, is the source of truth, owned by Claude as synergy's WELFARE; git keeps the versions; GitHub is the backup.
 
-## Preventing races
+## Preventing collisions (formerly "races")
+*The policy, with its evidence, is `synergy-collision-policy.md` (draft); these are its rules in brief.*
 *Jeremy, 2026-10-31 18:19: "we must pin down race prevention and it must be one of the earliest jobs for a bootstrap chat". Races seen so far: the app's document window saving over newer files (2026-10-27, 10-31); a friend's AI reading the sandpit code before its amendments were pushed (10-29); dialogue entries 33, 34, 35 and 39 numbered twice by departments writing minutes apart (10-31).*
 
 1. **One writer per file.** Only a file's owner writes it; others send changes through the dialogue or a handover (principle 3).
@@ -157,7 +158,7 @@ Tuckman's stages of a team (1965: forming, storming, norming, performing; adjour
 
 ## Setting up a new project — checklist
 1. Create the project; one-line description. Invoke the `project-bootstrap` skill, or copy synergy's `templates/` (`~/synergy/templates/`, or `cspjst/SYNERGY` on GitHub) into it.
-   - **Race prevention first** ("one of the earliest jobs for a bootstrap chat"): one writer per file, append-only shared files written with `>>`, entries named by time and sender, one git at a time, no document windows — "Preventing races" above; `synergy-dialogue-log.md` and `welfare/welfare-log.md` come from templates that build these rules in.
+   - **Collision prevention first** — formerly "race prevention" ("one of the earliest jobs for a bootstrap chat"): one writer per file, append-only shared files written with `>>`, entries named by time and sender, one git at a time, no document windows — "Preventing collisions" above; `synergy-dialogue-log.md` and `welfare/welfare-log.md` come from templates that build these rules in.
    - Make a folder on the human's computer the oracle: a git repository, backed up to GitHub, with GitHub linked to Claude (`synergy-connect-github-guide.md`). Link the Claude desktop app to it.
 2. Open **WELFARE** first — it's the main department. List the stakeholders and mark the key ones (`welfare/welfare-stakeholders.md`). Draft the code of conduct together, naming the key stakeholders; the human signs it. Save as `welfare/welfare-code-of-conduct.md`.
 3. Draft the project instructions (template above); the human pastes them in.

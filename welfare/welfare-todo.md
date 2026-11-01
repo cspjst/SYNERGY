@@ -40,7 +40,7 @@ CODE opened before "the agreement first" was the rule. *Proposal:* CODE drafts i
 
 #### welfare-2026-10-31-11 — Brief PRESS to bring the README up to date
 `uid: welfare-2026-10-31-11@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31`
-with today's work: the code of conduct v4, archetypes, the boards, race prevention. *A yes or no; PRESS drafts.*
+with today's work: the code of conduct v4, archetypes, the boards, collision prevention. *A yes or no; PRESS drafts.*
 
 #### welfare-2026-10-31-12 — Tidy the operating model before you sign it
 `uid: welfare-2026-10-31-12@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31`

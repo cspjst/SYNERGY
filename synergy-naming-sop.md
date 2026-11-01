@@ -9,10 +9,16 @@
 4. **Kind**, last: `-policy`, `-sop`, `-guide`, `-log`, `-notes`, `-todo`, `-agreement`.
 5. **Check:** lowercase; only `a`–`z`, `0`–`9`, `-`; no version; short but clear. Code follows its language.
 
+## Adopting a term
+1. **Plain word first** — does it say what happens to the work?
+2. **Check it** against the Inclusive Naming Initiative's current word lists (`synergy-naming-policy.md`, rules 11–15); note the date checked.
+3. **Tier 1:** don't use it. **Tier 2 or 3:** use a clearer word if there is one. **No change:** fine.
+4. **Replacing an old term:** change it in living documents only — never in quotes or dated records; give the old term once as an alias where the new one is defined; record the decision and reason in the working agreement; tell the departments in the dialogue.
+
 ## Renaming a file
 1. **Sterile phase** (`synergy-incident-sop.md`): one rename at a time, nothing else in that commit.
 2. `git mv` — never delete-and-recreate, so history follows the file.
-3. **Update living references** — documents that describe the present; leave dated records (history, handovers, the dialogue, settled decisions) as they were written.
+3. **Update living references** — documents that describe the present — and check the new name's words ("Adopting a term"); leave dated records (history, handovers, the dialogue, settled decisions) as they were written.
 4. **Search for the old name** afterwards; expect only dated records to mention it.
 5. **Tell the departments** in the dialogue, and the human if the project's Instructions or a skill name the file.
 6. **Refresh the project's copies**, and delete the copy under the old name.

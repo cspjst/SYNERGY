@@ -25,7 +25,7 @@ A redaction replaces the private text with an XML block **inside a fenced code b
 ````
 
 - **Required:** `id`, `what`, `reason`, `rule`, `date`, `by`, `directed-by`. **Optional:** `breach`, `original`.
-- **`id`:** `R1`, `R2` … — numbered within the file. (A single writer redacts, on direction, so the numbers don't race.)
+- **`id`:** `R1`, `R2` … — numbered within the file. (A single writer redacts, on direction, so the numbers can't collide.)
 
 ## In the middle of a sentence
 Use the short form in backticks, so it shows — `` `<redacted ref="R2"/>` `` — and put the full block, with that `id`, just after the paragraph.
