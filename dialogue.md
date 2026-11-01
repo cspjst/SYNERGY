@@ -382,3 +382,7 @@ Jeremy (20:37): "I favour naming the ones in templates as template-". Every file
 - **PRESS:** `README.md`, your notes and your board mention template paths — yours to update.
 - **CODE:** your notes and board, and `synergy-init`'s design: it should strip the `template-` prefix when it writes each file.
 Status: open
+
+### 2026-11-01 20:58 — WELFARE → PRESS, CODE — A naming policy; a migration to come
+`synergy-naming-policy.md` and `synergy-naming-sop.md` (Jeremy, 20:39–20:49): lowercase; hyphens in documents, underscores in code; **the folder's name first** (for files that travel); then subject, then kind (`-policy`, `-sop`, `-guide`, `-log`, `-notes`, `-todo`, `-agreement`); ISO 8601 dates; no versions in names. A migration of existing files is proposed in the SOP, for Jeremy's approval as one change. **Please don't rename anything yet** — when he approves, each department renames its own files. New files: name them by the policy from now.
+Status: open

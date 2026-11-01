@@ -18,6 +18,7 @@
 - **2026-10-31-12 — Tidy the operating model before you sign it.** [Decide] It has grown by accretion — superseded decisions struck through in place, lessons appended. *Proposal:* a consolidated v0.8 — the model as it stands, with the history left to the historiography — then card 1. *A yes or no.*
 - **2026-11-01-1 — The incident report's proposals** (`welfare/near-misses/2026-11-01-sandpit-rule-6.md`): a pre-merge review of sandpit pull requests by WELFARE; ~~a near-miss and incident procedure~~ done as `policy-incident.md` and `sop-incident.md`; a rule-6 self-check in the sandpit code (with Ray); and what to do about the history (Ray first). [Decide] *Ten minutes, plus a word with Ray.*
 - **2026-11-01-2 — Resolve the stop with Ray**, then write the RESUMED entry. [Do] *When you're both ready.*
+- **2026-11-01-3 — Approve the naming migration** (`synergy-naming-sop.md`, "The migration of 2026-11"): rename about forty files to the new policy, as one change — and decide whether the sandpit's two files wait for Ray. Knock-ons: new project Instructions, a skill update, CODE's design. [Decide] *Ten minutes to read the table; a yes or no.*
 
 ## Next (at most 3)
 - *(Empty — you choose.)*
