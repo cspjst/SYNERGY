@@ -102,20 +102,19 @@
   - **git** (2026-10-27 20:14) — status, remotes, commits; just report what happened.
 - Placeholders in templates: `<PROJECT>`, `<DEPT>`, `<HUMAN>`, `<date>`.
 
-## Status (2026-10-31 19:36, at the washup)
-- **Start here next time:** `synergy-wakeup-sop.md`, then `handover/handover-2026-10-31-welfare-washup.md`.
-- **Jeremy's load:** the boards — `welfare/welfare-todo.md`, `press/press-todo.md`, `code/code-todo.md`; 20 cards waiting, Next and Doing empty. Limits Next 3, Doing 2, across all boards.
-- **Code of conduct:** v4, signed 2026-10-31 19:06 (`c41b3ed`); the template follows it.
-- **Operating model:** v0.7, work in progress (WELFARE todo 2026-10-31-1, -12).
-- **Templates:** `templates/`, each named `template-<name>.md` (from 2026-11-01) — including department agreement, dialogue, todo, welfare log, incident report, and department notes with Wake up and Wash up.
-- **Historiography:** `synergy-historiography.md`, chapters 1–5 (2026-10-27 to 10-31).
-- **SOPs:** `synergy-washup-sop.md`, `synergy-wakeup-sop.md` (the project's, WELFARE's); departments wake and wash up from their notes. Collision rules: `synergy-collision-policy.md`.
-- **The oracle:** `~/synergy`; GitHub `cspjst/SYNERGY`; pushes recorded in `synergy-dialogue-log.md`. The project holds copies (`synergy/` for top-level files).
-- **WELFARE:** stakeholders, working agreement, code of conduct v4, welfare log, welfare notes, board.
-- **PRESS:** README and sandpit guide; two blog posts in two versions each, unpublished; writing framework v0.1 (unsigned); writer–editor agreement v0.2 (signed 18:39); board.
-- **CODE:** notes and board; six calls for `synergy-init` waiting; `tools/dialogue-append` and `tools/board` assigned, not started — waiting for WELFARE todo 2026-10-31-10 (its agreement first).
-- **SMALL-C:** the 2026-10-29 handover waiting for its WELFARE; a third update proposed (WELFARE todo 2026-10-31-8).
-- **Sandpit:** **stopped** since 2026-11-01 20:25 (breach 1, rule 6); entries 001–004; resumes only with a RESUMED entry by Jeremy, agreed by Ray.
+## Status (2026-11-01 22:05, at the washup)
+- **Start here next time:** `synergy-wakeup-sop.md`, then `handover/handover-2026-11-01-welfare-washup.md`; then the Next card, **welfare-2026-11-01-16** (opening a department, then the Monitor Evaluator).
+- **Jeremy's load:** the boards — `welfare/welfare-todo.md`, `press/press-todo.md`, `code/todo.md` (CODE's rename to `code/code-todo.md` waits). Limits Next 3, Doing 2, across all boards (`synergy-kanban-policy.md`).
+- **Code of conduct:** v4, signed 2026-10-31 19:06 (`c41b3ed`).
+- **Policies and SOPs:** kanban policy v1 (signed 21:10); personality policy v1 (signed 21:56, `1e69a4b`) with `synergy-personality-sop.md` and `synergy-character-guide.md`; naming policy and SOP (approved 20:53; rules 11–15 on words added 21:38); incident policy and SOP; redaction SOP; collision policy v0.2 — **awaiting signature** (card welfare-2026-11-01-13).
+- **Operating model:** v0.7, work in progress (cards 2026-10-31-1, -12; 2026-11-01-6); its collision rules now live in the collision policy.
+- **Templates:** `templates/template-<name>.md`; the department agreement's section 1a carries the personality rules.
+- **Historiography:** `synergy-historiography.md`, chapters 1–7 (to 2026-11-01).
+- **The oracle:** `~/synergy`; GitHub `cspjst/SYNERGY`; pushes recorded in `synergy-dialogue-log.md`. The project holds copies under the new names (`synergy/` for top-level files).
+- **PRESS:** renames and links done; board in the signed format; washed up (21:38). Its commits are unsigned (card welfare-2026-11-01-14).
+- **CODE:** not yet caught up — the renames, the board format, "push owner", the `.ics` export tool; its tools wait for its agreement (card 2026-10-31-10).
+- **SMALL-C:** the 2026-10-29 handover waiting for its WELFARE.
+- **Sandpit:** **stopped** since 2026-11-01 20:25 (breach 1, rule 6); resumes only with a RESUMED entry by Jeremy, agreed by Ray.
 
 ## Open — Jeremy's calls
 - **See `welfare/todo.md`** — Jeremy's to-do: what only he can decide, do or read, each item named by date and number. Settled items are recorded above, under Settled decisions. (Jeremy, 2026-10-31 19:16–19:18: "i think we need a todo.md in each dept for the human more than anything"; "yes but can be something like open see todo date number for example"; "yes")

@@ -12,6 +12,7 @@ Companion docs: `welfare/working-agreement.md` (the settled decisions, each quot
 4. The sandpit opens (2026-10-30 to 10-31)
 5. Evidence, roles and load (2026-10-31, evening)
 6. The first incident (2026-11-01)
+7. Policies, with evidence (2026-11-01, evening)
 
 ---
 
@@ -182,3 +183,32 @@ Every defence that worked, worked after publication. The fix isn't more care at 
 
 Sources: this chat, 2026-11-01 20:11–20:30; `sandpit/conversation.md` entries 003–004; `welfare/near-misses/2026-11-01-sandpit-rule-6.md`; `welfare/working-agreement.md`. The personal information itself is deliberately not recorded.
 
+---
+
+## Chapter 7: Policies, with evidence (2026-11-01, evening)
+
+### 1. The problem as it appeared
+- The first incident showed that synergy's rules lived in conversations and one long model, not in documents anyone could find, sign or check. Jeremy (20:39): "policies must be evidence based". In one evening the rules became policies, each with a procedure.
+
+### 2. What was tried
+- **Redaction** (20:28–20:31): Jeremy's tags made visible on GitHub — "point of order you have not used the xml tags I requested" — as fenced `xml` blocks with an id, reason, rule, date and who directed it: `synergy-redaction-sop.md`. Jeremy: "perfect"; "its nice inside the ```xml block".
+- **Incidents** (20:34–20:40): "do we also have a template for how to deal with fuckups borrowed from the airline industry" — `synergy-incident-policy.md`, `synergy-incident-sop.md`, a report template and `welfare/welfare-incident-log.md`.
+- **Naming** (20:39–21:05): an evidence-based naming policy and SOP, then a migration of every file to it, top level included (20:53: "top level files included pls sop approve proceed to implementation"). Jeremy kept one exception: "with one exception to enable travelling files pls keep folder names" — the folder's name first.
+- **Kanban** (21:00–21:10): boards as policy, cards in iCalendar's VTODO vocabulary (RFC 5545/6321) written in Markdown (21:06: "yes adopy RFC 6321 but as md"); limits across all boards; ageing handled by a weekly collector — "a sort of garbage collector if you will". Signed 21:10.
+- **Collisions and words** (21:28–21:44): "race" renamed "collision", for clarity; then a rule for words as well as files, from the Inclusive Naming Initiative's tiers, Linux 5.8, NISTIR 8366 and the IESG (2021). "Master" became "owner" in living documents (21:40: "replace all occurences of master with owner"); the collision rules moved into one place ("yes rules in one place long pointers!").
+- **Personalities** (21:49–22:00): "evidence based policy for ai agent "personalities" ... by splitting into behaviour archetypes + optional and imho the dangerous part character". Signed 21:56, with an SOP, a character guide, and the template's section 1a.
+
+### 3. What the sources said
+- Aviation's reporting culture (ASRS), just culture (Marx, Dekker) and Reason's layers for incidents; ISO 9001's document control for naming; kanban's limits and pull (Anderson); concurrency theory for collisions (Lamport, Kung & Robinson, Berenson et al.); the industry's inclusive-language precedents for words.
+- For personalities: a wrongful-death suit, reported 2026-10-29, alleging that ChatGPT (GPT-4o) helped Bowen Wan, who had epilepsy, taper off her anti-seizure medicine and hide it from her doctors — allegations, not findings; OpenAI's own rollback of a sycophantic GPT-4o update (April 2025); sycophancy learned from human feedback (Sharma et al., 2023); personas "highly fluid and liable to change unexpectedly" (Chen et al., 2025).
+
+### 4. What was decided
+- **Seven documents, five signed or agreed:** redaction SOP ("perfect"); incident policy and SOP; naming policy and SOP (approved 20:53); kanban policy (signed 21:10); personality policy (signed 21:56, against `1e69a4b`). The collision policy (v0.2) awaits signature.
+- **Archetype required, character optional and fenced:** no character on health, medicine, money, the law or safety; no relationship; never flatter; drift checked weekly.
+- **Rufus:** the request for an explanation stays about the breach (21:56) — a persona is a hypothesis, not a finding.
+- **Next session starts with** a policy, SOP and guide for opening a department, then the vacant Monitor Evaluator (22:02: "we need to start next time with a hight priority card ... as we still dont have a monitor").
+
+### What it adds up to
+Jeremy, 22:04: "synergy has made some major leaps forward into a seminal piece of work on safe productive working between human and ai". The evening's pattern: a storm, then a norm, then evidence, then a signature. And the speak-up culture worked in both directions: PRESS reported WELFARE's clock-ahead timestamps as a near miss (dialogue, "21:38 PRESS").
+
+Sources: this chat, 2026-11-01 20:28–22:05; the policies and SOPs named above; `synergy-dialogue-log.md`, 2026-11-01 entries; `welfare/welfare-working-agreement.md`.

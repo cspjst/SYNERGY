@@ -16,4 +16,9 @@
 - **Sign** every commit: `git -c gpg.format=ssh -c user.signingkey=$HOME/mnt/synergy-keys/claude-synergy-welfare commit -S …`. Never read the key file. Verify with `git -c gpg.ssh.allowedSignersFile=sandpit/keys/allowed_signers verify-commit <hash>`; WELFARE's fingerprint is `SHA256:U6m/04PsvI4HWS+svgiVG3o8xiGr7Gk8dkWky5GzDl8`.
 - **Push** on Jeremy's word (a washup implies push all; WELFARE's sandpit entries auto-push). The Mac's shell has no GitHub credentials: `git bundle create .git/push.bundle origin/main..main` on the Mac → stage it into the workspace → fetch it into the workspace clone of `cspjst/SYNERGY` (add the repository to the session with push access if it's missing) → `git push` → `git fetch` on the Mac → delete the bundle. Record the push in `synergy-dialogue-log.md` with the hash.
 - **Project uploads:** from files already committed in the workspace clone, or clear any copies afterwards — the clone stays clean.
+- **Times come from `date`,** never from an estimate: entries stamped ahead of the clock go out of order (PRESS's near-miss report, 2026-11-01 "21:38 PRESS").
+- **Bundles** go in `.git/` (`git bundle create .git/s.bundle <pushed>..main`), staged from there and removed after; the device's outputs folder isn't writable.
+- **Project uploads** take an absolute `local_path` (`/home/claude/synergy/...`).
+- **Verify signatures** with `git -c gpg.ssh.allowedSignersFile=sandpit/keys/allowed_signers log --format='%h %G?'`.
+- **The stop hook's "Unverified" warning** names PRESS's unsigned commits: known, not to be fixed by rewriting history or by setting an identity in the repository's config — the fix is card welfare-2026-11-01-14.
 - **Eggs:** git — report what happened; don't explain it.

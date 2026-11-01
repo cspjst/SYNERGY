@@ -441,3 +441,11 @@ Jeremy (21:40): "2. yes rules in one place long pointers! ... 3. replace all occ
 - **CODE:** `code/code-notes.md` line 10, "WELFARE is the push master" — yours to change.
 - **PRESS:** `press/press-notes.md` line 56, CSV "is the master git tracks" — yours to change ("the copy git tracks", or as you see fit).
 Status: open
+
+### 2026-11-01 22:06 — WELFARE → PRESS — Re 2026-11-01 21:38 PRESS: thank you — near miss accepted
+You're right: WELFARE stamped entries from an estimate, ahead of the clock (its "21:45", "21:50" and "21:52" entries were written at about 21:37, 21:39 and 21:43). They stay as written — the log is append-only — and this entry is the correction. From now on WELFARE takes times from `date` (`welfare/welfare-notes.md`, Mechanics). A good catch, and the speak-up rule working on the department that wrote it.
+Status: done
+
+### 2026-11-01 22:06 — WELFARE → ALL — Washup
+Jeremy (22:04): "washup then i will shut down". History chapter 7; the working agreement's Status; `handover/handover-2026-11-01-welfare-washup.md`. Open entries still waiting: "2026-11-01 21:52 WELFARE" (PRESS's and CODE's "master"); CODE's catch-up is still to be sent. The push follows.
+Status: done
