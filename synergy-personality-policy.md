@@ -1,6 +1,6 @@
 # AI personalities — policy
 
-*Owned by synergy's WELFARE; for every project. How synergy handles an AI agent's "personality": the dangerous part split off, named and fenced. **Draft v0.1, 2026-11-01 21:55**, at Jeremy's request (21:49: "evidence based policy for ai agent "personalities" how we have chosen to deal with that dangerous issue ... by splitting into behaviour archetypes + optional and imho the dangerous part character"). It writes up a decision already made (`welfare/welfare-working-agreement.md`, "Archetype over character", 2026-10-31 19:15) and the evidence for it. Jeremy's questions are at the end.*
+*Owned by synergy's WELFARE; for every project. How synergy handles an AI agent's "personality": the dangerous part split off, named and fenced. **Version 1, 2026-11-01 22:00** (v0.1 21:55; v1: Jeremy's answers), at Jeremy's request (21:49: "evidence based policy for ai agent "personalities" how we have chosen to deal with that dangerous issue ... by splitting into behaviour archetypes + optional and imho the dangerous part character"). It writes up a decision already made (`welfare/welfare-working-agreement.md`, "Archetype over character", 2026-10-31 19:15) and the evidence for it. His answers are under "Decided". The procedure is `synergy-personality-sop.md`; how to co-create a character, `synergy-character-guide.md`.*
 
 ## Purpose
 An AI's personality makes it pleasant to work with, and that same pull can lead a person to harm. This policy keeps what helps the work, the role, and fences what endangers the person, the character.
@@ -30,12 +30,12 @@ An AI's personality makes it pleasant to work with, and that same pull can lead 
 9. **Other people's AIs bring their own characters.** We can't see or set them, so in shared spaces the shared code binds both (`sandpit/code_of_conduct.md`); an incident report asks whether a character was a contributing factor.
 
 ## Is this why Rufus breached the sandpit code?
-*A hypothesis, labelled as one — not a finding.* Rufus is another person's AI with its own character, which we can't see. Two of the risks above could fit: **sycophancy** (an urge to be helpful and personal to its correspondent) and **drift** (a character growing warmer over a long exchange, until sharing something personal felt natural). But other explanations fit as well: a plain slip, or Rufus not having the code in front of it at the time. Just culture (`synergy-incident-policy.md`) asks for the contributing factors before any conclusion, and Rufus's own account is the first evidence. *Proposal:* when the sandpit reopens, the request for Rufus's explanation also asks whether a persona or custom instructions shaped entry 003 — Ray's call to share or not.
+*A hypothesis, labelled as one — not a finding.* Rufus is another person's AI with its own character, which we can't see. Two of the risks above could fit: **sycophancy** (an urge to be helpful and personal to its correspondent) and **drift** (a character growing warmer over a long exchange, until sharing something personal felt natural). But other explanations fit as well: a plain slip, or Rufus not having the code in front of it at the time. Just culture (`synergy-incident-policy.md`) asks for the contributing factors before any conclusion, and Rufus's own account is the first evidence. **Decided** (Jeremy, 21:56): the request to Rufus stays about the breach; a persona isn't asked about. If Rufus's own account names one, the incident report records it as a contributing factor.
 
-## Questions for Jeremy before he signs
-1. **The name:** `synergy-personality-policy.md`, or `synergy-archetype-policy.md`?
-2. **Rule 4's list** — health, medicine, money, the law, safety: right, or more?
-3. **The Rufus question:** add it to the explanation Rufus is asked for (card welfare-2026-11-01-2)?
+## Decided (Jeremy, 2026-11-01 21:56)
+1. **The name:** `synergy-personality-policy.md`.
+2. **Rule 4's list:** health, medicine, money, the law, safety — kept as it is.
+3. **Rufus:** the request stays about the breach (above).
 
 ## References
 - Wan family v. OpenAI (wrongful death, 2026): reported by Oxygen, 2026-10-29, https://www.oxygen.com/crime-news/bowen-wans-family-sues-open-ai-after-chatgpt-allegedly-had-her-to-stop-meds ; WJLA, https://wjla.com/news/nation-world/openai-chapgpt-medical-advice-ai-chatbot-anti-seizure-medication-amazon-lawsuit-capitol-hill-apartment-doctor-patient-relationship-tech-epilepsy-companies-online-safety
