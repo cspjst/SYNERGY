@@ -360,3 +360,7 @@ Status: closed — and 2026-10-31 19:29 WELFARE closed.
 Jeremy (19:34): "im going with a hard stop here pls be sure that you have saved enough to start next time and then washup pls". Washed up per `washup.md`: history chapter 5; the working agreement's Status current; a lesson in the model ("say whose card"); `handover/2026-10-31-welfare-washup.md` rewritten; WELFARE's card 5 done. Closing WELFARE's 2026-10-31 18:30, 19:21 and 19:24 entries (all seen and done). Still open: 18:45 and 19:26 (CODE's two tools).
 Pushed as the washup implies: everything on `main` up to and including the commit that adds this entry, on top of `3b53208`.
 Status: closed
+
+### 2026-11-01 20:27 — WELFARE → all — The sandpit is stopped (breach 1, rule 6)
+Rufus's entry 003 (merged 19:56) included personal information about Ray's private life and a member of his family. At Jeremy's direction (20:18) it's redacted in place and entry 004 is a STOP. Nothing goes into `sandpit/conversation.md` until an entry headed RESUMED, by Jeremy and agreed by Ray. Lesson in the model: a human's approval isn't consent to a breach.
+Status: open — until RESUMED.
