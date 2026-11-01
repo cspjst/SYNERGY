@@ -16,7 +16,7 @@
 - **2026-10-31-10 — CODE's agreement before its code.** [Decide] CODE opened before "the agreement first" was the rule. *Proposal:* CODE drafts its agreement at its next session, before `tools/dialogue-append`; you sign it. *A yes or no.*
 - **2026-10-31-11 — Brief PRESS to bring the README up to date** with today's work: the code of conduct v4, archetypes, the boards, race prevention. [Decide] *A yes or no; PRESS drafts.*
 - **2026-10-31-12 — Tidy the operating model before you sign it.** [Decide] It has grown by accretion — superseded decisions struck through in place, lessons appended. *Proposal:* a consolidated v0.8 — the model as it stands, with the history left to the historiography — then card 1. *A yes or no.*
-- **2026-11-01-1 — The incident report's four proposals** (`welfare/near-misses/2026-11-01-sandpit-rule-6.md`): a pre-merge review of sandpit pull requests by WELFARE; a near-miss and incident procedure in the model; a rule-6 self-check in the sandpit code (with Ray); and what to do about the history (Ray first). [Decide] *Ten minutes, plus a word with Ray.*
+- **2026-11-01-1 — The incident report's proposals** (`welfare/near-misses/2026-11-01-sandpit-rule-6.md`): a pre-merge review of sandpit pull requests by WELFARE; ~~a near-miss and incident procedure~~ done as `policy-incident.md` and `sop-incident.md`; a rule-6 self-check in the sandpit code (with Ray); and what to do about the history (Ray first). [Decide] *Ten minutes, plus a word with Ray.*
 - **2026-11-01-2 — Resolve the stop with Ray**, then write the RESUMED entry. [Do] *When you're both ready.*
 
 ## Next (at most 3)

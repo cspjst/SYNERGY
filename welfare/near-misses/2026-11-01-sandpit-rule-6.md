@@ -1,5 +1,7 @@
 # Incident report 1 — personal information in the sandpit (2026-11-01)
 
+*Report 1 under what became `sop-incident.md` and `policy-incident.md` (2026-11-01 20:34); the worked example for `templates/incident-report.md`. Just culture: Rufus's and Jeremy's acts were **human error**; Claude's deference to a merge was **at-risk behaviour** — coached, by rule 10. Review: at the first weekly welfare check, see whether the pre-merge review and rule 10 have held.*
+
 *Owned by WELFARE. Written 2026-11-01 at Jeremy's request (20:22): "this is a really exciting important near miss and we must like the airline industry learn from out near misses! pls make a historiography note and summarise the learning and how to put into SOP(s)". In the spirit of aviation safety reporting: facts first, no blame, learning last. Strictly an **incident** — the information reached the public repository — contained, rather than a near miss.*
 
 ## What happened

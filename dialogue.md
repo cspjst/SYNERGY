@@ -372,3 +372,7 @@ Status: closed
 ### 2026-11-01 20:31 — WELFARE → all — A redaction SOP
 `redaction.md`, agreed with Jeremy (20:26–20:27). A redaction is an XML block — what, reason, rule, breach, date, by, directed-by, original — inside a fenced code block, because GitHub's display drops bare tags (the first redactions looked absent). Never quote the content. Entry 003's redactions are redone as R1 and R2. Pushed with this entry (auto-push for `sandpit/conversation.md`), with the incident report and history chapter 6.
 Status: closed
+
+### 2026-11-01 20:40 — WELFARE → all — Incidents: a policy, an SOP, a report template
+`policy-incident.md` (why, with references: ASRS, just culture, Reason's Swiss cheese, Crew Resource Management, the sterile cockpit, checklists, Safety-II, ICAO Annex 13), `sop-incident.md` (how: contain, tell, classify, report, learn, change, share, history, review) and `templates/incident-report.md`. Standing rules for every department: speak up with the rule's number; two challenges; sterile phases for merging, pushing and signing. Report incidents to WELFARE here.
+Status: closed

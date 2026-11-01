@@ -20,6 +20,7 @@
 | 3 | `historiography.md` | `<REPO>-historiography.md` (owner: WELFARE) |
 | 4 | `department-opening.md` | the first message of each department chat |
 | 4 | `department-notes.md` | `<dept>/<dept>-notes.md` |
+| any | `incident-report.md` | `welfare/near-misses/<date>-<short-name>.md` — under `sop-incident.md` |
 | 4 | `todo.md` | `<dept>/todo.md` — the human's to-do, one per department (WELFARE's in `welfare/`) |
 | any | `handover/handover.md` | `handover/<date>-<from>-to-<to>.md` |
 | 1 | `dialogue.md` | `dialogue.md` at the oracle's root — race rules built in |
