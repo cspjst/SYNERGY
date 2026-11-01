@@ -1,6 +1,6 @@
 # Kanban — policy
 
-*Owned by synergy's WELFARE; for every project. Why the human's work is kept on boards, and the rules the boards follow. **Draft v0.3, 2026-11-01, for signing** — started at Jeremy's request (21:00: "next i would like to develop kanban policy"); his answers of 21:06 and 21:09 are in. Builds on what's already agreed (2026-10-31 19:16–19:23): a Markdown kanban per department, written only by its department, limits counted across all boards.*
+*Owned by synergy's WELFARE; for every project. Why the human's work is kept on boards, and the rules the boards follow. **Version 1, signed by Jeremy 2026-11-01 21:10, against the text of commit `01302e3`** — started at Jeremy's request (21:00: "next i would like to develop kanban policy"); his answers of 21:06 and 21:09 are in. Builds on what's already agreed (2026-10-31 19:16–19:23): a Markdown kanban per department, written only by its department, limits counted across all boards.*
 
 ## Purpose
 To keep the human's load **visible**, **bearable** and **moving** — welfare first. Each department's file holds two boards: **for the human** — what only he can decide, do or read — and **its own work**, so he can see what each department is doing and what's waiting on whom.
@@ -67,3 +67,5 @@ To keep the human's load **visible**, **bearable** and **moving** — welfare fi
 - Desruisseaux, B. (ed.) (2009). *Internet Calendaring and Scheduling Core Object Specification (iCalendar).* RFC 5545 — VTODO, STATUS, PRIORITY, CATEGORIES, RELATED-TO, x- properties. https://www.rfc-editor.org/rfc/rfc5545
 - Daboo, C., Douglass, M., & Lees, S. (2011). *xCal: The XML Format for iCalendar.* RFC 6321. https://www.rfc-editor.org/rfc/rfc6321
 - Synergy: `welfare/welfare-working-agreement.md` (2026-10-31 19:16–19:23); `welfare/welfare-code-of-conduct.md` (rule 16); `templates/template-todo.md`.
+
+*Signed off by Jeremy: "sign kanban push all pls", 2026-11-01 21:10 — signing the text of commit `01302e3`.*
