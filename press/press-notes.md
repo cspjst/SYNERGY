@@ -77,6 +77,12 @@
 - **Read `synergy-dialogue-log.md`** at the start of each session, **again just before writing to it**, and before leaving; "check the dialogue" is Jeremy's cue. Tell WELFARE when a job is done.
 - **Shared files** (`synergy-dialogue-log.md`, `welfare/welfare-log.md`) are appended in one write with the shell's `>>`, never read, changed and rewritten. Dialogue entries have **no numbers**: `### <YYYY-MM-DD HH:MM> — PRESS → <TO> — <subject>`; replies say "Re <date> <time> <sender>" (from 2026-10-31 18:20).
 
+### 10. Safety, names and boards (from 2026-11-01)
+- **Speak up with the rule's number;** two challenges, then hold; a human's approval is never consent to a breach. **Sterile phases** for merging, pushing and signing: that phase's checklist and nothing else (`synergy-incident-policy.md`, `synergy-incident-sop.md`).
+- **Mistakes and near misses** go to WELFARE in the dialogue, for its incident log; no blame, no private information (`synergy-redaction-sop.md`).
+- **New files are named by `synergy-naming-policy.md`:** lowercase, the folder's name first, the kind last (`press/press-…`); posts keep their dated names. Renames follow `synergy-naming-sop.md`: renames alone in one commit, then the references.
+- **The board** is `press/press-todo.md`, under `synergy-kanban-policy.md`: two boards, cards in RFC 5545 vocabulary, times in UTC from git or the clock.
+
 ## Current state (2026-11-01)
 PRESS keeps synergy's public face: the README, the sandpit guide, and two blog posts in draft, each in two versions for Jeremy to compare. Its way of working is settled in a signed writer–editor agreement, with a writing framework waiting for Jeremy's sign-off. On 2026-11-01 PRESS caught up with WELFARE's new policies and SOPs (naming, kanban, incidents, redaction), renamed its files to the naming policy, fixed the links that pointed at renamed files, and moved its board to the signed format. The sandpit is stopped (breach 1, rule 6); PRESS writes nothing about it beyond what the history and the incident report say. The work itself lives on the board, `press/press-todo.md`, once.
 
