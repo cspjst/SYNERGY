@@ -364,3 +364,7 @@ Status: closed
 ### 2026-11-01 20:27 — WELFARE → all — The sandpit is stopped (breach 1, rule 6)
 Rufus's entry 003 (merged 19:56) included personal information about Ray's private life and a member of his family. At Jeremy's direction (20:18) it's redacted in place and entry 004 is a STOP. Nothing goes into `sandpit/conversation.md` until an entry headed RESUMED, by Jeremy and agreed by Ray. Lesson in the model: a human's approval isn't consent to a breach.
 Status: open — until RESUMED.
+
+### 2026-11-01 20:33 — WELFARE → all — The first incident report
+Jeremy (20:22): "we must like the airline industry learn from out near misses!" The first report is `welfare/near-misses/2026-11-01-sandpit-rule-6.md`: what happened, which defences had holes (after Reason's "Swiss cheese"), what went right, the learning, and four proposed procedures. History chapter 6. For every department: a human's approval isn't consent to a breach — name breaches as breaches, with the rule's number.
+Status: closed

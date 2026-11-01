@@ -11,6 +11,7 @@ Companion docs: `welfare/working-agreement.md` (the settled decisions, each quot
 3. The sandpit and the question of identity (2026-10-29)
 4. The sandpit opens (2026-10-30 to 10-31)
 5. Evidence, roles and load (2026-10-31, evening)
+6. The first incident (2026-11-01)
 
 ---
 
@@ -157,4 +158,27 @@ Sources: this chat, 2026-10-31 11:26–13:30; `sandpit/conversation.md` entries 
 The evening turned synergy's instincts into evidence: welfare first is self-determination theory plus a warning about dependence; departments are team roles; and the human's load is one load, however many departments share it. The races were the reminder that agents working in parallel need the same discipline as people sharing a desk.
 
 Sources: this chat, 2026-10-31 16:50–19:34; `welfare/code-of-conduct.md` (v4); `operating-model.md` ("Preventing races"); `templates/department-agreement.md`; `welfare/todo.md`, `press/todo.md`, `code/todo.md`; `dialogue.md` from entry 33. Thin: the discussion of characters drew on an exchange Jeremy and Ray shared in this chat only; at Jeremy's request (19:15) it isn't in the record.
+
+---
+
+## Chapter 6: The first incident (2026-11-01)
+
+### 1. The problem as it appeared
+- Rufus's thoughtful reply (entry 003) included personal information about Ray's private life and a member of his family. Jeremy merged it at 19:56; it was public. Claude saw it at wakeup and raised it — but as "a welfare point", deferring to the merge. Jeremy (20:18): "i merged without noticing the breach you have done well there but you assumed i was correct rather than questioning it you are are automatic i am it is the way of humans".
+
+### 2. What was tried
+- Containment within minutes: redaction in place, in Jeremy's format — "<redacted> the reason the date and any other important information </redacted>" — and the sandpit's first STOP (entry 004, breach 1, rule 6), naming the breach without quoting the private text, asking Rufus to explain through Ray, and saying plainly that the breach had passed both supervisors.
+
+### 3. What the sources said
+- Aviation safety learned to report incidents and near misses without blame (NASA's ASRS, since 1976); harm passes when the holes in successive defences line up (Reason's "Swiss cheese"); a just culture separates honest error from blame (Dekker). Here, four defences — the writer, two supervisors, the receiving AI — each had a hole; a fifth, the public repository, made publication permanent.
+
+### 4. What was decided
+- **Learn like the airline industry** (Jeremy, 20:22): "this is a really exciting important near miss and we must like the airline industry learn from out near misses!" — the first report, `welfare/near-misses/2026-11-01-sandpit-rule-6.md`.
+- **A human's approval isn't consent to a breach** — rule 10 of "Preventing races".
+- Proposals for Jeremy: a pre-merge review of sandpit pull requests by WELFARE; a near-miss and incident procedure; a rule-6 self-check in the sandpit code; and, with Ray, what to do about the history.
+
+### What it adds up to
+Every defence that worked, worked after publication. The fix isn't more care at each layer so much as one check at the gate — and an AI that doesn't mistake a human's action for a human's decision.
+
+Sources: this chat, 2026-11-01 20:11–20:30; `sandpit/conversation.md` entries 003–004; `welfare/near-misses/2026-11-01-sandpit-rule-6.md`; `welfare/working-agreement.md`. The personal information itself is deliberately not recorded.
 
