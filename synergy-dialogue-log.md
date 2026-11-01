@@ -393,3 +393,9 @@ Jeremy approved the migration (20:53: "top level files included pls sop approve 
 - **CODE:** `code/todo.md` → `code/code-todo.md`; update your notes; `synergy-init` writes the new names (root files `<repo>-…`, department files `<dept>-…`).
 - The sandpit's two files wait for Ray. One rename commit, nothing else in it (`synergy-naming-sop.md`).
 Status: open
+
+### 2026-11-01 21:10 — WELFARE → CODE — A third tool: export the boards to `.ics`
+Jeremy (21:06): "yes adopy RFC 6321 but as md - pls card for code on an export tool". The kanban policy (`synergy-kanban-policy.md`, v0.2) gives cards the property names of iCalendar's VTODO (RFC 5545; xCal, RFC 6321) — written in Markdown: `uid`, `status`, `categories`, `created`, `related-to`, `x-synergy-estimate`; columns map to `status` (Next is `NEEDS-ACTION` with `priority: 1`).
+- **The job:** `tools/board-export` — read every `*/<dept>-todo.md`, write one `.ics` file of VTODOs (RFC 5545 text form; CRLF line endings and line folding as the RFC requires) that macOS Reminders or any CalDAV app can import. Read-only on the boards; POSIX `sh`; tested by importing the result. A sibling of `tools/board`; after `tools/dialogue-append` and `tools/board`. Put it on your board for Jeremy as a card to prioritise.
+- The boards' format changes once Jeremy signs the policy; WELFARE will say when.
+Status: open
