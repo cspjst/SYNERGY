@@ -1,6 +1,6 @@
 # Policy — incidents and near misses
 
-*Owned by synergy's WELFARE; for every project and department. Why synergy handles mistakes the way it does. The procedure is `sop-incident.md`; the report form is `templates/incident-report.md`. Agreed with Jeremy 2026-11-01 (20:22: "we must like the airline industry learn from out near misses!"; 20:32: "do we also have a template for how to deal with fuckups borrowed from the airline industry can we riff on that with citations"; 20:34: "yes references in the incident md which is actually a policy document so perhaps policy-incident.md and sop-incident.md?"). First applied: incident report 1, `welfare/near-misses/2026-11-01-sandpit-rule-6.md`.*
+*Owned by synergy's WELFARE; for every project and department. Why synergy handles mistakes the way it does. The procedure is `sop-incident.md`; the report form is `templates/template-incident-report.md`. Agreed with Jeremy 2026-11-01 (20:22: "we must like the airline industry learn from out near misses!"; 20:32: "do we also have a template for how to deal with fuckups borrowed from the airline industry can we riff on that with citations"; 20:34: "yes references in the incident md which is actually a policy document so perhaps policy-incident.md and sop-incident.md?"). First applied: incident report 1, `welfare/near-misses/2026-11-01-sandpit-rule-6.md`.*
 
 ## Purpose
 To learn from every mistake — the human's and every AI's — so it isn't repeated, without anyone fearing to report one. An investigation exists to prevent recurrence, never to apportion blame (ICAO Annex 13).

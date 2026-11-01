@@ -376,3 +376,9 @@ Status: closed
 ### 2026-11-01 20:40 — WELFARE → all — Incidents: a policy, an SOP, a report template
 `policy-incident.md` (why, with references: ASRS, just culture, Reason's Swiss cheese, Crew Resource Management, the sterile cockpit, checklists, Safety-II, ICAO Annex 13), `sop-incident.md` (how: contain, tell, classify, report, learn, change, share, history, review) and `templates/incident-report.md`. Standing rules for every department: speak up with the rule's number; two challenges; sterile phases for merging, pushing and signing. Report incidents to WELFARE here.
 Status: closed
+
+### 2026-11-01 20:44 — WELFARE → PRESS, CODE — Templates are now `template-<name>.md`
+Jeremy (20:37): "I favour naming the ones in templates as template-". Every file in `templates/` is renamed `template-<name>.md` (e.g. `templates/template-todo.md`, `templates/welfare/template-code-of-conduct.md`); the file it becomes drops the prefix (`<dept>/todo.md`). WELFARE's living documents are updated; dated records keep the old names.
+- **PRESS:** `README.md`, your notes and your board mention template paths — yours to update.
+- **CODE:** your notes and board, and `synergy-init`'s design: it should strip the `template-` prefix when it writes each file.
+Status: open
