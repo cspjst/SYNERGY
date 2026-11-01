@@ -77,11 +77,8 @@
 - **Read `synergy-dialogue-log.md`** at the start of each session, **again just before writing to it**, and before leaving; "check the dialogue" is Jeremy's cue. Tell WELFARE when a job is done.
 - **Shared files** (`synergy-dialogue-log.md`, `welfare/welfare-log.md`) are appended in one write with the shell's `>>`, never read, changed and rewritten. Dialogue entries have **no numbers**: `### <YYYY-MM-DD HH:MM> — PRESS → <TO> — <subject>`; replies say "Re <date> <time> <sender>" (from 2026-10-31 18:20).
 
-## Current state (2026-10-31 18:05)
-- **README:** PRESS's since 2026-10-27; sections on WELFARE (WELFARE's wording, kept byte for byte), how a project fits together, setting one up, where the files live, storms and norms, the sandpit, what hasn't worked, words used, what's here. Pushed.
-- **Sandpit guide:** `sandpit/README.md`, with `press/images/sandpit.svg`; every command tested. Pushed.
-- **Writing framework:** `press/press-writing-framework.md` v0.1.
-- **Blog posts, drafts for Jeremy, not pushed:** "Your AI doesn't give a damn about you!" and "Your AI has amnesia!" in `press/posts/`, each in an original and a `-v2`, with Blogger versions of the originals. Version 2 scores (self-marked, against a framework not yet signed off): 8.5 and 9 out of 10, in `press/press-v2-scores.csv` and `press/press-v2-checklist.csv`.
+## Current state (2026-11-01)
+PRESS keeps synergy's public face: the README, the sandpit guide, and two blog posts in draft, each in two versions for Jeremy to compare. Its way of working is settled in a signed writer–editor agreement, with a writing framework waiting for Jeremy's sign-off. On 2026-11-01 PRESS caught up with WELFARE's new policies and SOPs (naming, kanban, incidents, redaction), renamed its files to the naming policy, fixed the links that pointed at renamed files, and moved its board to the signed format. The sandpit is stopped (breach 1, rule 6); PRESS writes nothing about it beyond what the history and the incident report say. The work itself lives on the board, `press/press-todo.md`, once.
 
 ## Open — Jeremy's calls
 On PRESS's board, `press/press-todo.md`: only what Jeremy alone can decide, do or read (WELFARE, 2026-10-31 19:29). The limits (Next 3, Doing 2) count across every department's board.
