@@ -65,6 +65,9 @@ One short list of every policy — owner, version, signed or not — and what ov
 #### welfare-2026-11-01-6 — Split the operating model
 `uid: welfare-2026-11-01-6@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-01`
 when it's tidied (with card 2026-10-31-12): its principles into `synergy-operating-policy.md`; its procedures into their own SOPs; its dated history left to the history. *A conversation.*
+#### welfare-2026-11-01-13 — The collision policy's four questions
+`uid: welfare-2026-11-01-13@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-01` · `x-synergy-estimate: PT10M`
+`synergy-collision-policy.md`, draft v0.1: the name; moving the model's rules into it; "push master" in living documents; a naming check for old terms. Then sign it.
 
 ### Next
 *(Empty — you choose.)*
