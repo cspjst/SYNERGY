@@ -54,7 +54,7 @@ The archetype section, and the new file names. Waits for Jeremy's yes.
 
 #### press-2026-11-01-3 — Bring the README up to date
 `uid: press-2026-11-01-3@synergy` · `status: NEEDS-ACTION` · `created: 2026-11-01T21:32Z` · `related-to: welfare-2026-10-31-11@synergy` · `x-synergy-estimate: PT1H`
-With what's new since 2026-10-31: the code of conduct v4, archetypes, the boards, race prevention, the policies and SOPs. Waits for Jeremy's brief, on WELFARE's card. Split into smaller cards when briefed.
+With what's new since 2026-10-31: the code of conduct v4, archetypes, the boards, collision prevention (formerly "race prevention"), the policies and SOPs. Waits for Jeremy's brief, on WELFARE's card. Split into smaller cards when briefed.
 
 ### Done this week
 #### press-2026-11-01-4 — Catch up with WELFARE's entry of 2026-11-01 21:15

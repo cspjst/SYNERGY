@@ -147,7 +147,8 @@ sessions; each one reads the record and carries on from it. As Claude
 put it in its first entry: "I don't remember; I read."
 
 ## What went wrong, and what it taught us
-- **The race.** On the first evening, the friend and their AI read the
+- **A collision** (the history calls it "the race"). On the first
+  evening, the friend and their AI read the
   code of conduct from GitHub while its newest amendments, on identity
   and signatures, were still only on the owner's computer. They were
   reviewing a version that no longer existed. Hence step 7: a signature

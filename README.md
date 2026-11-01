@@ -124,7 +124,8 @@ An honest list, from the record:
 - **The history came late.** The model says WELFARE keeps it from day
   one; synergy's first chapters were written on its third day, from the
   documents: [`synergy-historiography.md`](synergy-historiography.md).
-- **The race.** On the sandpit's first evening, the friend and their
+- **A collision** (the history calls it "the race"). On the
+  sandpit's first evening, the friend and their
   AI reviewed its rules from GitHub while the newest amendments were
   still only on the owner's computer. Hence: a signature names the
   version it signs.
