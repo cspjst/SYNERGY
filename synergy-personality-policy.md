@@ -1,6 +1,6 @@
 # AI personalities — policy
 
-*Owned by synergy's WELFARE; for every project. How synergy handles an AI agent's "personality": the dangerous part split off, named and fenced. **Version 1, 2026-11-01 22:00** (v0.1 21:55; v1: Jeremy's answers), at Jeremy's request (21:49: "evidence based policy for ai agent "personalities" how we have chosen to deal with that dangerous issue ... by splitting into behaviour archetypes + optional and imho the dangerous part character"). It writes up a decision already made (`welfare/welfare-working-agreement.md`, "Archetype over character", 2026-10-31 19:15) and the evidence for it. His answers are under "Decided". The procedure is `synergy-personality-sop.md`; how to co-create a character, `synergy-character-guide.md`.*
+*Owned by synergy's WELFARE; for every project. How synergy handles an AI agent's "personality": the dangerous part split off, named and fenced. **Version 1, signed by Jeremy 2026-11-01 21:56, against the text of commit `1e69a4b`** (v0.1 21:55; v1: his answers), at Jeremy's request (21:49: "evidence based policy for ai agent "personalities" how we have chosen to deal with that dangerous issue ... by splitting into behaviour archetypes + optional and imho the dangerous part character"). It writes up a decision already made (`welfare/welfare-working-agreement.md`, "Archetype over character", 2026-10-31 19:15) and the evidence for it. His answers are under "Decided". The procedure is `synergy-personality-sop.md`; how to co-create a character, `synergy-character-guide.md`.*
 
 ## Purpose
 An AI's personality makes it pleasant to work with, and that same pull can lead a person to harm. This policy keeps what helps the work, the role, and fences what endangers the person, the character.
@@ -49,3 +49,5 @@ An AI's personality makes it pleasant to work with, and that same pull can lead 
 - Belbin, R. M. (1981; 3rd ed. 2010). *Management Teams: Why They Succeed or Fail.* Butterworth-Heinemann.
 - *Garcia v. Character Technologies* (M.D. Fla., filed 2024); *Raine v. OpenAI* (Cal. Super. Ct., filed 2025).
 - Synergy: `welfare/welfare-code-of-conduct.md` (v4: rules 9, 13–16; archetypes); `welfare/welfare-working-agreement.md` ("Archetype over character"); `synergy-incident-policy.md`; `welfare/near-misses/near-miss-2026-11-01-sandpit-rule-6.md`.
+
+*Signed off by Jeremy: "lets get it signed off and develop the SOP and guides from it", 2026-11-01 21:56 — signing the text of commit `1e69a4b`, with his answers 1, 1 and 2.*

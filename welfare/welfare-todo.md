@@ -69,10 +69,6 @@ when it's tidied (with card 2026-10-31-12): its principles into `synergy-operati
 `uid: welfare-2026-11-01-13@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-01` · `x-synergy-estimate: PT10M`
 `synergy-collision-policy.md`, v0.2: your four answers (21:40) are in — name kept, the rules moved in, "master" → owner, the term check done. Left: your signature, naming the commit. *A yes or no.*
 
-#### welfare-2026-11-01-15 — The personality policy's three questions
-`uid: welfare-2026-11-01-15@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-01` · `related-to: welfare-2026-11-01-2@synergy` · `x-synergy-estimate: PT15M`
-`synergy-personality-policy.md`, draft v0.1 (Jeremy, 21:49: "evidence based policy for ai agent "personalities""): the name; rule 4's list of no-character topics; whether Rufus is also asked if a persona shaped entry 003. Then sign it. *Three short answers.*
-
 #### welfare-2026-11-01-14 — A signing key for PRESS and CODE
 `uid: welfare-2026-11-01-14@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-01` · `x-synergy-estimate: PT20M`
 Jeremy (21:44): "good pls do signing card". PRESS's and CODE's commits are unsigned, so GitHub shows them as Unverified (flagged 21:43: `3b7962c`, `04a8eb7`); WELFARE's are signed. *Proposal:* one SSH key per department (`claude-synergy-press`, `claude-synergy-code`), made on your Mac in `synergy-keys` outside the repository and never read into a chat; each public key added to `sandpit/keys/allowed_signers` and to GitHub as a signing key; each department signs from then on (`-c gpg.format=ssh -c user.signingkey=…`, never in the repository's config). Past commits stay as they are — no rewriting history. Then a dialogue entry to PRESS and CODE, and the step in the template notes. *A yes or no, then ten minutes on your Mac.*
@@ -84,6 +80,10 @@ Jeremy (21:44): "good pls do signing card". PRESS's and CODE's commits are unsig
 *(Empty.)*
 
 ### Done this week
+#### welfare-2026-11-01-15 — Sign the personality policy
+`uid: welfare-2026-11-01-15@synergy` · `status: COMPLETED` · `created: 2026-11-01` · `completed: 2026-11-01T21:56Z`
+Signed against `1e69a4b` (answers 1, 1, 2); the SOP, the character guide and the template section followed.
+
 #### welfare-2026-11-01-7 — Sign the kanban policy
 `uid: welfare-2026-11-01-7@synergy` · `status: COMPLETED` · `created: 2026-11-01` · `completed: 2026-11-01T21:10Z`
 done 21:10, against `01302e3`.
