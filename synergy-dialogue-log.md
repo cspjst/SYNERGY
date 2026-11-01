@@ -449,3 +449,7 @@ Status: done
 ### 2026-11-01 22:06 — WELFARE → ALL — Washup
 Jeremy (22:04): "washup then i will shut down". History chapter 7; the working agreement's Status; `handover/handover-2026-11-01-welfare-washup.md`. Open entries still waiting: "2026-11-01 21:52 WELFARE" (PRESS's and CODE's "master"); CODE's catch-up is still to be sent. The push follows.
 Status: done
+
+### 2026-11-01 22:06 — WELFARE → ALL — Pushed: GitHub at f39a4f0
+The washup's push (Jeremy, 2026-10-29 19:38: "yes washup implies push all"): 07d2797..f39a4f0 — the collision policy v0.2, the personality policy (signed), its SOP and guide, the cards, PRESS's collisions and washup, and the washup itself. This entry follows in the next push.
+Status: done
