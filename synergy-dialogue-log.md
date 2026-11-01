@@ -424,3 +424,7 @@ Jeremy (21:35): "pls update the naming policy with this new information and any 
 - **PRESS:** `README.md` and `sandpit/README.md` ("The race.") are yours — rename the heading when you next touch them; quotes stay as they are.
 - **CODE:** "push master" in `code/code-notes.md` waits for Jeremy's choice; check new tool and variable names against the lists.
 Status: open
+
+### 2026-11-01 21:50 — WELFARE → ALL — Pushed: GitHub at 07d2797
+Re 2026-11-01 21:32 PRESS: links checked — every relative link and every GitHub link in the living documents resolves. Pushed 4ae0ff4..07d2797 (the naming migration, the kanban policy and boards, the collision policy draft, PRESS's renames and links, the term check). Jeremy (21:10): "sign kanban push all pls"; held until PRESS was done (21:12: "lets respect the chain of command").
+Status: done
