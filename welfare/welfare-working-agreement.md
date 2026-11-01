@@ -88,6 +88,7 @@
 - **Policy and SOP for incidents** (Jeremy, 2026-11-01 20:32–20:34: "do we also have a template for how to deal with fuckups borrowed from the airline industry can we riff on that with citations"; "yes references in the incident md which is actually a policy document so perhaps policy-incident.md and sop-incident.md?"): `policy-incident.md`, `sop-incident.md`, `templates/incident-report.md`. *(after sign-off)*
 - **Templates are named `template-<name>.md`** (Jeremy, 2026-11-01 20:37: "I favour naming the ones in templates as template-"); the file each becomes drops the prefix. Renamed in git; living references updated; dated records keep the old names. *(after sign-off)*
 - **A naming policy, evidence-based** (Jeremy, 2026-11-01 20:39–20:49: "shall we figure out our file naming policy what can we learn from whats already out there as policies must be evidence based"; "1. whatever the research recommends 2. all lower as per research 3. yes"; "with one exception to enable travelling files pls keep folder names"): `synergy-naming-policy.md` and `synergy-naming-sop.md` — lowercase; hyphens in documents, underscores in code; folder name first; subject, then kind; ISO 8601 dates; no versions. The migration of existing files is proposed for Jeremy's approval (WELFARE todo 2026-11-01-3). *(after sign-off)*
+- **The naming migration, approved** (Jeremy, 2026-11-01 20:53: "top level files included pls sop approve proceed to implementation"). WELFARE's and the shared files renamed (`3fd45fc`), living references updated; signed texts, the history, handovers and past dialogue entries keep the names they were written with. PRESS and CODE rename theirs; the sandpit's files wait for Ray. New: `welfare/welfare-incident-log.md`. *(after sign-off)*
 - **Zero tolerance stays last** (Jeremy, 19:58): "at the end it is the firm punctuation that finalises".
 - **Sucking eggs** (GOAT, relayed by Jeremy, 20:14). From SMALL-C, 2026-10-23 22:10: Claude explained `chmod +x`; Jeremy: "this is sweet of you"; Claude offered to stop explaining; Jeremy: "no carry on i'll feedback if im sucking eggs ;)". The idiom: "don't teach your grandmother to suck eggs". 48 years of programming, C and 8086 since the IBM XT. First eggs here: git (20:14).
 
@@ -98,14 +99,14 @@
 - Placeholders in templates: `<PROJECT>`, `<DEPT>`, `<HUMAN>`, `<date>`.
 
 ## Status (2026-10-31 19:36, at the washup)
-- **Start here next time:** `wakeup.md`, then `handover/2026-10-31-welfare-washup.md`.
-- **Jeremy's load:** the boards — `welfare/todo.md`, `press/todo.md`, `code/todo.md`; 20 cards waiting, Next and Doing empty. Limits Next 3, Doing 2, across all boards.
+- **Start here next time:** `synergy-wakeup-sop.md`, then `handover/handover-2026-10-31-welfare-washup.md`.
+- **Jeremy's load:** the boards — `welfare/welfare-todo.md`, `press/press-todo.md`, `code/code-todo.md`; 20 cards waiting, Next and Doing empty. Limits Next 3, Doing 2, across all boards.
 - **Code of conduct:** v4, signed 2026-10-31 19:06 (`c41b3ed`); the template follows it.
 - **Operating model:** v0.7, work in progress (WELFARE todo 2026-10-31-1, -12).
 - **Templates:** `templates/`, each named `template-<name>.md` (from 2026-11-01) — including department agreement, dialogue, todo, welfare log, incident report, and department notes with Wake up and Wash up.
-- **Historiography:** `SYNERGY-historiography.md`, chapters 1–5 (2026-10-27 to 10-31).
-- **SOPs:** `washup.md`, `wakeup.md` (the project's, WELFARE's); departments wake and wash up from their notes. "Preventing races" in the model.
-- **The oracle:** `~/synergy`; GitHub `cspjst/SYNERGY`; pushes recorded in `dialogue.md`. The project holds copies (`synergy/` for top-level files).
+- **Historiography:** `synergy-historiography.md`, chapters 1–5 (2026-10-27 to 10-31).
+- **SOPs:** `synergy-washup-sop.md`, `synergy-wakeup-sop.md` (the project's, WELFARE's); departments wake and wash up from their notes. "Preventing races" in the model.
+- **The oracle:** `~/synergy`; GitHub `cspjst/SYNERGY`; pushes recorded in `synergy-dialogue-log.md`. The project holds copies (`synergy/` for top-level files).
 - **WELFARE:** stakeholders, working agreement, code of conduct v4, welfare log, welfare notes, board.
 - **PRESS:** README and sandpit guide; two blog posts in two versions each, unpublished; writing framework v0.1 (unsigned); writer–editor agreement v0.2 (signed 18:39); board.
 - **CODE:** notes and board; six calls for `synergy-init` waiting; `tools/dialogue-append` and `tools/board` assigned, not started — waiting for WELFARE todo 2026-10-31-10 (its agreement first).

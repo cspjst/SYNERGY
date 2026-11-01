@@ -1,6 +1,6 @@
 # Handover: <from> → <to> (<date>)
 
-*From <the department or chat — with its link if it's being closed>. Read after `welfare/code-of-conduct.md`. The receiver applies the action list, then deletes it, keeping the record.*
+*From <the department or chat — with its link if it's being closed>. Read after `welfare/welfare-code-of-conduct.md`. The receiver applies the action list, then deletes it, keeping the record.*
 
 ## What's delivered
 - <Each thing, and where it now lives.>

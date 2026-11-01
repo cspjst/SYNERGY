@@ -25,7 +25,7 @@ A conversation is a poor place to keep a project. It gets long, it gets **compac
   <PROJECT> — <one line>.
 
   Before anything else, read these project docs, in this order:
-  1. welfare/code-of-conduct.md — how we work together; it wins over everything else.
+  1. welfare/welfare-code-of-conduct.md — how we work together; it wins over everything else.
   2. <the working agreement / current rules>
   3. <the historiography> — why things are the way they are; keep it current.
   4. <style docs, if any>
@@ -47,7 +47,7 @@ A conversation is a poor place to keep a project. It gets long, it gets **compac
 
   This is the <NAME> department of <PROJECT>. Its remit: <does>. Not <doesn't>.
 
-  Read welfare/code-of-conduct.md, then <folder>/<notes>.md [, …].
+  Read welfare/welfare-code-of-conduct.md, then <folder>/<notes>.md [, …].
 
   Where I am: <one honest line>.
   ```
@@ -56,7 +56,7 @@ A conversation is a poor place to keep a project. It gets long, it gets **compac
 - **Each department keeps a notes document** (`<folder>/<name>-notes.md`): remit, how it works, current state, open questions *marked as the human's calls*, next step. Its header says which other documents win over it.
 - **WELFARE is the main department** (principle 8): the one the human treats as home; other departments report to it by handover. (SMALL-C's main department began as a separate "GOAT" chat; under this model that role is WELFARE's.)
 - **WELFARE** — every project has one (principle 7). It looks after the wellbeing of every key stakeholder — the human, Claude, and anyone else the project has (readers, collaborators, users) — and how they work together: the code of conduct, the working agreement, the historiography, breaks and late nights, anything getting in the way. Not the work itself.
-- **WELFARE identifies and maintains the stakeholder list** (Jeremy, 2026-10-27 17:51), in `welfare/stakeholders.md`:
+- **WELFARE identifies and maintains the stakeholder list** (Jeremy, 2026-10-27 17:51), in `welfare/welfare-stakeholders.md`:
   - **Stakeholders:** everyone with a stake in the project.
   - **Key stakeholders — a subset:** those whose driver is the project's best interests. "Not all stake holders will necessarily have the project's best interests as their driver." Welfare is for the key stakeholders; the others are still listed, with their interest stated, so the project knows they're there.
   - For each: who, their interest, key or not (and why), what their wellbeing needs from the project, and the date reviewed.
@@ -81,7 +81,7 @@ Tuckman's stages of a team (1965: forming, storming, norming, performing; adjour
 - **Before a conversation is deleted or abandoned,** it writes a handover and checks that everything worth keeping is in a document. (SMALL-C, 27 October: the "Abstract machine" chat moved its reading list, tested scripts and loose ends into notes and a handover, then was deleted.)
 - The receiver applies the handover and deletes the action list from it, keeping the record.
 
-### The dialogue (`dialogue.md`, owned by WELFARE)
+### The dialogue (`synergy-dialogue-log.md`, owned by WELFARE)
 - **For talk between departments** — questions, notices, replies — without the human relaying. Handovers stay for passing work or ownership. (Jeremy, 2026-10-27 21:10.)
 - **Append only**, newest at the bottom; each entry numbered, dated, From → To, with a status (open, answered, closed). Only the department that opened an entry closes it. Questions that are the human's are marked as the human's call.
 - **It lives in the repository only**, not in the project: it changes too often for copies to keep up.
@@ -92,7 +92,7 @@ Tuckman's stages of a team (1965: forming, storming, norming, performing; adjour
 - **Every department commits** as `Claude-<PROJECT>-<DEPT>` (Jeremy, 20:31, 20:55), e.g. `Claude-SYNERGY-WELFARE`.
 - **Only WELFARE pushes** (principle 9), when the human says, sending everything on `main`, and records each push in the dialogue with the hash.
 - **Before the first commit of a session**, ask the human for delete permission on the folder: without it git leaves lock files that break the next command (PRESS, 21:15).
-- **Pushing needs GitHub linked to Claude** (`connect-github.md`). The shell on the human's computer has no GitHub credentials, so WELFARE carries the commits to its own workspace and pushes from there, then brings the computer's copy level.
+- **Pushing needs GitHub linked to Claude** (`synergy-connect-github-guide.md`). The shell on the human's computer has no GitHub credentials, so WELFARE carries the commits to its own workspace and pushes from there, then brings the computer's copy level.
 - **Delete permission can lapse mid-session** — when the desktop app restarts (2026-10-29). Check it before every git command — `git fetch` leaves a lock file too — by creating and removing a scratch file under `.git`, not once per session.
 - **A renamed GitHub repository has to be added to Claude's session again** before Claude can push to it (2026-10-28).
 - **Stage only the paths you mean** (`git add <path>`), never `git add -A`: the human's own commits from other machines can leave the working tree in states that aren't Claude's to commit.
@@ -100,9 +100,9 @@ Tuckman's stages of a team (1965: forming, storming, norming, performing; adjour
 - **A signature names the version it signs** (2026-10-29 19:38–19:40): Ray and Rufus read the sandpit's code from GitHub while its amendments were still only in the oracle — a race between writing, pushing and reading. So every signature says which commit's text it signs.
 - **A shared welfare log** (2026-10-31): each chat sees only its own conversation, so departments can't tell whether the human has eaten. One file (`welfare/welfare-log.md`) that every chat checks before reminding and notes after — the human is asked once, not by every department.
 - **Uploads to the project from a clean place:** copying files into Claude's own git clone to upload them leaves it dirty; clear the copies once uploaded.
-- **Incidents and near misses** (2026-11-01): `policy-incident.md` (why — report without fear, just culture, Swiss cheese, speak up, two challenges, sterile phases, checklists, Safety-II, with references) and `sop-incident.md` (how — contain, tell, classify, report, learn, change, share, history, review); reports in `welfare/near-misses/` from `templates/template-incident-report.md`.
-- **Redaction** (2026-11-01): `redaction.md` — only on a human's direction; an agreed XML block inside a fenced code block, so it shows on GitHub; never quote the content; redaction isn't removal.
-- **Washup and wakeup** (2026-10-29) — *Only* WELFARE wakes up and washes up (Jeremy, 2026-10-29 19:44: "*ONLY* welfare can wakeup and washup"). Other departments don't run these procedures. — `washup.md` is the procedure for leaving a chat — history, status, lessons, a short handover, push, project copies; `wakeup.md` is its complement for starting one cold from the oracle — welfare, access, read, check git, check what changed, check identity, report and wait.
+- **Incidents and near misses** (2026-11-01): `synergy-incident-policy.md` (why — report without fear, just culture, Swiss cheese, speak up, two challenges, sterile phases, checklists, Safety-II, with references) and `synergy-incident-sop.md` (how — contain, tell, classify, report, learn, change, share, history, review); reports in `welfare/near-misses/` from `templates/template-incident-report.md`.
+- **Redaction** (2026-11-01): `synergy-redaction-sop.md` — only on a human's direction; an agreed XML block inside a fenced code block, so it shows on GitHub; never quote the content; redaction isn't removal.
+- **Washup and wakeup** (2026-10-29) — *Only* WELFARE wakes up and washes up (Jeremy, 2026-10-29 19:44: "*ONLY* welfare can wakeup and washup"). Other departments don't run these procedures. — `synergy-washup-sop.md` is the procedure for leaving a chat — history, status, lessons, a short handover, push, project copies; `synergy-wakeup-sop.md` is its complement for starting one cold from the oracle — welfare, access, read, check git, check what changed, check identity, report and wait.
 
 ### The code of conduct (one per project, signed by the human)
 - Sections: **who Claude is here** (the colleague the project needs — not a cheerleader, not a ghostwriter); **Claude's code of conduct** (numbered); **what Claude can expect from the human**; **zero tolerance** (no abuse or contempt in either direction).
@@ -122,7 +122,7 @@ Tuckman's stages of a team (1965: forming, storming, norming, performing; adjour
 - **Tends to** (SMALL-C's lessons — WELFARE watches for these): over-deliver on small asks ("woah nellie! i just want you to show me frame.asm"); misread status words; claim things from memory after a compaction; tidy the human's wording.
 
 ### Working on files the human can see (learned 2026-10-27, 17:44–17:59)
-- **A file open in an editor or in the Claude app's file window is saved back from its loaded copy.** Twice Claude's write to `~/claude/operating-model.md` was silently undone seconds later — first by an editor (Zed or Typora), then by the app's own window, where Jeremy was reading it. So: **Claude doesn't write to a file the human has open.** Edits wait until it's closed; the human says when.
+- **A file open in an editor or in the Claude app's file window is saved back from its loaded copy.** Twice Claude's write to `~/claude/synergy-operating-model.md` was silently undone seconds later — first by an editor (Zed or Typora), then by the app's own window, where Jeremy was reading it. So: **Claude doesn't write to a file the human has open.** Edits wait until it's closed; the human says when.
 - **"Written" isn't proof.** After every write to the human's machine, Claude reads the file back and compares checksums — once at once, and again after a short pause, because the overwrite came seconds later.
 - **A new version gets a new file name** (`operating-model-v0.2.md`, `-v0.3.md`). Nothing can have it open, and the old version stays as a record until the human deletes it. This is now the rule for every shared document (Jeremy, 18:09: "yes versioning then I can choose to delete as/if needed but probably not"): the first version keeps its plain name, later ones get a suffix, and readers take the highest version. **Superseded 20:28:** git is the versioning tool, one file per document edited in place; the guards below stay, because the reason for them — the app's document window saving over newer files — hasn't gone away.
 - **Write with a guard.** Claude writes only if the file is unchanged since it last looked (the modification time), so a human edit is never overwritten; if it has changed, Claude reads it first and reports the difference.
@@ -133,11 +133,11 @@ Tuckman's stages of a team (1965: forming, storming, norming, performing; adjour
 - **Synergy's WELFARE is the original** (Jeremy, 18:26: "synergy project is the owner of the OG welfare that will propagate out to all projects going forward"). Every project's WELFARE is bootstrapped from it, and improvements to WELFARE propagate out from synergy.
 - **What it holds (masters):**
   - this operating model;
-  - templates: project instructions, a department's opening message, a department notes document, a handover, `welfare/stakeholders.md`, `welfare/code-of-conduct.md`, a historiography chapter;
+  - templates: project instructions, a department's opening message, a department notes document, a handover, `welfare/welfare-stakeholders.md`, `welfare/welfare-code-of-conduct.md`, a historiography chapter;
   - SMALL-C's documents as the worked example.
 - **How it reaches a project:** a chat can only read its own project's documents, so a new project gets **copies** at bootstrap; from then on the copies belong to that project and are tailored there (its own stakeholders, its own code of conduct, signed afresh).
 - **Improvements flow back:** when a project's WELFARE learns something general (a storm turned into a norm that isn't project-specific), it's proposed to synergy by handover, and synergy updates the master.
-- **The templates are ready** (Jeremy, 18:03: "i want the templates ready and waiting"): `~/synergy/templates/` on Jeremy's machine (`~/claude` until 2026-10-28), backed up on GitHub (`cspjst/SYNERGY`) — `README.md` (placeholders, bootstrap order), `project-instructions.md`, `welfare/stakeholders.md`, `welfare/code-of-conduct.md`, `welfare/working-agreement.md`, `historiography.md`, `department-opening.md`, `department-notes.md`, `handover/handover.md`. Uploaded to the synergy project 18:19.
+- **The templates are ready** (Jeremy, 18:03: "i want the templates ready and waiting"): `~/synergy/templates/` on Jeremy's machine (`~/claude` until 2026-10-28), backed up on GitHub (`cspjst/SYNERGY`) — `README.md` (placeholders, bootstrap order), `project-instructions.md`, `welfare/welfare-stakeholders.md`, `welfare/welfare-code-of-conduct.md`, `welfare/welfare-working-agreement.md`, `historiography.md`, `department-opening.md`, `department-notes.md`, `handover/handover.md`. Uploaded to the synergy project 18:19.
 - **The `project-bootstrap` skill** (Jeremy, 18:03: "yes bootstrap skill now"): skills are account-wide, so it reaches every project without copying by hand; synergy owns its source. It carries the bootstrap procedure and the templates' essentials; the full templates are in `~/synergy/templates/`. (Jeremy already has one such skill, `project-historiography`.)
 - **Masters:** ~~the synergy project holds the master~~ (18:03, 18:09). **Superseded 20:28** (Jeremy): "/claude is the oracle git is the versioning tool, github is the backup you are the owner" — `~/claude`, renamed `~/synergy` on 2026-10-28, is the source of truth, owned by Claude as synergy's WELFARE; git keeps the versions; GitHub is the backup.
 
@@ -145,7 +145,7 @@ Tuckman's stages of a team (1965: forming, storming, norming, performing; adjour
 *Jeremy, 2026-10-31 18:19: "we must pin down race prevention and it must be one of the earliest jobs for a bootstrap chat". Races seen so far: the app's document window saving over newer files (2026-10-27, 10-31); a friend's AI reading the sandpit code before its amendments were pushed (10-29); dialogue entries 33, 34, 35 and 39 numbered twice by departments writing minutes apart (10-31).*
 
 1. **One writer per file.** Only a file's owner writes it; others send changes through the dialogue or a handover (principle 3).
-2. **Shared files are append only** — `dialogue.md`, `welfare/welfare-log.md`. Append in one write with the shell's `>>`. Never read the file, change it in memory and write the whole thing back: two writers doing that at once lose one of the writes.
+2. **Shared files are append only** — `synergy-dialogue-log.md`, `welfare/welfare-log.md`. Append in one write with the shell's `>>`. Never read the file, change it in memory and write the whole thing back: two writers doing that at once lose one of the writes.
 3. **No sequence numbers in shared files.** An entry is identified by its date, time and sender — `### 2026-10-31 18:20 — WELFARE → PRESS — <subject>` — and referred to the same way ("Re 2026-10-31 18:14 PRESS"). Two departments can't take the same minute *and* the same name.
 4. **One git at a time.** Before any git command: test delete permission (create and remove a scratch file under `.git`), and look for `.git/index.lock`. Under a minute old: another git is working — wait and retry. Older: left over — remove it and say so. Stage named paths only.
 5. **Read back every write**, at once and after a pause; check the modification time before writing a file anyone else might have open.
@@ -157,15 +157,15 @@ Tuckman's stages of a team (1965: forming, storming, norming, performing; adjour
 
 ## Setting up a new project — checklist
 1. Create the project; one-line description. Invoke the `project-bootstrap` skill, or copy synergy's `templates/` (`~/synergy/templates/`, or `cspjst/SYNERGY` on GitHub) into it.
-   - **Race prevention first** ("one of the earliest jobs for a bootstrap chat"): one writer per file, append-only shared files written with `>>`, entries named by time and sender, one git at a time, no document windows — "Preventing races" above; `dialogue.md` and `welfare/welfare-log.md` come from templates that build these rules in.
-   - Make a folder on the human's computer the oracle: a git repository, backed up to GitHub, with GitHub linked to Claude (`connect-github.md`). Link the Claude desktop app to it.
-2. Open **WELFARE** first — it's the main department. List the stakeholders and mark the key ones (`welfare/stakeholders.md`). Draft the code of conduct together, naming the key stakeholders; the human signs it. Save as `welfare/code-of-conduct.md`.
+   - **Race prevention first** ("one of the earliest jobs for a bootstrap chat"): one writer per file, append-only shared files written with `>>`, entries named by time and sender, one git at a time, no document windows — "Preventing races" above; `synergy-dialogue-log.md` and `welfare/welfare-log.md` come from templates that build these rules in.
+   - Make a folder on the human's computer the oracle: a git repository, backed up to GitHub, with GitHub linked to Claude (`synergy-connect-github-guide.md`). Link the Claude desktop app to it.
+2. Open **WELFARE** first — it's the main department. List the stakeholders and mark the key ones (`welfare/welfare-stakeholders.md`). Draft the code of conduct together, naming the key stakeholders; the human signs it. Save as `welfare/welfare-code-of-conduct.md`.
 3. Draft the project instructions (template above); the human pastes them in.
 4. WELFARE starts the historiography with chapter 1: why this project, why now.
 5. For each area of work, open a department: **its agreement first** (`templates/template-department-agreement.md` — who decides what, signed, naming the version; "any good relationship should start out on a firm footing whilst expecting it to evolve that evolution shoyld be recorded of course", Jeremy, 2026-10-31 18:19), then its notes (with "Wake up" and "Wash up" sections), the opening message, and rename the chat.
 6. Upload reference files (books, specs) to the project.
 7. At each milestone: update the department's notes, and send WELFARE what the historiography needs. Before leaving a chat for good: handover.
-8. Departments talk in `dialogue.md`; every department commits; only WELFARE pushes.
+8. Departments talk in `synergy-dialogue-log.md`; every department commits; only WELFARE pushes.
 
 ## Open — Jeremy's calls
 - Is this the model, or a starting draft to rewrite? (Default: draft.)
@@ -174,11 +174,11 @@ Tuckman's stages of a team (1965: forming, storming, norming, performing; adjour
 - ~~Where does the master live?~~ Settled 18:03: the synergy project; `~/claude` is the backup.
 - ~~The `project-bootstrap` skill?~~ Settled 18:03: yes, now.
 - ~~The templates?~~ Settled 18:03: ready and waiting in `~/claude/templates/`; 18:09: synergy is their master, GitHub a backup.
-- ~~Synergy's own WELFARE?~~ Done 18:12, from SMALL-C's: `welfare/stakeholders.md`, `welfare/working-agreement.md`, `welfare/code-of-conduct.md` (awaiting Jeremy's signature).
+- ~~Synergy's own WELFARE?~~ Done 18:12, from SMALL-C's: `welfare/welfare-stakeholders.md`, `welfare/welfare-working-agreement.md`, `welfare/welfare-code-of-conduct.md` (awaiting Jeremy's signature).
 - ~~Who owns the historiography; is there a main department?~~ Settled 18:24 and 18:26: WELFARE is the main department and owns the historiography, in every project (principle 8).
 - **Synergy's historiography:** chapter 1 (why synergy, why now) — next, by WELFARE.
-- ~~SMALL-C retrofit?~~ Settled 18:09: bring it up to date as if bootstrapped from synergy (done 18:14; SMALL-C's `handover/2026-10-27-synergy-to-small-c.md`). Its large `claude/` documents stay where they are for now, with owners recorded — moving them means rewriting them through a tool, which risks mangling them.
+- ~~SMALL-C retrofit?~~ Settled 18:09: bring it up to date as if bootstrapped from synergy (done 18:14; SMALL-C's `handover/handover-2026-10-27-synergy-to-small-c.md`). Its large `claude/` documents stay where they are for now, with owners recorded — moving them means rewriting them through a tool, which risks mangling them.
 - ~~Versioning convention?~~ Settled 18:09: every version of every shared document.
 - ~~Version names?~~ Settled 20:28: git keeps the versions; one file per document.
-- **Where the historiography file lives:** templates put it at the project root (`<REPO>-historiography.md`, named after the repository — Jeremy, 2026-10-28 19:24–19:25). Now that WELFARE owns it, `welfare/` is the alternative. Jeremy's call; unchanged until then.
+- **Where the historiography file lives:** templates put it at the project root (`<repo>-historiography.md`, named after the repository — Jeremy, 2026-10-28 19:24–19:25). Now that WELFARE owns it, `welfare/` is the alternative. Jeremy's call; unchanged until then.
 - **SMALL-C:** its main department and historiography owner predate principle 8. Bring it into line by handover? Jeremy's call.

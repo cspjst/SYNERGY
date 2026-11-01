@@ -1,6 +1,6 @@
 # Redaction — removing private information from the record
 
-*Owned by synergy's WELFARE; for every project and department. Agreed with Jeremy 2026-11-01 (20:18: "we need to redact personal information replacing it with <redacted> the reason the date and any other important information </redacted>"; 20:26: "we to agree on the layout of redaction blocks and pop it into a redaction SOP pls"; 20:27: "perfect"). Learned from incident report 1, `welfare/near-misses/2026-11-01-sandpit-rule-6.md`.*
+*Owned by synergy's WELFARE; for every project and department. Agreed with Jeremy 2026-11-01 (20:18: "we need to redact personal information replacing it with <redacted> the reason the date and any other important information </redacted>"; 20:26: "we to agree on the layout of redaction blocks and pop it into a redaction SOP pls"; 20:27: "perfect"). Learned from incident report 1, `welfare/near-misses/near-miss-2026-11-01-sandpit-rule-6.md`.*
 
 ## When
 - Only on a human's direction — the project's human, or the supervisor of the AI whose entry it is.

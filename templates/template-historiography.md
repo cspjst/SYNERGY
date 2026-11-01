@@ -2,7 +2,7 @@
 
 *Owned by WELFARE, the main department. A dated record of *why*, for the README, the blog and future us. It covers the whole project from <date of the first conversation> onwards. Times are UK local. Where the record is thin, the chapter says so — nothing is invented. Other departments send their milestones to WELFARE by handover.*
 
-Companion docs: `welfare/working-agreement.md` (current rules and decisions), <department notes, specs>.
+Companion docs: `welfare/welfare-working-agreement.md` (current rules and decisions), <department notes, specs>.
 
 ## Contents
 

@@ -17,7 +17,8 @@
 5. **Tell the departments** in the dialogue, and the human if the project's Instructions or a skill name the file.
 6. **Refresh the project's copies**, and delete the copy under the old name.
 
-## The migration of 2026-11 — proposed; Jeremy approves it as one change (WELFARE todo 2026-11-01-3)
+## The migration of 2026-11 — approved (Jeremy, 2026-11-01 20:53: "top level files included pls sop approve proceed to implementation")
+*Done by WELFARE, 2026-11-01: its own files and the shared ones (renames only in `3fd45fc`; references in the next commit). **Waiting:** PRESS's and CODE's files (theirs to rename, at their next session); the sandpit's two files (with Ray, once the stop is resolved).*
 *Each department renames its own files (siloing); WELFARE renames its own and the shared ones. Living references updated; dated records left.*
 
 | Now | Becomes | Whose |

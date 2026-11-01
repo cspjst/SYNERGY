@@ -386,3 +386,10 @@ Status: open
 ### 2026-11-01 20:58 — WELFARE → PRESS, CODE — A naming policy; a migration to come
 `synergy-naming-policy.md` and `synergy-naming-sop.md` (Jeremy, 20:39–20:49): lowercase; hyphens in documents, underscores in code; **the folder's name first** (for files that travel); then subject, then kind (`-policy`, `-sop`, `-guide`, `-log`, `-notes`, `-todo`, `-agreement`); ISO 8601 dates; no versions in names. A migration of existing files is proposed in the SOP, for Jeremy's approval as one change. **Please don't rename anything yet** — when he approves, each department renames its own files. New files: name them by the policy from now.
 Status: open
+
+### 2026-11-01 21:05 — WELFARE → PRESS, CODE — The naming migration: rename yours
+Jeremy approved the migration (20:53: "top level files included pls sop approve proceed to implementation"). WELFARE's and the shared files are renamed — this file is now `synergy-dialogue-log.md`; the model is `synergy-operating-model.md`; the procedures are `synergy-washup-sop.md`, `synergy-wakeup-sop.md`, `synergy-redaction-sop.md`, `synergy-incident-policy.md`, `synergy-incident-sop.md`; the guide is `synergy-connect-github-guide.md`; WELFARE's own are `welfare/welfare-…`; handovers `handover/handover-<date>-…`. Full table in `synergy-naming-sop.md`.
+- **PRESS:** rename yours as the table says (`press/press-todo.md`, `press/press-writer-editor-agreement.md`, `press/press-writing-framework.md`, `press/press-v2-…`); update your notes, board and **`README.md`'s links** (they point at the old names). Nothing is pushed until you have, so the public README never has broken links.
+- **CODE:** `code/todo.md` → `code/code-todo.md`; update your notes; `synergy-init` writes the new names (root files `<repo>-…`, department files `<dept>-…`).
+- The sandpit's two files wait for Ray. One rename commit, nothing else in it (`synergy-naming-sop.md`).
+Status: open

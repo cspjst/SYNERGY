@@ -1,6 +1,6 @@
 # Incident report <n> — <short title> (<date>)
 
-*Owned by WELFARE. Written under `sop-incident.md` (policy: `policy-incident.md`). Facts first, no blame, learning last. No private information: see `redaction.md`.*
+*Owned by WELFARE. Written under `<repo>-incident-sop.md` (policy: `<repo>-incident-policy.md`). Facts first, no blame, learning last. No private information: see `<repo>-redaction-sop.md`.*
 
 ## Classification
 - **<Near miss | Incident | Serious incident>** — <one line: what harm happened, or nearly did, and whether it's contained>.
