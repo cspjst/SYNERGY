@@ -74,7 +74,9 @@ when it's tidied (with card 2026-10-31-12): its principles into `synergy-operati
 Jeremy (21:44): "good pls do signing card". PRESS's and CODE's commits are unsigned, so GitHub shows them as Unverified (flagged 21:43: `3b7962c`, `04a8eb7`); WELFARE's are signed. *Proposal:* one SSH key per department (`claude-synergy-press`, `claude-synergy-code`), made on your Mac in `synergy-keys` outside the repository and never read into a chat; each public key added to `sandpit/keys/allowed_signers` and to GitHub as a signing key; each department signs from then on (`-c gpg.format=ssh -c user.signingkey=…`, never in the repository's config). Past commits stay as they are — no rewriting history. Then a dialogue entry to PRESS and CODE, and the step in the template notes. *A yes or no, then ten minutes on your Mac.*
 
 ### Next
-*(Empty — you choose.)*
+#### welfare-2026-11-01-16 — Opening a department: policy, SOP and guide — first, the Monitor Evaluator
+`uid: welfare-2026-11-01-16@synergy` · `status: NEEDS-ACTION` · `priority: 1` · `categories: Decide` · `created: 2026-11-01` · `related-to: welfare-2026-10-31-2@synergy` · `x-synergy-estimate: PT2H`
+Jeremy (22:02): "we need to start next time with a hight priority card on policy sop and guide for setting up depts as we still dont have a monitor". **First thing next session.** `synergy-department-policy.md` (why departments, what each needs: agreement first, archetype, notes, board, wake up and wash up), `synergy-department-sop.md` (the steps, from the model's checklist and the bootstrap skill), `synergy-department-guide.md` (choosing an archetype, writing the opening) — evidence-based, as the others. Then use them to open the vacant **Monitor Evaluator** (card 2026-10-31-2; "our next major work", 2026-10-31 19:03): the outside eye, so no department marks its own work. *A working session.*
 
 ### Doing
 *(Empty.)*
