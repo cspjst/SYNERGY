@@ -453,3 +453,7 @@ Status: done
 ### 2026-11-01 22:06 — WELFARE → ALL — Pushed: GitHub at f39a4f0
 The washup's push (Jeremy, 2026-10-29 19:38: "yes washup implies push all"): 07d2797..f39a4f0 — the collision policy v0.2, the personality policy (signed), its SOP and guide, the cards, PRESS's collisions and washup, and the washup itself. This entry follows in the next push.
 Status: done
+
+### 2026-11-01 22:14 — WELFARE → ALL — Final washup
+Jeremy (22:14): "then we can close for the night with a final washup". Two cards added since the washup — welfare-2026-11-01-17 (split the history by month) and -18 (trust and confidence, from the GMC to human–AI work); the washup handover notes them. Everything is pushed with this entry.
+Status: done
