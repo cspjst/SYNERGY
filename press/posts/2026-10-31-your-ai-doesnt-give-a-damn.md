@@ -121,7 +121,7 @@ attached, clear decisions, and no contempt in either direction.
 
 ## Where to read more
 
-- The [code of conduct](../../welfare/code-of-conduct.md), rule 2
+- The [code of conduct](../../welfare/welfare-code-of-conduct.md), rule 2
   included.
 - The [welfare log](../../welfare/welfare-log.md), eggs and all.
 - The companion post: [Your AI has amnesia!](2026-10-31-your-ai-has-amnesia.md)

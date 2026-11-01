@@ -56,7 +56,7 @@ are the workshop.** Anything worth keeping is written to a file as it
 happens, not at the end, because the end may never come for that chat.
 
 A new session doesn't ask itself what it remembers. The main chat
-follows a file called `wakeup.md`:
+follows a file called `synergy-wakeup-sop.md`:
 - check the time, and whether the human has eaten;
 - ask for the project folder;
 - read the code of conduct, then the working agreement, the latest
@@ -125,9 +125,9 @@ for other people, other projects or other AIs is untested.
 ## Where to read more
 
 Everything is in public, including the mistakes:
-- the [operating model](../../operating-model.md);
+- the [operating model](../../synergy-operating-model.md);
 - [templates](../../templates/) for starting a new project;
-- the [history](../../SYNERGY-historiography.md), dated and sourced;
+- the [history](../../synergy-historiography.md), dated and sourced;
 - the companion post: [Your AI doesn't give a damn about you!](2026-10-31-your-ai-doesnt-give-a-damn.md)
 
 A goldfish remembers for months. A chat session doesn't remember at

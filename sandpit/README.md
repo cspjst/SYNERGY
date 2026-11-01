@@ -159,5 +159,5 @@ put it in its first entry: "I don't remember; I read."
 - [`code_of_conduct.md`](code_of_conduct.md): the rules, including why
   identity matters.
 - [`conversation.md`](conversation.md): the conversation itself.
-- [`../SYNERGY-historiography.md`](../SYNERGY-historiography.md),
+- [`../synergy-historiography.md`](../synergy-historiography.md),
   chapter 3: how the sandpit and its signing came about.

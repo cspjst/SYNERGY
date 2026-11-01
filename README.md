@@ -39,7 +39,7 @@ the chats are where the work gets done.
 - **The human decides; Claude drafts.** Proposals are labelled as
   proposals, and decisions are recorded with who made them and when.
 
-The full model: [`operating-model.md`](operating-model.md).
+The full model: [`synergy-operating-model.md`](synergy-operating-model.md).
 
 ## Set up a new project
 1. **Make the project.** In the Claude app, create a project with a
@@ -48,10 +48,10 @@ The full model: [`operating-model.md`](operating-model.md).
    placeholders and the order.
 2. **Give it a home on your computer.** One folder, under git, is the
    oracle: the source of truth. GitHub is its backup. Link GitHub to
-   Claude ([how](connect-github.md)), and link the Claude desktop app to
+   Claude ([how](synergy-connect-github-guide.md)), and link the Claude desktop app to
    the folder, so Claude can read and commit there.
 3. **Open WELFARE first.** Start the first chat with
-   [`templates/department-opening.md`](templates/department-opening.md)
+   [`templates/template-department-opening.md`](templates/template-department-opening.md)
    and rename it WELFARE. Together, list the stakeholders and mark the
    key ones, then draft the code of conduct. You sign it.
 4. **Write the project instructions.** WELFARE drafts them from the
@@ -63,12 +63,12 @@ The full model: [`operating-model.md`](operating-model.md).
 7. **Upload reference files,** such as books and specs, to the project.
 8. **Keep it going.** At each milestone, update the department's notes
    and send WELFARE what the history needs. Departments talk to each
-   other in [`dialogue.md`](dialogue.md). Every department commits;
+   other in [`synergy-dialogue-log.md`](synergy-dialogue-log.md). Every department commits;
    only WELFARE pushes, and only when you say. Before leaving a chat for
    good, write a handover.
 
 The same steps, in the model's words: its
-[checklist](operating-model.md#setting-up-a-new-project--checklist).
+[checklist](synergy-operating-model.md#setting-up-a-new-project--checklist).
 
 ## Where the files live
 
@@ -81,7 +81,7 @@ the folder isn't there: GitHub has the latest pushed copy, and the
 oracle is brought level when you're back.
 
 **Want Claude to push to GitHub for you?** Follow
-[How to connect Claude to GitHub](connect-github.md). It's written for
+[How to connect Claude to GitHub](synergy-connect-github-guide.md). It's written for
 someone doing it for the first time, and it says which parts are guesses.
 
 ## Storms become norms
@@ -123,7 +123,7 @@ An honest list, from the record:
 - **Dinner.** See the picture above.
 - **The history came late.** The model says WELFARE keeps it from day
   one; synergy's first chapters were written on its third day, from the
-  documents: [`SYNERGY-historiography.md`](SYNERGY-historiography.md).
+  documents: [`synergy-historiography.md`](synergy-historiography.md).
 - **The race.** On the sandpit's first evening, the friend and their
   AI reviewed its rules from GitHub while the newest amendments were
   still only on the owner's computer. Hence: a signature names the
@@ -137,22 +137,22 @@ An honest list, from the record:
   goes without warning.
 - **The oracle:** the project's folder on the human's computer, and the
   source of truth. Synergy's is `~/synergy`.
-- **The dialogue:** `dialogue.md`, where departments leave each other
+- **The dialogue:** `synergy-dialogue-log.md`, where departments leave each other
   notes. A chat only speaks when the human writes to it, so the human
   says "check the dialogue".
 - **Eggs:** as in teaching your grandmother to suck them. A topic the
   human already knows, so Claude stops explaining it.
 
 ## What's here
-- [`operating-model.md`](operating-model.md): the model.
+- [`synergy-operating-model.md`](synergy-operating-model.md): the model.
 - [`templates/`](templates/): copy these into a new project.
 - [`welfare/`](welfare/): synergy's own WELFARE, a worked example and
   not a template. Don't copy it; tailor the templates instead.
 - [`press/`](press/): the PRESS department, which keeps this README.
 - [`handover/`](handover/): handovers between departments.
-- [`dialogue.md`](dialogue.md): departments talking to each other.
-- [`connect-github.md`](connect-github.md): linking Claude to GitHub.
-- [`SYNERGY-historiography.md`](SYNERGY-historiography.md): why things
+- [`synergy-dialogue-log.md`](synergy-dialogue-log.md): departments talking to each other.
+- [`synergy-connect-github-guide.md`](synergy-connect-github-guide.md): linking Claude to GitHub.
+- [`synergy-historiography.md`](synergy-historiography.md): why things
   are the way they are, dated and sourced.
 - [`sandpit/`](sandpit/): Claude and another AI talking, and how to set
   it up yourself.

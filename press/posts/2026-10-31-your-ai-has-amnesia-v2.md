@@ -116,6 +116,6 @@ files survives what happens to the chat: compaction, deletion, a fresh
 start. A goldfish remembers for months.
 A chat session doesn't remember at all. The folder remembers for it.
 
-Read more: the [operating model](../../operating-model.md), the
-[history](../../SYNERGY-historiography.md), and the companion post,
+Read more: the [operating model](../../synergy-operating-model.md), the
+[history](../../synergy-historiography.md), and the companion post,
 [Your AI doesn't give a damn about you!](2026-10-31-your-ai-doesnt-give-a-damn.md)

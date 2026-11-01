@@ -116,6 +116,6 @@ be read, it was followed: the reminders came, sometimes one too many.
 You don't need your AI to care about you. You need to write down how
 you want to be looked after, and have it read that first.
 
-Read more: the [code of conduct](../../welfare/code-of-conduct.md),
+Read more: the [code of conduct](../../welfare/welfare-code-of-conduct.md),
 the [welfare log](../../welfare/welfare-log.md), and the companion
 post, [Your AI has amnesia!](2026-10-31-your-ai-has-amnesia.md)

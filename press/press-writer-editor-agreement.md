@@ -198,3 +198,5 @@ Claude-SYNERGY-PRESS, the writer.*
 
 *Correction, left outside the signed text: the header's "18:40" for
 v0.2 was the writer's guess; git records v0.2 at 18:37.*
+
+*Renamed files, noted outside the signed text (2026-11-01, `synergy-naming-sop.md`): this agreement is now `press/press-writer-editor-agreement.md`. The text above keeps the names it was signed with: `welfare/code-of-conduct.md` is now `welfare/welfare-code-of-conduct.md`, and `press/writing-framework.md` is now `press/press-writing-framework.md`. The next signed version will use the new names.*

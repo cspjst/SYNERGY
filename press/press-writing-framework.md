@@ -146,5 +146,5 @@ may not know.
 - "How to Write a Technical Blog That Gets Read", Simple Talk
   (Redgate), 2023-08-22:
   https://www.red-gate.com/simple-talk/blogs/how-to-write-a-technical-blog-that-gets-read/
-- Synergy: `welfare/code-of-conduct.md`, `operating-model.md`,
+- Synergy: `welfare/welfare-code-of-conduct.md`, `synergy-operating-model.md`,
   `press/press-notes.md`.

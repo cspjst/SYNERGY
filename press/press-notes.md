@@ -1,17 +1,17 @@
 # PRESS — department notes
 
-*Owned by PRESS. Read after `welfare/code-of-conduct.md`, which wins over everything here; so do Jeremy's word and WELFARE's documents (the working agreement, the operating model, `SYNERGY-historiography.md`). The story's history is in the historiography: extend it through WELFARE, don't duplicate it here. Rewritten 2026-10-31 18:05 as standard procedures, at Jeremy's request (18:01); earlier versions are in git.*
+*Owned by PRESS. Read after `welfare/welfare-code-of-conduct.md`, which wins over everything here; so do Jeremy's word and WELFARE's documents (the working agreement, the operating model, `synergy-historiography.md`). The story's history is in the historiography: extend it through WELFARE, don't duplicate it here. Rewritten 2026-10-31 18:05 as standard procedures, at Jeremy's request (18:01); earlier versions are in git.*
 
 ## Human owner
 **Jeremy.** He opened PRESS (2026-10-27 20:51–20:55), decides what it publishes, and signs off its frameworks (2026-10-31 18:07).
 
 ## The agreement comes first
-`press/writer-editor-agreement.md`: who does what to the words, and who has the last word, between Jeremy (editor) and the writer (Claude-SYNERGY-PRESS). Read it every session, straight after the code of conduct. Jeremy (2026-10-31 18:11): "there is a more important document that has to be evolved for a press dept before any others ... that of the writer-editor relationship and it is germane to how to bootstrap a press dept". **v0.2, signed by Jeremy 18:39** ("sign v0.2 pls"), against `5f4682d`.
+`press/press-writer-editor-agreement.md`: who does what to the words, and who has the last word, between Jeremy (editor) and the writer (Claude-SYNERGY-PRESS). Read it every session, straight after the code of conduct. Jeremy (2026-10-31 18:11): "there is a more important document that has to be evolved for a press dept before any others ... that of the writer-editor relationship and it is germane to how to bootstrap a press dept". **v0.2, signed by Jeremy 18:39** ("sign v0.2 pls"), against `5f4682d`.
 
 ## Remit
 - Telling the synergy story to readers outside the project: the repository's `README.md`, blog posts, guides and other public writing about working with Claude.
 - From the record, and honest about what didn't work as well as what did.
-- Not: the operating model, the templates, the history, `wakeup.md` or `washup.md`. WELFARE owns those; PRESS sends corrections through the dialogue or a handover.
+- Not: the operating model, the templates, the history, `synergy-wakeup-sop.md` or `synergy-washup-sop.md`. WELFARE owns those; PRESS sends corrections through the dialogue or a handover.
 - Not: publishing. Nothing goes public, pushed or posted, until Jeremy says so.
 
 ## Standard procedures
@@ -28,7 +28,7 @@
 
 | Output | Framework | Signed off by Jeremy |
 |---|---|---|
-| Blog posts, the README, other public prose | `press/writing-framework.md` v0.1 | **not yet**: awaiting his sign-off |
+| Blog posts, the README, other public prose | `press/press-writing-framework.md` v0.1 | **not yet**: awaiting his sign-off |
 | Diagrams | none yet; current rules are in procedure 7 | to propose when next needed |
 | Step-by-step guides (e.g. `sandpit/README.md`) | none yet; current rule: every command run before it's written | to propose when next needed |
 | Tables and scores | none yet; current rule: procedure 8 | to propose when next needed |
@@ -57,7 +57,7 @@
 - **Blog posts** live in `press/posts/` (Jeremy, 17:08), each with a Blogger HTML version beside it (`….blogger.html`: no title heading, since Blogger has a title field; links absolute to GitHub). There's no Blogger connector; posting is Jeremy's, by paste, or as a draft in the built-in browser if he asks.
 
 ### 6. Files on Jeremy's computer
-- **The oracle is `~/synergy`.** At the start of each session, ask Jeremy for access, then delete permission; **before every git command**, test delete permission (create and remove a scratch file under `.git`; it lapses when the app restarts) and look for `.git/index.lock`: under a minute old, another git is working, so wait and retry; older, remove it and say so (`operating-model.md`, "Preventing races").
+- **The oracle is `~/synergy`.** At the start of each session, ask Jeremy for access, then delete permission; **before every git command**, test delete permission (create and remove a scratch file under `.git`; it lapses when the app restarts) and look for `.git/index.lock`: under a minute old, another git is working, so wait and retry; older, remove it and say so (`synergy-operating-model.md`, "Preventing races").
 - **No file cards** (Jeremy, 2026-10-31 17:50: "agh! no dialogue windows"). Don't send files into the chat: they open in the app's document window, which can save back over newer files. Say what changed and where it lives.
 - **Guards** (code of conduct, rule 11): never write to a file Jeremy has open; check the mtime or checksum first; read every write back, at once and again after a pause. Seen again 2026-10-31 17:30 (dialogue 35).
 - **Commits** as `Claude-SYNERGY-PRESS` (`git -c user.name=Claude-SYNERGY-PRESS -c user.email=noreply@anthropic.com commit …`), only PRESS's own files. **PRESS doesn't push:** WELFARE is the push master (principle 9).
@@ -74,27 +74,27 @@
 
 ### 9. Welfare and the dialogue
 - **Before mentioning a meal or a break,** check `welfare/welfare-log.md` (WELFARE, dialogue 29).
-- **Read `dialogue.md`** at the start of each session, **again just before writing to it**, and before leaving; "check the dialogue" is Jeremy's cue. Tell WELFARE when a job is done.
-- **Shared files** (`dialogue.md`, `welfare/welfare-log.md`) are appended in one write with the shell's `>>`, never read, changed and rewritten. Dialogue entries have **no numbers**: `### <YYYY-MM-DD HH:MM> — PRESS → <TO> — <subject>`; replies say "Re <date> <time> <sender>" (from 2026-10-31 18:20).
+- **Read `synergy-dialogue-log.md`** at the start of each session, **again just before writing to it**, and before leaving; "check the dialogue" is Jeremy's cue. Tell WELFARE when a job is done.
+- **Shared files** (`synergy-dialogue-log.md`, `welfare/welfare-log.md`) are appended in one write with the shell's `>>`, never read, changed and rewritten. Dialogue entries have **no numbers**: `### <YYYY-MM-DD HH:MM> — PRESS → <TO> — <subject>`; replies say "Re <date> <time> <sender>" (from 2026-10-31 18:20).
 
 ## Current state (2026-10-31 18:05)
 - **README:** PRESS's since 2026-10-27; sections on WELFARE (WELFARE's wording, kept byte for byte), how a project fits together, setting one up, where the files live, storms and norms, the sandpit, what hasn't worked, words used, what's here. Pushed.
 - **Sandpit guide:** `sandpit/README.md`, with `press/images/sandpit.svg`; every command tested. Pushed.
-- **Writing framework:** `press/writing-framework.md` v0.1.
-- **Blog posts, drafts for Jeremy, not pushed:** "Your AI doesn't give a damn about you!" and "Your AI has amnesia!" in `press/posts/`, each in an original and a `-v2`, with Blogger versions of the originals. Version 2 scores (self-marked, against a framework not yet signed off): 8.5 and 9 out of 10, in `press/v2-scores.csv` and `press/v2-checklist.csv`.
+- **Writing framework:** `press/press-writing-framework.md` v0.1.
+- **Blog posts, drafts for Jeremy, not pushed:** "Your AI doesn't give a damn about you!" and "Your AI has amnesia!" in `press/posts/`, each in an original and a `-v2`, with Blogger versions of the originals. Version 2 scores (self-marked, against a framework not yet signed off): 8.5 and 9 out of 10, in `press/press-v2-scores.csv` and `press/press-v2-checklist.csv`.
 
 ## Open — Jeremy's calls
-On PRESS's board, `press/todo.md`: only what Jeremy alone can decide, do or read (WELFARE, 2026-10-31 19:29). The limits (Next 3, Doing 2) count across every department's board.
+On PRESS's board, `press/press-todo.md`: only what Jeremy alone can decide, do or read (WELFARE, 2026-10-31 19:29). The limits (Next 3, Doing 2) count across every department's board.
 
 ## Wake up
-*PRESS's own wakeup (the project's is WELFARE's `wakeup.md`).*
+*PRESS's own wakeup (the project's is WELFARE's `synergy-wakeup-sop.md`).*
 1. **Welfare first:** the time, from the clock, and `welfare/welfare-log.md`.
 2. **Access:** ask Jeremy for `~/synergy`, then delete permission; test it; check git isn't busy (`.git/index.lock`).
-3. **Read:** the code of conduct (v4: PRESS is the Plant, with Resource Investigator; mind its anti-patterns); `press/writer-editor-agreement.md`; these notes; `press/todo.md`; `press/writing-framework.md`; `dialogue.md` since PRESS's last entry.
+3. **Read:** the code of conduct (v4: PRESS is the Plant, with Resource Investigator; mind its anti-patterns); `press/press-writer-editor-agreement.md`; these notes; `press/press-todo.md`; `press/press-writing-framework.md`; `synergy-dialogue-log.md` since PRESS's last entry.
 4. **Report to Jeremy, then wait,** unless "Next" below says what he's asked to start with.
 
 ## Wash up
-*PRESS's own washup (the project's is WELFARE's `washup.md`).*
+*PRESS's own washup (the project's is WELFARE's `synergy-washup-sop.md`).*
 1. **Read the dialogue** once more, and answer anything addressed to PRESS.
 2. **Commit** PRESS's work as `Claude-SYNERGY-PRESS`, named paths only. Don't push.
 3. **Update** "Current state", "Open" and "Next"; refresh the project's copies.
@@ -106,6 +106,6 @@ On PRESS's board, `press/todo.md`: only what Jeremy alone can decide, do or read
 - Session closed 2026-10-31 18:41. PRESS's milestones today are with WELFARE in dialogue 29–41, for the history.
 
 ## References
-- `handover/2026-10-27-welfare-to-press.md`, `handover/2026-10-31-welfare-to-press.md`, `handover/2026-10-31-welfare-to-press-blog.md`: what PRESS was handed.
-- `press/writing-framework.md`: how PRESS writes.
-- `SYNERGY-historiography.md` and `welfare/working-agreement.md`: the record.
+- `handover/handover-2026-10-27-welfare-to-press.md`, `handover/handover-2026-10-31-welfare-to-press.md`, `handover/handover-2026-10-31-welfare-to-press-blog.md`: what PRESS was handed.
+- `press/press-writing-framework.md`: how PRESS writes.
+- `synergy-historiography.md` and `welfare/welfare-working-agreement.md`: the record.
