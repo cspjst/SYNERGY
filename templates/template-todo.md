@@ -1,14 +1,28 @@
-# <DEPT> — <HUMAN>'s board
+# <DEPT> — boards
 
-*Owned and written by <DEPT>, for <HUMAN>: a Markdown kanban, kept in the repository so git versions it. Only what <HUMAN> alone can decide, do or read. Each card is named `<date>-<n>`, so other documents point to it ("see todo <date>-<n>") instead of repeating it. WELFARE's board also carries cards no single department owns.*
+*Owned and written by <DEPT>. Two Markdown kanban boards, kept in the repository so git versions them: **for <HUMAN>** — what only they can decide, do or read — and **<DEPT>'s own work**. Rules: `synergy-kanban-policy.md` (in the project's own oracle, `<repo>-kanban-policy.md`). <HUMAN> doesn't edit this file: one writer per file, and no document windows on the repository.*
 
-*How it works: <HUMAN> chooses what moves to **Next** and **Doing**; <DEPT> moves the cards when they say. **Limits: Next at most <3>, Doing at most <2> — across all departments' boards together**, because <HUMAN>'s load is one load. Before moving a card into Next or Doing, check the combined view (`tools/board`, or WELFARE's report at wakeup); at the limit, say so instead of moving it. **Done this week** is cleared at WELFARE's weekly welfare check; git keeps the history. Labels: **Decide**, **Do**, **Read**. No deadlines unless <HUMAN> sets them. <HUMAN> doesn't edit this file: one writer per file, and no document windows on the repository.*
+*Cards use iCalendar's VTODO vocabulary (RFC 5545; xCal, RFC 6321), in Markdown. A card:*
 
-## Waiting for you
-- **<date>-<n> — <the card>.** [Decide | Do | Read] <Why it matters; options; any proposal, labelled.> *<Roughly how long.>*
+```
+#### <dept>-<date>-<n> — <title>
+`uid: <dept>-<date>-<n>@<repo>` · `status: NEEDS-ACTION` · `categories: Decide` · `created: <date>T<time>Z` · `x-synergy-estimate: PT10M`
+Why it matters; any proposal, labelled.
+```
 
-## Next (at most <3>)
+## For <HUMAN>
+*Limits across all departments' boards together: Next at most 3, Doing at most 2. <HUMAN> chooses what moves; <DEPT> moves it on their word. Cards waiting more than 14 days are raised at the weekly welfare check: keep, drop, or Next.*
 
-## Doing (at most <2>)
+### Waiting for you
+### Next
+### Doing
+### Done this week
+### Dropped
 
-## Done this week
+## <DEPT>'s own work
+*Doing at most 1. Every Blocked card names what it waits for, with `related-to`.*
+
+### Backlog
+### Doing
+### Blocked
+### Done this week

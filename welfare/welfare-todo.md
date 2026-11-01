@@ -20,7 +20,7 @@
 - **2026-11-01-4 — New project Instructions to paste**, for the new names (`welfare/welfare-code-of-conduct.md`, `welfare/welfare-working-agreement.md`, `synergy/synergy-operating-model.md`, and the start-up line `synergy-wakeup-sop.md`). Replaces card 2026-10-31-3. WELFARE has the draft ready. [Do] *Two minutes.*
 - **2026-11-01-5 — A policy index.** [Decide] One short list of every policy — owner, version, signed or not — and what overrides what: the code of conduct, then the policies, then the SOPs, then the working agreement's decisions; a master list as ISO 9001's document control keeps. *Proposal:* `synergy-policy-index.md`, kept by WELFARE. *A yes or no.*
 - **2026-11-01-6 — Split the operating model** when it's tidied (with card 2026-10-31-12): its principles into `synergy-operating-policy.md`; its procedures into their own SOPs; its dated history left to the history. [Decide] *A conversation.*
-- **2026-11-01-7 — The kanban policy's five questions** (`synergy-kanban-policy.md`, draft v0.1): limits, ageing, dropped cards, card size, departments' own work. Then sign it. [Decide] *Five minutes.*
+- **2026-11-01-7 — Sign the kanban policy** (`synergy-kanban-policy.md`, v0.3 — all five questions answered). Once signed, every department's board moves to the new format. [Decide] *A yes.*
 
 ## Next (at most 3)
 - *(Empty — you choose.)*

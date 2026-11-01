@@ -1,9 +1,9 @@
 # Kanban — policy
 
-*Owned by synergy's WELFARE; for every project. Why the human's work is kept on boards, and the rules the boards follow. **Draft v0.2, 2026-11-01** — started at Jeremy's request (21:00: "next i would like to develop kanban policy"); his answers of 21:06 are in; one question remains before it's signed. Builds on what's already agreed (2026-10-31 19:16–19:23): a Markdown kanban per department, written only by its department, limits counted across all boards.*
+*Owned by synergy's WELFARE; for every project. Why the human's work is kept on boards, and the rules the boards follow. **Draft v0.3, 2026-11-01, for signing** — started at Jeremy's request (21:00: "next i would like to develop kanban policy"); his answers of 21:06 and 21:09 are in. Builds on what's already agreed (2026-10-31 19:16–19:23): a Markdown kanban per department, written only by its department, limits counted across all boards.*
 
 ## Purpose
-To keep the human's load **visible**, **bearable** and **moving** — welfare first. The boards are for what only the human can decide, do or read; they are not a record of the departments' own work, which lives in their notes.
+To keep the human's load **visible**, **bearable** and **moving** — welfare first. Each department's file holds two boards: **for the human** — what only he can decide, do or read — and **its own work**, so he can see what each department is doing and what's waiting on whom.
 
 ## Principles
 1. **Make the work visible.** What can't be seen can't be managed: every card the human owes is on a board, and nowhere else (Anderson, 2010; Benson & DeMaria Barry, 2011). One board per department; one combined view (`tools/board`, or WELFARE's report at wakeup).
@@ -39,6 +39,11 @@ To keep the human's load **visible**, **bearable** and **moving** — welfare fi
   - `created` — ISO 8601, UTC; `completed` when done;
   - `related-to` — another card's `uid`, where one depends on another;
   - `x-synergy-estimate` — roughly how long, as an ISO 8601 duration (`PT5M`, `PT2H`). RFC 5545 allows `x-` properties for extensions.
+- **The department's own work — the second board, below the first** (Jeremy, 21:09: "middle way is a good solution"):
+  - **Columns:** Backlog (`NEEDS-ACTION`) · Doing (`IN-PROCESS`, **at most 1** — a department works only while the human is in its chat) · Blocked (`NEEDS-ACTION`, with `related-to` naming what it waits for — usually a card on the human's board) · Done this week (`COMPLETED`).
+  - The combined view shows the chain: a department's Blocked card → the card it waits for → the human.
+  - **The notes stop listing tasks:** their "Current state" is narrative only; the work lives on the board, once.
+  - No deadlines. What's blocked on the human is looked at in the weekly check as a welfare question, not a to-do.
 - **Who writes:** only the board's department, on the human's word; the human never edits a board himself (one writer per file; no document windows).
 - **Files:** `<dept>/<dept>-todo.md`, from `templates/template-todo.md`.
 
@@ -47,7 +52,7 @@ To keep the human's load **visible**, **bearable** and **moving** — welfare fi
 2. ~~Ageing~~ a timed review, "a sort of garbage collector": weekly, over 14 days (21:06).
 3. ~~Dropped cards~~ "own column pls" (21:06).
 4. ~~Card size~~ "yes split" (21:06).
-5. **The departments' own work** — "pls to discuss this" (21:06): stay in their notes, as now — or should each department keep a board of its own work too, so you can see what it's doing?
+5. ~~The departments' own work~~ the middle way — one file, two boards (21:09: "middle way is a good solution make it s").
 
 ## References
 - Ohno, T. (1988). *Toyota Production System: Beyond Large-Scale Production.* Productivity Press. (Kanban's origin.)
