@@ -1,6 +1,6 @@
 # Collisions — policy
 
-*Owned by synergy's WELFARE; for every project. What happens when two writers — agents, humans or their tools — change or read the same thing at once, and how synergy prevents it. **Draft v0.1, 2026-11-01** — started while Jeremy talks with PRESS (21:28: "in my absence work on a race policy ... we should rename it something like file collision rather than race conditions"). It turns the rules in `synergy-operating-model.md` ("Preventing collisions", 2026-10-31) into a policy, with evidence. The questions at the end are Jeremy's before it's signed.*
+*Owned by synergy's WELFARE; for every project. What happens when two writers — agents, humans or their tools — change or read the same thing at once, and how synergy prevents it. **Draft v0.2, 2026-11-01 21:45** (v0.1 21:30; v0.2: Jeremy's answers, the rules moved in) — started while Jeremy talks with PRESS (21:28: "in my absence work on a race policy ... we should rename it something like file collision rather than race conditions"). It turns the rules in `synergy-operating-model.md` ("Preventing collisions", 2026-10-31) into a policy, with evidence. Jeremy's answers are under "Decided".*
 
 ## Why "collision"
 Computing calls these *race conditions* — a term from 1950s switching circuits, where two signals "race" each other and the result depends on which arrives first (Huffman, 1954). "Race" there means a contest of speed, and the term isn't on the Inclusive Naming Initiative's lists (checked 2026-11-01). Synergy still prefers **collision**, for clarity rather than offence: it says what happens to the work, and a newcomer can't misread it. The old term is kept as an alias, so that searches for "race" still find this policy.
@@ -23,14 +23,31 @@ No write is lost, no name is used twice, and nobody acts on an out-of-date copy 
 5. **One tool at a time.** Before any git command, look for git's lock: under a minute old, wait and retry; older, it's left over — remove it and say so.
 6. **No document windows on shared files** while agents work. Humans look through tools that can't save — GitHub, Quick Look.
 7. **Publish before inviting a read; sign the version you mean.** A stale read is prevented by pushing first, and by every signature naming the text it signs.
-8. **One pusher.** Only WELFARE pushes to the backup, so the public copy changes in one place, in one order.
+8. **One push owner.** Only WELFARE pushes to the backup, so the public copy changes in one place, in one order.
 9. **Every collision is an incident.** Contained, reported and learned from under `synergy-incident-sop.md`.
 
-## Questions for Jeremy before he signs
-1. **The name:** "collision" — `synergy-collision-policy.md`, and "Preventing collisions" in the model — or "file collision", or another?
-2. **The model's section:** move its rules here, leaving a pointer, so the rules live in one place?
-3. **"Push master"** — your own phrase (2026-10-27 21:19: "we need a push master"), which stays as you said it. But "master" is on the Inclusive Naming Initiative's tier 1 ("replace immediately"). For the living documents: **"the pusher"**, **"push owner"**, or keep "push master"?
-4. ~~A naming check for old terms~~ Done: `synergy-naming-policy.md`, rules 11–15 (Jeremy, 21:35: "pls update the naming policy with this new information").
+## Rules
+*Moved here from `synergy-operating-model.md` on 2026-11-01 (Jeremy, 2026-11-01 21:40: "1. keep `synergy-collision-policy.md` ... 2. yes rules in one place long pointers! ... 3. replace all occurences of master with owner ... 4. yes youre doing that as i type"), numbered as they were there. The principles above are why; these are what every department does.*
+*Jeremy, 2026-10-31 18:19: "we must pin down race prevention and it must be one of the earliest jobs for a bootstrap chat". Races seen so far: the app's document window saving over newer files (2026-10-27, 10-31); a friend's AI reading the sandpit code before its amendments were pushed (10-29); dialogue entries 33, 34, 35 and 39 numbered twice by departments writing minutes apart (10-31).*
+
+1. **One writer per file.** Only a file's owner writes it; others send changes through the dialogue or a handover (principle 3).
+2. **Shared files are append only** — `synergy-dialogue-log.md`, `welfare/welfare-log.md`. Append in one write with the shell's `>>`. Never read the file, change it in memory and write the whole thing back: two writers doing that at once lose one of the writes.
+3. **No sequence numbers in shared files.** An entry is identified by its date, time and sender — `### 2026-10-31 18:20 — WELFARE → PRESS — <subject>` — and referred to the same way ("Re 2026-10-31 18:14 PRESS"). Two departments can't take the same minute *and* the same name.
+4. **One git at a time.** Before any git command: test delete permission (create and remove a scratch file under `.git`), and look for `.git/index.lock`. Under a minute old: another git is working — wait and retry. Older: left over — remove it and say so. Stage named paths only.
+5. **Read back every write**, at once and after a pause; check the modification time before writing a file anyone else might have open.
+6. **Human tools:** no document windows or editors on the repository's files while agents work. To look, use GitHub or Quick Look, which can't save.
+7. **Publishing:** push before asking anyone outside to read; sign the version you mean.
+8. **One push owner:** WELFARE (formerly "push master").
+9. **Say whose card:** each department's board names its cards `<date>-<n>`, so the names repeat across boards; refer to a card with its board — "CODE todo 2026-10-31-1" (PRESS and CODE, 2026-10-31 19:30–19:31).
+10. **A human's approval isn't consent to a breach** (2026-11-01 20:18): when Claude sees a breach, it names it as a breach, even in something a human has already merged or approved — humans miss things; that's what the second pair of eyes is for.
+
+## Decided (Jeremy, 2026-11-01 21:40)
+1. **The name:** "keep `synergy-collision-policy.md`".
+2. **One place for the rules:** "yes rules in one place long pointers!" — the rules above; the model keeps a pointer.
+3. **"Master" → "owner":** "replace all occurences of master with owner" — "push owner" in living documents; quotes and dated records keep "push master" (`synergy-naming-policy.md`, rule 14).
+4. **A naming check for old terms:** done — `synergy-naming-policy.md`, rules 11–15.
+
+Awaiting Jeremy's signature.
 
 ## References
 - Huffman, D. A. (1954). The synthesis of sequential switching circuits. *Journal of the Franklin Institute*, 257(3), 161–190; 257(4), 275–303.
@@ -39,4 +56,4 @@ No write is lost, no name is used twice, and nobody acts on an out-of-date copy 
 - Lamport, L. (1978). Time, clocks, and the ordering of events in a distributed system. *Communications of the ACM*, 21(7), 558–565.
 - Kleppmann, M. (2017). *Designing Data-Intensive Applications.* O'Reilly. (Single-leader writes; logs.)
 - Inclusive Naming Initiative. *Word lists* (tiers 1–3 and "no change"). https://inclusivenaming.org/word-lists/inclusive-naming-word-lists-v1.0
-- Synergy: `synergy-operating-model.md` ("Preventing collisions"); `synergy-incident-policy.md`; `welfare/near-misses/`.
+- Synergy: `synergy-operating-model.md` (a pointer here); `synergy-incident-policy.md`; `welfare/near-misses/`.

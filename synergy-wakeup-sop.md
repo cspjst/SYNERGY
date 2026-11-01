@@ -8,7 +8,7 @@
 
 ## The steps
 1. **Welfare first.** Check the time against the code of conduct's meal times and bedtime, and `welfare/welfare-log.md` for what's already happened today; then ask how the human is — before anything else.
-2. **Access, and collisions.** Ask the human for the oracle folder, then for delete permission there, and test it (create and remove a scratch file under `.git`) — before any git command, `git fetch` included. Then the rest of "Preventing collisions" in `synergy-operating-model.md`: one git at a time, appends with `>>`, entries named by time and sender. If WELFARE signs its commits, ask for the keys folder too.
+2. **Access, and collisions.** Ask the human for the oracle folder, then for delete permission there, and test it (create and remove a scratch file under `.git`) — before any git command, `git fetch` included. Then the rest of the rules in `synergy-collision-policy.md`: one git at a time, appends with `>>`, entries named by time and sender. If WELFARE signs its commits, ask for the keys folder too.
 3. **Read, in order:**
    1. `welfare/welfare-code-of-conduct.md` — it wins over everything else;
    2. `welfare/welfare-working-agreement.md` — its Status and "Open — <HUMAN>'s calls" first;

@@ -60,14 +60,14 @@ It has grown by accretion — superseded decisions struck through in place, less
 
 #### welfare-2026-11-01-5 — A policy index
 `uid: welfare-2026-11-01-5@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-01`
-One short list of every policy — owner, version, signed or not — and what overrides what: the code of conduct, then the policies, then the SOPs, then the working agreement's decisions; a master list as ISO 9001's document control keeps. *Proposal:* `synergy-policy-index.md`, kept by WELFARE. *A yes or no.*
+One short list of every policy — owner, version, signed or not — and what overrides what: the code of conduct, then the policies, then the SOPs, then the working agreement's decisions; an owned list as ISO 9001's document control keeps. *Proposal:* `synergy-policy-index.md`, kept by WELFARE. *A yes or no.*
 
 #### welfare-2026-11-01-6 — Split the operating model
 `uid: welfare-2026-11-01-6@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-01`
 when it's tidied (with card 2026-10-31-12): its principles into `synergy-operating-policy.md`; its procedures into their own SOPs; its dated history left to the history. *A conversation.*
-#### welfare-2026-11-01-13 — The collision policy's four questions
+#### welfare-2026-11-01-13 — Sign the collision policy
 `uid: welfare-2026-11-01-13@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-01` · `x-synergy-estimate: PT10M`
-`synergy-collision-policy.md`, draft v0.1: the name; moving the model's rules into it; "push master" in living documents; a naming check for old terms. Then sign it.
+`synergy-collision-policy.md`, v0.2: your four answers (21:40) are in — name kept, the rules moved in, "master" → owner, the term check done. Left: your signature, naming the commit. *A yes or no.*
 
 ### Next
 *(Empty — you choose.)*

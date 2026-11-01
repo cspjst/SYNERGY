@@ -1,6 +1,6 @@
 # Bootstrap templates
 
-*Owned by synergy. Every template is named `template-<name>.md` (Jeremy, 2026-11-01 20:37: "I favour naming the ones in templates as template-"); the file it becomes drops the prefix. Masters for starting a new project with Claude, per `synergy-operating-model.md`. Copy them into a new project at bootstrap; from then on the copies belong to that project. Synergy's WELFARE is the original; every project's WELFARE is bootstrapped from it.*
+*Owned by synergy. Every template is named `template-<name>.md` (Jeremy, 2026-11-01 20:37: "I favour naming the ones in templates as template-"); the file it becomes drops the prefix. The owner's copies for starting a new project with Claude, per `synergy-operating-model.md`. Copy them into a new project at bootstrap; from then on the copies belong to that project. Synergy's WELFARE is the original; every project's WELFARE is bootstrapped from it.*
 
 ## Placeholders
 - `<PROJECT>` — the project's name in capitals; `<project>` — lower case where a path needs it.

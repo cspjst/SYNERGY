@@ -131,30 +131,18 @@ Tuckman's stages of a team (1965: forming, storming, norming, performing; adjour
 ## The bootstrap kit — owned by synergy
 **Synergy owns anything a new project needs to bootstrap from** (Jeremy, 2026-10-27 17:57: "i think synergy should own anything any new project would need to bootstrap from").
 - **Synergy's WELFARE is the original** (Jeremy, 18:26: "synergy project is the owner of the OG welfare that will propagate out to all projects going forward"). Every project's WELFARE is bootstrapped from it, and improvements to WELFARE propagate out from synergy.
-- **What it holds (masters):**
+- **What it holds (as owner):**
   - this operating model;
   - templates: project instructions, a department's opening message, a department notes document, a handover, `welfare/welfare-stakeholders.md`, `welfare/welfare-code-of-conduct.md`, a historiography chapter;
   - SMALL-C's documents as the worked example.
 - **How it reaches a project:** a chat can only read its own project's documents, so a new project gets **copies** at bootstrap; from then on the copies belong to that project and are tailored there (its own stakeholders, its own code of conduct, signed afresh).
-- **Improvements flow back:** when a project's WELFARE learns something general (a storm turned into a norm that isn't project-specific), it's proposed to synergy by handover, and synergy updates the master.
+- **Improvements flow back:** when a project's WELFARE learns something general (a storm turned into a norm that isn't project-specific), it's proposed to synergy by handover, and synergy, as owner, updates it.
 - **The templates are ready** (Jeremy, 18:03: "i want the templates ready and waiting"): `~/synergy/templates/` on Jeremy's machine (`~/claude` until 2026-10-28), backed up on GitHub (`cspjst/SYNERGY`) — `README.md` (placeholders, bootstrap order), `project-instructions.md`, `welfare/welfare-stakeholders.md`, `welfare/welfare-code-of-conduct.md`, `welfare/welfare-working-agreement.md`, `historiography.md`, `department-opening.md`, `department-notes.md`, `handover/handover.md`. Uploaded to the synergy project 18:19.
 - **The `project-bootstrap` skill** (Jeremy, 18:03: "yes bootstrap skill now"): skills are account-wide, so it reaches every project without copying by hand; synergy owns its source. It carries the bootstrap procedure and the templates' essentials; the full templates are in `~/synergy/templates/`. (Jeremy already has one such skill, `project-historiography`.)
 - **Masters:** ~~the synergy project holds the master~~ (18:03, 18:09). **Superseded 20:28** (Jeremy): "/claude is the oracle git is the versioning tool, github is the backup you are the owner" — `~/claude`, renamed `~/synergy` on 2026-10-28, is the source of truth, owned by Claude as synergy's WELFARE; git keeps the versions; GitHub is the backup.
 
 ## Preventing collisions (formerly "races")
-*The policy, with its evidence, is `synergy-collision-policy.md` (draft); these are its rules in brief.*
-*Jeremy, 2026-10-31 18:19: "we must pin down race prevention and it must be one of the earliest jobs for a bootstrap chat". Races seen so far: the app's document window saving over newer files (2026-10-27, 10-31); a friend's AI reading the sandpit code before its amendments were pushed (10-29); dialogue entries 33, 34, 35 and 39 numbered twice by departments writing minutes apart (10-31).*
-
-1. **One writer per file.** Only a file's owner writes it; others send changes through the dialogue or a handover (principle 3).
-2. **Shared files are append only** — `synergy-dialogue-log.md`, `welfare/welfare-log.md`. Append in one write with the shell's `>>`. Never read the file, change it in memory and write the whole thing back: two writers doing that at once lose one of the writes.
-3. **No sequence numbers in shared files.** An entry is identified by its date, time and sender — `### 2026-10-31 18:20 — WELFARE → PRESS — <subject>` — and referred to the same way ("Re 2026-10-31 18:14 PRESS"). Two departments can't take the same minute *and* the same name.
-4. **One git at a time.** Before any git command: test delete permission (create and remove a scratch file under `.git`), and look for `.git/index.lock`. Under a minute old: another git is working — wait and retry. Older: left over — remove it and say so. Stage named paths only.
-5. **Read back every write**, at once and after a pause; check the modification time before writing a file anyone else might have open.
-6. **Human tools:** no document windows or editors on the repository's files while agents work. To look, use GitHub or Quick Look, which can't save.
-7. **Publishing:** push before asking anyone outside to read; sign the version you mean.
-8. **One push master:** WELFARE.
-9. **Say whose card:** each department's board names its cards `<date>-<n>`, so the names repeat across boards; refer to a card with its board — "CODE todo 2026-10-31-1" (PRESS and CODE, 2026-10-31 19:30–19:31).
-10. **A human's approval isn't consent to a breach** (2026-11-01 20:18): when Claude sees a breach, it names it as a breach, even in something a human has already merged or approved — humans miss things; that's what the second pair of eyes is for.
+The rules now live in one place: **`synergy-collision-policy.md`**, "Rules" — numbered as they were here, so references hold (Jeremy, 2026-11-01 21:40: "1. keep `synergy-collision-policy.md` ... 2. yes rules in one place long pointers! ... 3. replace all occurences of master with owner ... 4. yes youre doing that as i type").
 
 ## Setting up a new project — checklist
 1. Create the project; one-line description. Invoke the `project-bootstrap` skill, or copy synergy's `templates/` (`~/synergy/templates/`, or `cspjst/SYNERGY` on GitHub) into it.
