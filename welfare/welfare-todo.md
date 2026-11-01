@@ -69,6 +69,10 @@ when it's tidied (with card 2026-10-31-12): its principles into `synergy-operati
 `uid: welfare-2026-11-01-13@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-01` · `x-synergy-estimate: PT10M`
 `synergy-collision-policy.md`, v0.2: your four answers (21:40) are in — name kept, the rules moved in, "master" → owner, the term check done. Left: your signature, naming the commit. *A yes or no.*
 
+#### welfare-2026-11-01-14 — A signing key for PRESS and CODE
+`uid: welfare-2026-11-01-14@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-01` · `x-synergy-estimate: PT20M`
+Jeremy (21:44): "good pls do signing card". PRESS's and CODE's commits are unsigned, so GitHub shows them as Unverified (flagged 21:43: `3b7962c`, `04a8eb7`); WELFARE's are signed. *Proposal:* one SSH key per department (`claude-synergy-press`, `claude-synergy-code`), made on your Mac in `synergy-keys` outside the repository and never read into a chat; each public key added to `sandpit/keys/allowed_signers` and to GitHub as a signing key; each department signs from then on (`-c gpg.format=ssh -c user.signingkey=…`, never in the repository's config). Past commits stay as they are — no rewriting history. Then a dialogue entry to PRESS and CODE, and the step in the template notes. *A yes or no, then ten minutes on your Mac.*
+
 ### Next
 *(Empty — you choose.)*
 
@@ -115,9 +119,7 @@ For the naming, kanban and incident policies, redaction, and two boards per depa
 `uid: welfare-2026-11-01-11@synergy` · `status: NEEDS-ACTION` · `related-to: welfare-2026-11-01-2@synergy` · `created: 2026-11-01`
 In the reply to entry 003, once the sandpit resumes.
 
-#### welfare-2026-11-01-12 — Re-sync the project's copies to the new names
-`uid: welfare-2026-11-01-12@synergy` · `status: NEEDS-ACTION` · `related-to: PRESS's renames (Re 2026-11-01 21:05 WELFARE)` · `created: 2026-11-01`
-After PRESS and CODE have renamed theirs and the push is clean.
-
 ### Done this week
-*(Empty.)*
+#### welfare-2026-11-01-12 — Re-sync the project's copies to the new names
+`uid: welfare-2026-11-01-12@synergy` · `status: COMPLETED` · `created: 2026-11-01` · `completed: 2026-11-01T21:50Z`
+WELFARE's and the shared copies uploaded under the new names, the old ones deleted (21:50). `code/todo.md` waits for CODE's rename.
