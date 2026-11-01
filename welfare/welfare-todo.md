@@ -18,6 +18,8 @@
 - **2026-11-01-1 — The incident report's proposals** (`welfare/near-misses/near-miss-2026-11-01-sandpit-rule-6.md`): a pre-merge review of sandpit pull requests by WELFARE; ~~a near-miss and incident procedure~~ done as `synergy-incident-policy.md` and `synergy-incident-sop.md`; a rule-6 self-check in the sandpit code (with Ray); and what to do about the history (Ray first). [Decide] *Ten minutes, plus a word with Ray.*
 - **2026-11-01-2 — Resolve the stop with Ray**, then write the RESUMED entry. [Do] *When you're both ready.*
 - **2026-11-01-4 — New project Instructions to paste**, for the new names (`welfare/welfare-code-of-conduct.md`, `welfare/welfare-working-agreement.md`, `synergy/synergy-operating-model.md`, and the start-up line `synergy-wakeup-sop.md`). Replaces card 2026-10-31-3. WELFARE has the draft ready. [Do] *Two minutes.*
+- **2026-11-01-5 — A policy index.** [Decide] One short list of every policy — owner, version, signed or not — and what overrides what: the code of conduct, then the policies, then the SOPs, then the working agreement's decisions; a master list as ISO 9001's document control keeps. *Proposal:* `synergy-policy-index.md`, kept by WELFARE. *A yes or no.*
+- **2026-11-01-6 — Split the operating model** when it's tidied (with card 2026-10-31-12): its principles into `synergy-operating-policy.md`; its procedures into their own SOPs; its dated history left to the history. [Decide] *A conversation.*
 
 ## Next (at most 3)
 - *(Empty — you choose.)*
