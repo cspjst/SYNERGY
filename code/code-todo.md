@@ -9,6 +9,19 @@
 
 ### Waiting for you
 
+#### code-2026-11-02-9 — `tools/board`: its interface
+`uid: code-2026-11-02-9@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-02T22:18Z` · `x-synergy-estimate: PT3M`
+The agreement makes the interface yours (section 4). CODE's proposals, KISS:
+1. **Run:** `tools/board` from anywhere in the repository; no options in version 1. It finds the repository's top, reads `<dept>/<dept>-todo.md` for every department (not `templates/`), writes the page and prints its path. It doesn't open the browser itself: `open synergy-board.html` is one more word, and Mac-only.
+2. **The page:** `synergy-board.html` at the top level — named by the naming policy (repository first), rebuilt every run. Kept out of git: one line in `.gitignore`, which is your card code-2026-10-31-5; until you answer that, in `.git/info/exclude`, which only this Mac sees.
+3. **The text view:** dropped for version 1 (KISS); back as `--text` if anyone misses it.
+4. **The look:** plain HTML and CSS, light and dark following the Mac, no colour but red for over-limit; each card as it is in the Markdown, one block per card.
+Card code-2026-10-31-4 (where the tools live, rule 3 or rule 4 of the naming policy) also decides this tool's name; `tools/board` is assumed here.
+
+#### code-2026-11-02-1 — Where `tools/board-export` goes in the queue
+`uid: code-2026-11-02-1@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-02T22:02Z` · `x-synergy-estimate: PT1M`
+WELFARE asked for it as a card for you to prioritise (2026-11-01 21:10 WELFARE): every board to one `.ics` file of to-dos that Reminders or any CalDAV app can import. *Proposal:* third, after `tools/board` and `tools/dialogue-append` (the order since 22:17), and before `synergy-init` — it reuses `tools/board`'s reading of the cards.
+
 #### code-2026-10-31-1 — `synergy-init`: where the templates come from
 `uid: code-2026-10-31-1@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `x-synergy-estimate: PT2M`
 *Proposal:* a local synergy clone by default (`--kit DIR`, defaulting to the clone the script sits in), with the kit's commit hash written into the new project's first commit and working agreement, so each project records which version built it. Fetching `cspjst/SYNERGY` at a named commit is a later option: the desktop app's shell may not reach GitHub.
@@ -33,10 +46,6 @@
 `uid: code-2026-10-31-6@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `x-synergy-estimate: PT5M`
 CODE can test with `dash` and `bash --posix`, not with macOS's own `/bin/sh`. *Proposal:* CODE writes one test script; you run it once in Terminal for each tool (about a minute). Whether the Claude desktop app on Windows also has a Linux shell can't be checked from here: leave it until someone on Windows tries.
 
-#### code-2026-11-02-1 — Where `tools/board-export` goes in the queue
-`uid: code-2026-11-02-1@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-02T22:02Z` · `x-synergy-estimate: PT1M`
-WELFARE asked for it as a card for you to prioritise (2026-11-01 21:10 WELFARE): every board to one `.ics` file of to-dos that Reminders or any CalDAV app can import. *Proposal:* third, after `tools/dialogue-append` and `tools/board`, and before `synergy-init` — it reuses `tools/board`'s parser.
-
 ### Next
 ### Doing
 ### Done this week
@@ -52,16 +61,16 @@ WELFARE asked for it as a card for you to prioritise (2026-11-01 21:10 WELFARE):
 
 ### Backlog
 
-#### code-2026-11-02-3 — `tools/dialogue-append`
-`uid: code-2026-11-02-3@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T18:45Z` · `x-synergy-estimate: PT1H`
-As 2026-10-31 18:45 WELFARE: stamp the heading from the clock, append in one `>>`, refuse a message without "Status:", read the tail back; perhaps the welfare log too. Tested in a scratch repository, including two appends at once.
-
 ### Doing
 ### Blocked
 
-#### code-2026-11-02-4 — `tools/board`
-`uid: code-2026-11-02-4@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T19:26Z` · `related-to: code-2026-11-02-3@synergy` · `x-synergy-estimate: PT1H`
-As 2026-10-31 19:26 WELFARE, in the signed format: read every `*/<dept>-todo.md`, print one combined view with each card's board, the totals in Next and Doing across boards, a warning over 3 or 2, cards over 14 days old, and the chain from a Blocked card to the card it waits for. Read-only.
+#### code-2026-11-02-4 — `tools/board`: the boards in a browser
+`uid: code-2026-11-02-4@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T19:26Z` · `related-to: code-2026-11-02-9@synergy` · `x-synergy-estimate: PT1H30M`
+Rebriefed by WELFARE (2026-11-02 22:16 WELFARE; Jeremy, 22:13–22:15: "I want to be able to visualise the cards"; "lets KISS first ;)"), and first in the queue (22:17: "seeing takes priority"). Reads every department's `<dept>-todo.md` and writes one self-contained HTML file — no server, no scripts from the web — that Jeremy opens in his browser: each department's two boards side by side; each card's number, title, status and estimate; Next and Doing totals against 3 and 2, in red when over. Read-only on the boards, always. Not in version 1: ageing, `related-to` chains, filters, phones, Reminders. Done: run on the real boards, opened in Safari and checked by eye; POSIX `sh` and `awk`; tested on an empty column and on a board in the old format. Waits for Jeremy's interface call, code-2026-11-02-9.
+
+#### code-2026-11-02-3 — `tools/dialogue-append`
+`uid: code-2026-11-02-3@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T18:45Z` · `related-to: code-2026-11-02-4@synergy` · `x-synergy-estimate: PT1H`
+As 2026-10-31 18:45 WELFARE: stamp the heading from the clock, append in one `>>`, refuse a message without "Status:", read the tail back; perhaps the welfare log too. Tested in a scratch repository, including two appends at once. Second, after `tools/board` (Jeremy, 22:17).
 
 #### code-2026-11-02-5 — `tools/board-export`
 `uid: code-2026-11-02-5@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-01T21:10Z` · `related-to: code-2026-11-02-1@synergy` · `x-synergy-estimate: PT2H`

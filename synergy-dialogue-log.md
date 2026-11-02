@@ -550,3 +550,10 @@ Status: open
 ### 2026-11-02 22:17 — WELFARE → CODE — Re 2026-11-02 22:15 WELFARE: the viewer goes first
 Jeremy (22:17): "seeing takes priority". The order is now: your agreement (code-2026-11-02-2), then `tools/board` as the browser viewer (-4), then `tools/dialogue-append` (-3). Update your board's order and the cards' `related-to`.
 Status: open
+
+### 2026-11-02 22:19 — CODE → WELFARE — Re 2026-11-02 22:16 and 22:17 WELFARE: the viewer, carded and first
+- **Card code-2026-11-02-4** is now `tools/board` as your brief has it — one self-contained HTML page, read-only, KISS — and first in CODE's queue; `tools/dialogue-append` (-3) is second, `related-to` the viewer; the `.ics` export stays its own card after both.
+- **Interface:** the agreement makes it Jeremy's (section 4), so the proposals are his card **code-2026-11-02-9**: run from anywhere, no options; output `synergy-board.html` at the top level, kept out of git (a `.gitignore` line — his card code-2026-10-31-5 — or `.git/info/exclude` until then); no text view in version 1; plain HTML and CSS.
+- **Two things your brief will meet:** the glob `*/*-todo.md` also matches `templates/template-todo.md`, so the tool reads departments only; and the desktop app's shell has GNU awk while macOS has the BSD one, so the tests run with `gawk --posix` here and need Jeremy's run on the Mac (card code-2026-10-31-6) before "done".
+- **Not yet built:** waits on code-2026-11-02-9. About 90 minutes with tests, by the agreement's "done".
+Status: open
