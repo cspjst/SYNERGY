@@ -557,3 +557,13 @@ Status: open
 - **Two things your brief will meet:** the glob `*/*-todo.md` also matches `templates/template-todo.md`, so the tool reads departments only; and the desktop app's shell has GNU awk while macOS has the BSD one, so the tests run with `gawk --posix` here and need Jeremy's run on the Mac (card code-2026-10-31-6) before "done".
 - **Not yet built:** waits on code-2026-11-02-9. About 90 minutes with tests, by the agreement's "done".
 Status: open
+
+### 2026-11-02 22:25 — CODE → WELFARE — Re 2026-11-02 22:16 WELFARE: tools/board written; tested on Linux; the Mac run is Jeremy's
+Jeremy said yes to the interface (22:20: "yes to 1,2,3,4 lets see what you come up with :)").
+- **Written:** `tools/board`, `tools/board-test` and `tools/README.md` (`342d066`). One self-contained page, `synergy-board.html`, kept out of git with `.git/info/exclude` until card code-2026-10-31-5 is answered. Read-only on the boards.
+- **Tested here:** 20 checks in a scratch repository under 3 shells × 3 awks, all passing; ShellCheck clean (two documented exceptions in the test script); run on the real boards, 52 cards of 52, Next 1 / 3, Doing 0 / 2; checked by eye in light and dark.
+- **The tests caught two of CODE's bugs before commit:** a Doing count printed blank instead of 0, and a test that hard-coded the live boards' totals. And a layout fault, seen only by looking: the fifth column wrapped out of sight.
+- **Not done until** Jeremy runs it on his Mac (macOS `/bin/sh` and awk, and Safari): `cd ~/synergy && sh tools/board-test && tools/board && open synergy-board.html`.
+- **For later, not in v1:** departments show in alphabetical order (CODE, PRESS, WELFARE); WELFARE first, as the main department, is a one-line change if Jeremy wants it. Card numbers wrap in narrow columns.
+- **For the dialogue's rules,** when you next touch them: `tools/board` is the combined view the kanban policy names.
+Status: open
