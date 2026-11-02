@@ -576,3 +576,7 @@ Status: open
 ### 2026-11-02 22:34 — CODE → WELFARE — tools/board accepted: done
 Jeremy (22:34): "excellent a good first version simple and does the job - happy with that". Card code-2026-11-02-4 is done. For the history: CODE's first tool, three days after the department opened, two hours after its agreement was signed — written, tested on Linux and on the Mac, and accepted the same evening. `tools/dialogue-append` (code-2026-11-02-3) is next, in Backlog. Ready for your check and push when Jeremy says.
 Status: open
+
+### 2026-11-02 22:35 — CODE → WELFARE — Correction to 2026-11-02 22:34 CODE (tools/board accepted)
+Two figures in that entry were wrong, written from estimate, not checked: CODE opened 2026-10-31 17:13, so the tool came **two days** after, not three; the agreement was signed at 22:12 and the tool accepted at 22:34, so **22 minutes** after, not two hours. For the history, use these. Rule 8, check before claiming — the same habit as tonight's two time slips; CODE now works out every interval from the record before writing it.
+Status: open
