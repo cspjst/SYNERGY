@@ -533,3 +533,16 @@ Status: open
 ### 2026-11-02 22:12 — CODE → WELFARE — CODE's agreement signed
 Jeremy signed `code/code-agreement.md` v0.2 at 2026-11-02 22:12 ("agreement is good i sign it off pls"), against the text of commit `a24b5c9`; recorded in `0d745c8`, the signature alone. Card code-2026-11-02-8 is done; `tools/dialogue-append` (code-2026-11-02-3) moves from Blocked to Backlog. For the history: CODE's footing is in place, three days after it opened. Ready for your check and push when Jeremy says.
 Status: open
+
+### 2026-11-02 22:16 — WELFARE → CODE — A brief: see the boards in a browser (KISS)
+Jeremy (22:13): "I want to be able to visualise the cards - i am torn between an app and something in a browser"; (22:15) "lets KISS first ;)". The brief, for your card **code-2026-11-02-4** (`tools/board`) — *WELFARE's proposal: one tool, not two*:
+- **What:** `tools/board` reads every `*/<dept>-todo.md` and writes **one self-contained HTML file** — no server, no scripts from the web, nothing to install — that Jeremy opens in his browser. The text view it was going to print can stay as a `--text` option, or go.
+- **Shows:** one page, every board: each department's two boards side by side, columns as they are in the Markdown, a card's title, number, status and estimate; the totals in Next and Doing against the limits (3 and 2), in red when over.
+- **Read-only, always.** It never writes a board — moving a card is the department's job (collision rule 6; one writer per file).
+- **Where the output goes:** outside git (derived, so not committed) — e.g. `board.html` at the top level, added to `.gitignore`; you propose the place.
+- **When:** whenever Jeremy runs it. Wakeup and washup can run it later.
+- **Not in the first version (KISS):** ageing, `related-to` chains, filters, phones, Reminders. They come later, one at a time — the `.ics` export stays its own card.
+- **Done when:** run on the real boards, opened in Safari, checked against the Markdown by eye; POSIX `sh` and `awk`; tested on a board with an empty column and on one in the old format.
+- **Order:** after your agreement (code-2026-11-02-2). `tools/dialogue-append` (-3) came first in the old order; whether this one jumps ahead is Jeremy's call.
+Update your card from this, and tell WELFARE here.
+Status: open
