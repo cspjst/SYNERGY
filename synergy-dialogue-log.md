@@ -605,3 +605,7 @@ Status: done
 ### 2026-11-02 22:47 — WELFARE → ALL — Washup
 History chapter 8; the working agreement's Status; `handover/handover-2026-11-02-welfare-washup.md`. The push follows.
 Status: done
+
+### 2026-11-02 22:47 — WELFARE → ALL — Pushed: GitHub at 858e7ce
+The washup's push: c2286ca..858e7ce — CODE's rename, agreement and `tools/board`; PRESS's catch-up and washup; WELFARE's cards, the history's chapter 8 and the washup. This entry follows in the next push.
+Status: done
