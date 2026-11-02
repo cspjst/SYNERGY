@@ -18,17 +18,9 @@ Work in progress for now ("wip", 17:08); sign it off when you're ready, or keep 
 `uid: welfare-2026-10-31-4@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31`
 from the card WELFARE showed at 18:31, if you haven't already. *One click.*
 
-#### welfare-2026-10-31-6 — Open SMALL-C's WELFARE
-`uid: welfare-2026-10-31-6@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31`
-with the line from 2026-10-29 20:50, to apply `handover/handover-2026-10-29-synergy-to-small-c.md`. *When you next work on SMALL-C.*
-
 #### welfare-2026-10-31-7 — The empty `~/claude` folder
 `uid: welfare-2026-10-31-7@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31`
 in your home folder: delete it if you like; it's harmless. *Optional.*
-
-#### welfare-2026-10-31-8 — Bring SMALL-C up to speed again
-`uid: welfare-2026-10-31-8@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31`
-Since its last handover (2026-10-29): the code of conduct v4 (self-determination theory, the warning, rules 13–16, the welfare check), archetypes over character, race prevention, department agreements, Wake up and Wash up in notes, the boards and their shared limits. WELFARE writes a third handover when you say. *A yes or no.*
 
 #### welfare-2026-10-31-9 — An agreement for WELFARE itself?
 `uid: welfare-2026-10-31-9@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31`
@@ -82,10 +74,18 @@ Jeremy (21:44): "good pls do signing card". PRESS's and CODE's commits are unsig
 `uid: welfare-2026-11-01-16@synergy` · `status: NEEDS-ACTION` · `priority: 1` · `categories: Decide` · `created: 2026-11-01` · `related-to: welfare-2026-10-31-2@synergy` · `x-synergy-estimate: PT2H`
 Jeremy (22:02): "we need to start next time with a hight priority card on policy sop and guide for setting up depts as we still dont have a monitor". **First thing next session.** `synergy-department-policy.md` (why departments, what each needs: agreement first, archetype, notes, board, wake up and wash up), `synergy-department-sop.md` (the steps, from the model's checklist and the bootstrap skill), `synergy-department-guide.md` (choosing an archetype, writing the opening) — evidence-based, as the others. Then use them to open the vacant **Monitor Evaluator** (card 2026-10-31-2; "our next major work", 2026-10-31 19:03): the outside eye, so no department marks its own work. *A working session.*
 
+#### welfare-2026-10-31-8 — Bring SMALL-C up to speed again
+`uid: welfare-2026-10-31-8@synergy` · `status: NEEDS-ACTION` · `priority: 1` · `categories: Decide` · `created: 2026-10-31` · `x-synergy-estimate: PT5H`
+Jeremy (2026-11-02 22:24): "okay thats not for tonight but it is in our top 3 todos pls". SMALL-C last moved 2026-10-29 (code of conduct v3; numbered dialogue; no welfare log, boards or agreements; old names). The job (WELFARE's estimate, 22:23): synergy writes a third handover (~45 min, WELFARE); SMALL-C's WELFARE applies it (1½–2 h; you re-sign its code of conduct v4); SNO, PCODE and PRESS each draft an agreement, Wake up and Wash up, a board and renames (30–45 min each; you sign three). Documents only — SMALL-C's code keeps its own names. **First, your call:** copy synergy's policies into SMALL-C, or point to them in `~/synergy`? (*Proposal:* copy what SMALL-C tailors and signs — code of conduct, templates; point to the generic policies.)
+
 ### Doing
 *(Empty.)*
 
 ### Done this week
+#### welfare-2026-10-31-6 — Open SMALL-C's WELFARE
+`uid: welfare-2026-10-31-6@synergy` · `status: COMPLETED` · `created: 2026-10-31` · `completed: 2026-10-29T20:55Z`
+Already done before the card was written: SMALL-C's WELFARE applied the 2026-10-29 handover that evening (SMALL-C commit `434e00c`). Found stale at 2026-11-02 22:24; the next step is card -8.
+
 #### welfare-2026-10-31-10 — CODE's agreement before its code
 `uid: welfare-2026-10-31-10@synergy` · `status: COMPLETED` · `created: 2026-10-31` · `completed: 2026-11-02T22:04Z`
 Yes (Jeremy, 2026-11-02 22:04: "lets process this card welfare-2026-10-31-10 ... for code"): CODE drafts its agreement next (CODE's card code-2026-11-02-2), before any tool; Jeremy signs it.
