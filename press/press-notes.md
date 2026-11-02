@@ -108,7 +108,7 @@ On PRESS's board, `press/press-todo.md`: only what Jeremy alone can decide, do o
 
 ## Next
 - **On restart:** follow "Wake up" above, then the board's first card, press-2026-10-31-1: ask Jeremy what he thinks of the two versions of each post (his request, 2026-10-31 18:41: "want to restart it with you asking me about my thoughts on the 2 versions of each blog post draft").
-- Washed up 2026-11-01 21:38. Everything committed; nothing pushed by PRESS.
+- Washed up 2026-11-02 22:45. Everything committed; nothing pushed by PRESS. Card press-2026-10-31-1 is still open: Jeremy hadn't answered on 2026-11-02, so ask again, once, when he next opens PRESS.
 
 ## References
 - `handover/handover-2026-10-27-welfare-to-press.md`, `handover/handover-2026-10-31-welfare-to-press.md`, `handover/handover-2026-10-31-welfare-to-press-blog.md`: what PRESS was handed.
