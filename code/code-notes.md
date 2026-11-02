@@ -33,7 +33,7 @@
 - **No template** for `.gitignore` and `.gitattributes`; synergy has neither (`.DS_Store` sits untracked).
 
 ## Current state (2026-11-02 22:02)
-CODE opened on 2026-10-31 (17:13–17:20) and has written no code yet: by design, it waits for its agreement, and `synergy-init` waits for Jeremy's six calls as well. On 2026-10-31 it wrote these notes, started its board, and adopted the collision rules. On 2026-11-02 WELFARE caught it up on 1 November's work (2026-11-02 21:57 WELFARE): the new policies and SOPs read; `code/todo.md` renamed `code/code-todo.md`; these notes moved to the new names and words; the board redone in the signed format, with the new work as cards. The desktop app's shell on the Mac is a Linux VM, with `dash` and `git` but no `gh`.
+CODE opened on 2026-10-31 (17:13–17:20) and has written no code yet: by design, it waits for its agreement, and `synergy-init` waits for Jeremy's six calls as well. On 2026-10-31 it wrote these notes, started its board, and adopted the collision rules. On 2026-11-02 WELFARE caught it up on 1 November's work (2026-11-02 21:57 WELFARE): the new policies and SOPs read; `code/todo.md` renamed `code/code-todo.md`; these notes moved to the new names and words; the board redone in the signed format, with the new work as cards. At 22:04 Jeremy said yes to the agreement first; CODE drafted `code/code-agreement.md`, v0.1, for him to sign. The desktop app's shell on the Mac is a Linux VM, with `dash` and `git` but no `gh`.
 
 ## Open — Jeremy's calls
 - See `code/code-todo.md`, "For Jeremy". Each call lives there, once. CODE's agreement is WELFARE's card `welfare-2026-10-31-10`.

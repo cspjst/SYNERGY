@@ -9,6 +9,10 @@
 
 ### Waiting for you
 
+#### code-2026-11-02-8 — Read and sign CODE's agreement
+`uid: code-2026-11-02-8@synergy` · `status: NEEDS-ACTION` · `categories: Read` · `created: 2026-11-02T22:06Z` · `related-to: welfare-2026-10-31-10@synergy` · `x-synergy-estimate: PT15M`
+`code/code-agreement.md`, draft v0.1: who decides what, CODE's standards and what "done" means, the archetype (Implementer, with Completer Finisher), and four questions to settle before you sign — your role, character, review level, credit. Sign against the commit. Every tool waits on this.
+
 #### code-2026-10-31-1 — `synergy-init`: where the templates come from
 `uid: code-2026-10-31-1@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `x-synergy-estimate: PT2M`
 *Proposal:* a local synergy clone by default (`--kit DIR`, defaulting to the clone the script sits in), with the kit's commit hash written into the new project's first commit and working agreement, so each project records which version built it. Fetching `cspjst/SYNERGY` at a named commit is a later option: the desktop app's shell may not reach GitHub.
@@ -49,12 +53,8 @@ WELFARE asked for it as a card for you to prioritise (2026-11-01 21:10 WELFARE):
 ### Doing
 ### Blocked
 
-#### code-2026-11-02-2 — Draft CODE's agreement
-`uid: code-2026-11-02-2@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-02T22:02Z` · `related-to: welfare-2026-10-31-10@synergy` · `x-synergy-estimate: PT30M`
-From `templates/template-department-agreement.md`; section 1a carries the archetype (Implementer, with Completer Finisher) and its anti-patterns; character none unless Jeremy wants one (`synergy-personality-sop.md`, A). Waits for his yes on WELFARE's card.
-
 #### code-2026-11-02-3 — `tools/dialogue-append`
-`uid: code-2026-11-02-3@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T18:45Z` · `related-to: code-2026-11-02-2@synergy` · `x-synergy-estimate: PT1H`
+`uid: code-2026-11-02-3@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T18:45Z` · `related-to: code-2026-11-02-8@synergy` · `x-synergy-estimate: PT1H`
 As 2026-10-31 18:45 WELFARE: stamp the heading from the clock, append in one `>>`, refuse a message without "Status:", read the tail back; perhaps the welfare log too. Tested in a scratch repository, including two appends at once.
 
 #### code-2026-11-02-4 — `tools/board`
@@ -70,6 +70,10 @@ As 2026-11-01 21:10 WELFARE: one `.ics` of VTODOs (RFC 5545 text form: CRLF, lin
 Waits for all six calls (code-2026-10-31-1 to -6) and the agreement. Writes the new names: strips `template-`, takes each folder's name (`<repo>-…` at the top level, `<dept>-…` in a department) (2026-11-01 20:44 and 21:05 WELFARE); installs the tools. Too big for one sitting: split into cards when it's unblocked (kanban policy, principle 11).
 
 ### Done this week
+
+#### code-2026-11-02-2 — Draft CODE's agreement
+`uid: code-2026-11-02-2@synergy` · `status: COMPLETED` · `categories: Do` · `created: 2026-11-02T22:02Z` · `completed: 2026-11-02T22:06Z` · `related-to: welfare-2026-10-31-10@synergy` · `x-synergy-estimate: PT30M`
+From `templates/template-department-agreement.md`; section 1a carries the archetype (Implementer, with Completer Finisher) and its anti-patterns; character none unless Jeremy wants one (`synergy-personality-sop.md`, A). Jeremy said yes (22:04). Drafted as v0.1, `code/code-agreement.md`; signing is his card, code-2026-11-02-8.
 
 #### code-2026-11-02-7 — Catch up on 1 November
 `uid: code-2026-11-02-7@synergy` · `status: COMPLETED` · `categories: Do` · `created: 2026-11-02T21:57Z` · `completed: 2026-11-02T22:02Z` · `x-synergy-estimate: PT30M`
