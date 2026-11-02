@@ -1,4 +1,4 @@
-# Handover: WELFARE → WELFARE, the next session (washup, 2026-11-02 22:50)
+# Handover: WELFARE → WELFARE, the next session (washup, 2026-11-02 22:47)
 
 *From synergy's WELFARE, after PRESS and CODE washed up (Jeremy, 22:46: "ok code and press have washed up"). Start with `synergy-wakeup-sop.md` and `welfare/welfare-notes.md`; this keeps only what's particular to tonight. The working agreement's Status is current.*
 

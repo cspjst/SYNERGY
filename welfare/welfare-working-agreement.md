@@ -104,7 +104,7 @@
   - **git** (2026-10-27 20:14) — status, remotes, commits; just report what happened.
 - Placeholders in templates: `<PROJECT>`, `<DEPT>`, `<HUMAN>`, `<date>`.
 
-## Status (2026-11-02 22:50, at the washup)
+## Status (2026-11-02 22:47, at the washup)
 - **Start here next time:** `synergy-wakeup-sop.md`, then `handover/handover-2026-11-02-welfare-washup.md`; then Next: **welfare-2026-11-01-16** (opening a department, then the Monitor Evaluator) and **welfare-2026-10-31-8** (SMALL-C). See every board at once with `tools/board && open synergy-board.html`.
 - **Jeremy's load:** the boards — `welfare/welfare-todo.md`, `press/press-todo.md`, `code/code-todo.md` (renamed 2026-11-02). Limits Next 3, Doing 2, across all boards (`synergy-kanban-policy.md`).
 - **Code of conduct:** v4, signed 2026-10-31 19:06 (`c41b3ed`).
