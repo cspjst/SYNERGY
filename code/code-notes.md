@@ -21,7 +21,8 @@
 - **What stays manual, by design:** creating the claude.ai project; pasting its Instructions; linking the desktop app to the folder; renaming department chats; signing — "a signature that's automated isn't one".
 - **Commits:** to `~/synergy` as `Claude-SYNERGY-CODE` (`git -c user.name=Claude-SYNERGY-CODE -c user.email=noreply@anthropic.com commit …`; the repository's config holds no identity). Unsigned for now: a signing key is WELFARE's card `welfare-2026-11-01-14`.
 - **The board:** `code/code-todo.md`, in the signed format (`synergy-kanban-policy.md`): Jeremy's cards, and CODE's own work. Tasks live there, once; these notes don't list them.
-- **Meals and breaks:** check `welfare/welfare-log.md` before mentioning one; times from `date`, never a guess.
+- **Meals and breaks:** check `welfare/welfare-log.md` before mentioning one.
+- **Times:** CODE never types a time. Every time it writes — cards, notes, headings, versions — comes from `date` in the same command (after two near misses on 2026-11-02, 22:02 and 22:09).
 - **Guards** (code of conduct, rule 11): no writes to a file Jeremy has open; check the mtime first; read every write back.
 
 ## What the templates ask of `synergy-init` (checked 2026-11-02 22:00)
