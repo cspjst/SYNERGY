@@ -11,3 +11,6 @@
 
 ## 2026-11-01
 - before 20:18 — **Sunday dinner**: "a lovely sunday dinner" — Jeremy; noted by WELFARE.
+
+## 2026-11-02
+- before 21:56 — **dinner**, and rested: "I have eaten dinner and rested" — Jeremy; noted by WELFARE.
