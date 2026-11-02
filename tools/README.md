@@ -1,6 +1,6 @@
 # tools
 
-Small POSIX `sh` tools for synergy, written by Claude-SYNERGY-CODE at Jeremy's direction (`code/code-agreement.md`). They run on macOS, Linux, and on Windows in Git Bash or WSL. Covered by the repository's licence.
+Small POSIX `sh` tools for synergy, written by Claude-SYNERGY-CODE at Jeremy's direction (`code/code-agreement.md`). Tested on macOS and Linux; written for Windows in Git Bash or WSL too, but not yet tried there. Covered by the repository's licence.
 
 ## `tools/board` — the boards in a browser
 ```
