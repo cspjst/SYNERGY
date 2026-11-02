@@ -104,15 +104,15 @@
 
 ## Status (2026-11-01 22:05, at the washup)
 - **Start here next time:** `synergy-wakeup-sop.md`, then `handover/handover-2026-11-01-welfare-washup.md`; then the Next card, **welfare-2026-11-01-16** (opening a department, then the Monitor Evaluator).
-- **Jeremy's load:** the boards — `welfare/welfare-todo.md`, `press/press-todo.md`, `code/todo.md` (CODE's rename to `code/code-todo.md` waits). Limits Next 3, Doing 2, across all boards (`synergy-kanban-policy.md`).
+- **Jeremy's load:** the boards — `welfare/welfare-todo.md`, `press/press-todo.md`, `code/code-todo.md` (renamed 2026-11-02). Limits Next 3, Doing 2, across all boards (`synergy-kanban-policy.md`).
 - **Code of conduct:** v4, signed 2026-10-31 19:06 (`c41b3ed`).
 - **Policies and SOPs:** kanban policy v1 (signed 21:10); personality policy v1 (signed 21:56, `1e69a4b`) with `synergy-personality-sop.md` and `synergy-character-guide.md`; naming policy and SOP (approved 20:53; rules 11–15 on words added 21:38); incident policy and SOP; redaction SOP; collision policy v0.2 — **awaiting signature** (card welfare-2026-11-01-13).
 - **Operating model:** v0.7, work in progress (cards 2026-10-31-1, -12; 2026-11-01-6); its collision rules now live in the collision policy.
 - **Templates:** `templates/template-<name>.md`; the department agreement's section 1a carries the personality rules.
 - **Historiography:** `synergy-historiography.md`, chapters 1–7 (to 2026-11-01).
 - **The oracle:** `~/synergy`; GitHub `cspjst/SYNERGY`; pushes recorded in `synergy-dialogue-log.md`. The project holds copies under the new names (`synergy/` for top-level files).
-- **PRESS:** renames and links done; board in the signed format; washed up (21:38). Its commits are unsigned (card welfare-2026-11-01-14).
-- **CODE:** not yet caught up — the renames, the board format, "push owner", the `.ics` export tool; its tools wait for its agreement (card 2026-10-31-10).
+- **PRESS:** caught up 2026-11-02 22:00 ("master" gone; personality rules in its procedures); its agreement's v0.3 waits on Jeremy (press-2026-10-31-3). Its commits are unsigned (card welfare-2026-11-01-14).
+- **CODE:** caught up 2026-11-02 22:02 (renames, notes, board in the signed format, new cards); its tools wait for its agreement (card 2026-10-31-10; CODE's code-2026-11-02-2).
 - **SMALL-C:** the 2026-10-29 handover waiting for its WELFARE.
 - **Sandpit:** **stopped** since 2026-11-01 20:25 (breach 1, rule 6); resumes only with a RESUMED entry by Jeremy, agreed by Ray.
 

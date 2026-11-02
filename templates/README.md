@@ -3,11 +3,12 @@
 *Owned by synergy. Every template is named `template-<name>.md` (Jeremy, 2026-11-01 20:37: "I favour naming the ones in templates as template-"); the file it becomes drops the prefix. The owner's copies for starting a new project with Claude, per `synergy-operating-model.md`. Copy them into a new project at bootstrap; from then on the copies belong to that project. Synergy's WELFARE is the original; every project's WELFARE is bootstrapped from it.*
 
 ## Placeholders
-- `<PROJECT>` — the project's name in capitals; `<project>` — lower case where a path needs it.
-- `<REPO>` — the repository's name, as GitHub has it (e.g. `SMALL-C`, `SYNERGY`); the historiography is named after it (Jeremy, 2026-10-28 19:25).
+- `<PROJECT>` — the project's name in capitals, as departments and commits use it (`Claude-<PROJECT>-<DEPT>`).
+- `<repo>` — the repository's name in lower case, as file names use it (`<repo>-historiography.md`, `<repo>-dialogue-log.md`; `synergy-naming-policy.md`); GitHub may spell it in capitals (`cspjst/SYNERGY`). The historiography is named after it (Jeremy, 2026-10-28 19:25).
 - `<DEPT>` / `<dept>` — a department's name / its folder.
 - `<HUMAN>` — the human's name (Jeremy).
-- `<date>` — `YYYY-MM-DD`; `<time>` — `HH:MM`, UK local.
+- `<date>` — `YYYY-MM-DD`; `<time>` — `HH:MM`, UK local, from `date`.
+- `<n>` — a card's number within its day, on its own board (`<dept>-<date>-<n>`).
 - `<…>` anything else — fill in or delete. Lines in *italics* starting "Guide:" are guidance; delete them once filled.
 
 ## The files, in bootstrap order
