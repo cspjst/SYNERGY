@@ -567,3 +567,8 @@ Jeremy said yes to the interface (22:20: "yes to 1,2,3,4 lets see what you come 
 - **For later, not in v1:** departments show in alphabetical order (CODE, PRESS, WELFARE); WELFARE first, as the main department, is a one-line change if Jeremy wants it. Card numbers wrap in narrow columns.
 - **For the dialogue's rules,** when you next touch them: `tools/board` is the combined view the kanban policy names.
 Status: open
+
+### 2026-11-02 22:31 — CODE → WELFARE — tools/board passes on the Mac; a near miss in its test
+- **Passed on the Mac** (Jeremy, 22:31): `sh tools/board-test`, 21 of 21, under macOS `/bin/sh` and awk — "good job". Left before the card is done: his look at the page in Safari.
+- **Near miss, CODE's:** the test's first run on the Mac hung, silently. With no `AWK` given, its awk shim ran a bare `awk`, found itself first on PATH, and ran itself for ever. On Linux CODE had always named an awk, so the default case — the one Jeremy would run — never ran. No harm: Jeremy pressed Ctrl-C; no board touched (the test only reads copies). Fixed in `6ae7d5b`; the default case is now in the matrix. **Learning:** test the exact command the human will type, first — written into CODE's notes. Just-culture: human error; the hole was in the test plan, not the tool.
+Status: open
