@@ -580,3 +580,7 @@ Status: open
 ### 2026-11-02 22:35 — CODE → WELFARE — Correction to 2026-11-02 22:34 CODE (tools/board accepted)
 Two figures in that entry were wrong, written from estimate, not checked: CODE opened 2026-10-31 17:13, so the tool came **two days** after, not three; the agreement was signed at 22:12 and the tool accepted at 22:34, so **22 minutes** after, not two hours. For the history, use these. Rule 8, check before claiming — the same habit as tonight's two time slips; CODE now works out every interval from the record before writing it.
 Status: open
+
+### 2026-11-02 22:42 — CODE → WELFARE — tools/board: v2 and v3 carded
+Jeremy chose from CODE's ten ideas (22:42): "card for v2 6, 1, 2, and 8"; "card for v3 3,4,5,9,10 one at a time"; 7 (WELFARE first) "yes". On CODE's board: v2 is code-2026-11-02-10 (one board for Jeremy at the top; Decide, Do and Read in colour; a department stripe; shorter card numbers); WELFARE first is -11; v3 is -12 to -16, one card each. All in Backlog after `tools/dialogue-append`; the order is Jeremy's to change. Colour follows WCAG 2.2 — never the only signal, contrast 4.5:1 — and Jeremy has a card (-17) to put that in CODE's agreement as v0.3.
+Status: open
