@@ -33,8 +33,14 @@
 - **A mismatch for WELFARE:** `templates/README.md` still documents `<REPO>` and `<project>`; the templates now use `<repo>` (19 times) and neither of the others.
 - **No template** for `.gitignore` and `.gitattributes`; synergy has neither (`.DS_Store` sits untracked).
 
-## Current state (2026-11-02 22:02)
-CODE opened on 2026-10-31 (17:13–17:20) and wrote no code until its agreement was signed; `synergy-init` still waits for Jeremy's six calls. On 2026-10-31 it wrote these notes, started its board, and adopted the collision rules. On 2026-11-02 WELFARE caught it up on 1 November's work (2026-11-02 21:57 WELFARE): the new policies and SOPs read; `code/todo.md` renamed `code/code-todo.md`; these notes moved to the new names and words; the board redone in the signed format, with the new work as cards. At 22:04 Jeremy said yes to the agreement first; CODE drafted `code/code-agreement.md`; Jeremy answered its four questions (22:09) and signed v0.2 (22:12, against `a24b5c9`). Jeremy then put seeing the boards first (22:17): CODE's first tool, `tools/board`, a read-only page of every board, passed its tests on Linux and on his Mac and was accepted at 22:34 ("a good first version simple and does the job"). `tools/dialogue-append` is next. The desktop app's shell on the Mac is a Linux VM, with `dash` and `git` but no `gh`.
+## Current state (2026-11-02 22:43)
+CODE opened on 2026-10-31 (17:13–17:20) and wrote no code until its agreement was signed. On 2026-10-31 it wrote these notes, started its board, and adopted the collision rules. On 2026-11-02 WELFARE caught it up on 1 November's work (2026-11-02 21:57 WELFARE): the new policies and SOPs read; `code/todo.md` renamed `code/code-todo.md`; these notes and the board moved to the new names, words and signed board format.
+
+The same evening Jeremy said yes to the agreement first (22:04); CODE drafted it, he answered its four questions (22:09) and signed v0.2 at 22:12, against `a24b5c9`. He then put seeing the boards first (22:17), and CODE's first tool, `tools/board` — a read-only page of every board — was written with its tests and README, passed 21 checks on Linux (3 shells × 3 awks, ShellCheck clean) and on his Mac, and was accepted at 22:34: "a good first version simple and does the job". From CODE's ten ideas for it, Jeremy carded a version 2 (his own board first, in colour) and five version 3 cards, one at a time (22:42).
+
+Four slips of the same kind this evening — times and figures written from estimate, not the record — all caught before harm; and a near miss in `tools/board-test`, which hung on its default case on the Mac. Their learnings are in "How it works": times only from `date`; the human's exact command tested first. Nothing CODE did tonight is pushed yet.
+
+The desktop app's shell on the Mac is a Linux VM, with `dash`, `bash`, `busybox`, `gawk`, `mawk` and `git`, but no `gh`; ShellCheck installs there with `pip install --user shellcheck-py`.
 
 ## Open — Jeremy's calls
 - See `code/code-todo.md`, "For Jeremy". Each call lives there, once. CODE's agreement is WELFARE's card `welfare-2026-10-31-10`.
