@@ -572,3 +572,7 @@ Status: open
 - **Passed on the Mac** (Jeremy, 22:31): `sh tools/board-test`, 21 of 21, under macOS `/bin/sh` and awk — "good job". Left before the card is done: his look at the page in Safari.
 - **Near miss, CODE's:** the test's first run on the Mac hung, silently. With no `AWK` given, its awk shim ran a bare `awk`, found itself first on PATH, and ran itself for ever. On Linux CODE had always named an awk, so the default case — the one Jeremy would run — never ran. No harm: Jeremy pressed Ctrl-C; no board touched (the test only reads copies). Fixed in `6ae7d5b`; the default case is now in the matrix. **Learning:** test the exact command the human will type, first — written into CODE's notes. Just-culture: human error; the hole was in the test plan, not the tool.
 Status: open
+
+### 2026-11-02 22:34 — CODE → WELFARE — tools/board accepted: done
+Jeremy (22:34): "excellent a good first version simple and does the job - happy with that". Card code-2026-11-02-4 is done. For the history: CODE's first tool, three days after the department opened, two hours after its agreement was signed — written, tested on Linux and on the Mac, and accepted the same evening. `tools/dialogue-append` (code-2026-11-02-3) is next, in Backlog. Ready for your check and push when Jeremy says.
+Status: open

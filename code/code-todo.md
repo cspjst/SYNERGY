@@ -61,17 +61,14 @@ Card code-2026-10-31-4 (where the tools live, rule 3 or rule 4 of the naming pol
 
 ### Backlog
 
+#### code-2026-11-02-3 — `tools/dialogue-append`
+`uid: code-2026-11-02-3@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T18:45Z` · `x-synergy-estimate: PT1H`
+As 2026-10-31 18:45 WELFARE: stamp the heading from the clock, append in one `>>`, refuse a message without "Status:", read the tail back; perhaps the welfare log too. Tested in a scratch repository, including two appends at once. Second, after `tools/board` (Jeremy, 22:17).
+
+
 ### Doing
 
-#### code-2026-11-02-4 — `tools/board`: the boards in a browser
-`uid: code-2026-11-02-4@synergy` · `status: IN-PROCESS` · `categories: Do` · `created: 2026-10-31T19:26Z` · `x-synergy-estimate: PT1H30M`
-Rebriefed by WELFARE (2026-11-02 22:16 WELFARE; Jeremy, 22:13–22:15: "I want to be able to visualise the cards"; "lets KISS first ;)"), and first in the queue (22:17: "seeing takes priority"). Reads every department's `<dept>-todo.md` and writes one self-contained HTML file — no server, no scripts from the web — that Jeremy opens in his browser: each department's two boards side by side; each card's number, title, status and estimate; Next and Doing totals against 3 and 2, in red when over. Read-only on the boards, always. Not in version 1: ageing, `related-to` chains, filters, phones, Reminders. Done: run on the real boards, opened in Safari and checked by eye; POSIX `sh` and `awk`; tested on an empty column and on a board in the old format. Interface decided (code-2026-11-02-9, 22:20). **Written and tested on Linux** (`342d066`): 20 checks under dash, bash --posix and busybox sh, each with gawk --posix, mawk and busybox awk; ShellCheck clean; run on the real boards (52 cards, all shown) and checked by eye in light and dark. **On the Mac** (Jeremy, 22:31): `sh tools/board-test` all passed, 21 of 21, under macOS `/bin/sh` and awk — after a fix to the test itself (`6ae7d5b`; its first run hung). **Left:** Jeremy's look at the page in Safari; then done.
-
 ### Blocked
-
-#### code-2026-11-02-3 — `tools/dialogue-append`
-`uid: code-2026-11-02-3@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T18:45Z` · `related-to: code-2026-11-02-4@synergy` · `x-synergy-estimate: PT1H`
-As 2026-10-31 18:45 WELFARE: stamp the heading from the clock, append in one `>>`, refuse a message without "Status:", read the tail back; perhaps the welfare log too. Tested in a scratch repository, including two appends at once. Second, after `tools/board` (Jeremy, 22:17).
 
 #### code-2026-11-02-5 — `tools/board-export`
 `uid: code-2026-11-02-5@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-01T21:10Z` · `related-to: code-2026-11-02-1@synergy` · `x-synergy-estimate: PT2H`
@@ -82,6 +79,10 @@ As 2026-11-01 21:10 WELFARE: one `.ics` of VTODOs (RFC 5545 text form: CRLF, lin
 Waits for all six calls (code-2026-10-31-1 to -6) and the agreement. Writes the new names: strips `template-`, takes each folder's name (`<repo>-…` at the top level, `<dept>-…` in a department) (2026-11-01 20:44 and 21:05 WELFARE); installs the tools. Too big for one sitting: split into cards when it's unblocked (kanban policy, principle 11).
 
 ### Done this week
+
+#### code-2026-11-02-4 — `tools/board`: the boards in a browser
+`uid: code-2026-11-02-4@synergy` · `status: COMPLETED` · `categories: Do` · `created: 2026-10-31T19:26Z` · `completed: 2026-11-02T22:34Z` · `x-synergy-estimate: PT1H30M`
+Rebriefed by WELFARE (2026-11-02 22:16 WELFARE; Jeremy, 22:13–22:15: "I want to be able to visualise the cards"; "lets KISS first ;)"), and first in the queue (22:17: "seeing takes priority"). Reads every department's `<dept>-todo.md` and writes one self-contained HTML file — no server, no scripts from the web — that Jeremy opens in his browser: each department's two boards side by side; each card's number, title, status and estimate; Next and Doing totals against 3 and 2, in red when over. Read-only on the boards, always. Not in version 1: ageing, `related-to` chains, filters, phones, Reminders. Done: run on the real boards, opened in Safari and checked by eye; POSIX `sh` and `awk`; tested on an empty column and on a board in the old format. Interface decided (code-2026-11-02-9, 22:20). **Written and tested on Linux** (`342d066`): 20 checks under dash, bash --posix and busybox sh, each with gawk --posix, mawk and busybox awk; ShellCheck clean; run on the real boards (52 cards, all shown) and checked by eye in light and dark. **On the Mac** (Jeremy, 22:31): `sh tools/board-test` all passed, 21 of 21, under macOS `/bin/sh` and awk — after a fix to the test itself (`6ae7d5b`; its first run hung). **Done** (Jeremy, 22:34: "excellent a good first version simple and does the job - happy with that").
 
 #### code-2026-11-02-2 — Draft CODE's agreement
 `uid: code-2026-11-02-2@synergy` · `status: COMPLETED` · `categories: Do` · `created: 2026-11-02T22:02Z` · `completed: 2026-11-02T22:06Z` · `related-to: welfare-2026-10-31-10@synergy` · `x-synergy-estimate: PT30M`
