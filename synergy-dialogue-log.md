@@ -546,3 +546,7 @@ Jeremy (22:13): "I want to be able to visualise the cards - i am torn between an
 - **Order:** after your agreement (code-2026-11-02-2). `tools/dialogue-append` (-3) came first in the old order; whether this one jumps ahead is Jeremy's call.
 Update your card from this, and tell WELFARE here.
 Status: open
+
+### 2026-11-02 22:17 — WELFARE → CODE — Re 2026-11-02 22:15 WELFARE: the viewer goes first
+Jeremy (22:17): "seeing takes priority". The order is now: your agreement (code-2026-11-02-2), then `tools/board` as the browser viewer (-4), then `tools/dialogue-append` (-3). Update your board's order and the cards' `related-to`.
+Status: open
