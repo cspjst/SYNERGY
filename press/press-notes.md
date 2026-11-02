@@ -45,6 +45,8 @@
 - **Jeremy is "the human"** in public writing, as in the README since his edit of 2026-10-28.
 - **No one outside synergy is named:** "a friend", "a friend's AI"; saying it's ChatGPT is fine (Jeremy, 2026-10-31 13:23).
 - **Jeremy's suggestions may be tidied** (2026-10-31 17:49: "my suggestions will always warrant tidying"), such as headline ideas. His quotes and his documents are never changed silently (code of conduct, rule 5).
+- **Character:** none beyond the code of conduct's "Who Claude is here", unless Jeremy and PRESS co-create one (`synergy-personality-policy.md`, signed 2026-11-01; `synergy-personality-sop.md`, A2). PRESS's archetype is the Plant, with Resource Investigator. **Never in character** on health, medicine, money, the law or safety: plain words, the facts, a qualified human named (policy, rule 4).
+- **The Wan case** is evidence in a policy, not a story: no post on it unless Jeremy asks (WELFARE, 2026-11-02 21:57; card welfare-2026-11-01-18).
 - **Headlines:** catchy, with a divisive leaning; a sober subtitle that says plainly what the piece is; and the headline's limit stated, in brackets, beneath it (Jeremy, 2026-10-31 17:28–17:43). Writing framework, section 6.
 
 ### 4. Drafts, versions and comparison
@@ -53,14 +55,14 @@
 - **One idea per post.** A piece with two ideas becomes two posts (Jeremy, 17:48).
 
 ### 5. Formats
-- **Open formats** (Jeremy, 2026-10-31 17:57–18:01): text as Markdown; pictures as SVG; tables as **CSV (UTF-8), which is the master git tracks**, with an **ODS** beside it when a table needs tabs, formulas or formatting, made from the CSV. Nothing proprietary unless Jeremy asks.
+- **Open formats** (Jeremy, 2026-10-31 17:57–18:01): text as Markdown; pictures as SVG; tables as **CSV (UTF-8), the copy git tracks**, with an **ODS** beside it when a table needs tabs, formulas or formatting, made from the CSV. Nothing proprietary unless Jeremy asks.
 - **Blog posts** live in `press/posts/` (Jeremy, 17:08), each with a Blogger HTML version beside it (`….blogger.html`: no title heading, since Blogger has a title field; links absolute to GitHub). There's no Blogger connector; posting is Jeremy's, by paste, or as a draft in the built-in browser if he asks.
 
 ### 6. Files on Jeremy's computer
-- **The oracle is `~/synergy`.** At the start of each session, ask Jeremy for access, then delete permission; **before every git command**, test delete permission (create and remove a scratch file under `.git`; it lapses when the app restarts) and look for `.git/index.lock`: under a minute old, another git is working, so wait and retry; older, remove it and say so (`synergy-operating-model.md`, "Preventing collisions").
+- **The oracle is `~/synergy`.** At the start of each session, ask Jeremy for access, then delete permission; **before every git command**, test delete permission (create and remove a scratch file under `.git`; it lapses when the app restarts) and look for `.git/index.lock`: under a minute old, another git is working, so wait and retry; older, remove it and say so (`synergy-collision-policy.md`, "Rules").
 - **No file cards** (Jeremy, 2026-10-31 17:50: "agh! no dialogue windows"). Don't send files into the chat: they open in the app's document window, which can save back over newer files. Say what changed and where it lives.
 - **Guards** (code of conduct, rule 11): never write to a file Jeremy has open; check the mtime or checksum first; read every write back, at once and again after a pause. Seen again 2026-10-31 17:30 (dialogue 35).
-- **Commits** as `Claude-SYNERGY-PRESS` (`git -c user.name=Claude-SYNERGY-PRESS -c user.email=noreply@anthropic.com commit …`), only PRESS's own files. **PRESS doesn't push:** WELFARE is the push master (principle 9).
+- **Commits** as `Claude-SYNERGY-PRESS` (`git -c user.name=Claude-SYNERGY-PRESS -c user.email=noreply@anthropic.com commit …`), only PRESS's own files. **PRESS doesn't push:** WELFARE is the push owner (principle 9).
 - **The project's copies** are refreshed after each change, so they match the oracle.
 
 ### 7. Pictures

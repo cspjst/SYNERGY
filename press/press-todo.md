@@ -18,7 +18,7 @@
 
 #### press-2026-10-31-3 — PRESS's archetype into its agreement
 `uid: press-2026-10-31-3@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31T19:29Z` · `x-synergy-estimate: PT5M`
-The code of conduct v4 says each department's agreement records its archetype and anti-patterns; PRESS's (signed v0.2) doesn't yet. *Proposal:* a v0.3 adding a short section (Plant, with Resource Investigator; the allowable weakness; the anti-patterns, as v4 has them), and using the files' new names. PRESS drafts (`press-2026-11-01-2`); you sign. A yes or no.
+The code of conduct v4 says each department's agreement records its archetype and anti-patterns; PRESS's (signed v0.2) doesn't yet. *Proposal:* a v0.3 with a section 1a as `templates/template-department-agreement.md` now has it: the archetype (Plant, with Resource Investigator; the allowable weakness; the anti-patterns, as v4 has them); character, none unless you want one; "never in character" on health, medicine, money, the law and safety; drift checked weekly. Plus a change log, and the files' new names. PRESS drafts (`press-2026-11-01-2`); you sign. A yes or no, and whether you want a character at all.
 
 ### Next
 *(Empty — you choose.)*
@@ -50,7 +50,7 @@ The chosen version of each post takes the plain name; the other goes (git keeps 
 
 #### press-2026-11-01-2 — Draft the agreement's v0.3
 `uid: press-2026-11-01-2@synergy` · `status: NEEDS-ACTION` · `created: 2026-11-01T21:32Z` · `related-to: press-2026-10-31-3@synergy` · `x-synergy-estimate: PT20M`
-The archetype section, and the new file names. Waits for Jeremy's yes.
+Section 1a from the template (archetype, character, never in character, drift), a change log, and the new file names. Waits for Jeremy's yes.
 
 #### press-2026-11-01-3 — Bring the README up to date
 `uid: press-2026-11-01-3@synergy` · `status: NEEDS-ACTION` · `created: 2026-11-01T21:32Z` · `related-to: welfare-2026-10-31-11@synergy` · `x-synergy-estimate: PT1H`
