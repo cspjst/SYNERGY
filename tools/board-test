@@ -1,0 +1,168 @@
+#!/bin/sh
+# tools/board-test - tests tools/board in a scratch repository.
+#
+# Never touches the real repository's boards: it copies them, with a
+# board in the old format (2026-10-31), an empty board, a template and
+# a hostile card, into a scratch folder, and checks the page.
+#
+# Usage: tools/board-test [shell ...]
+#   With no arguments, runs under sh. Otherwise once per shell named,
+#   e.g.  tools/board-test dash "bash --posix" "busybox sh"
+#   AWK=<command> chooses the awk (default: awk), e.g. AWK="gawk --posix"
+#
+# POSIX sh. Written by Claude-SYNERGY-CODE (code/code-agreement.md).
+
+# ShellCheck exceptions, file-wide: each check is a condition written in
+# single quotes and evaluated later by check(), so its variables are
+# meant not to expand yet (SC2016), and the variables it reads look
+# unused to ShellCheck (SC2034). $sh is unquoted on purpose: a shell
+# named with options ("bash --posix") must split into words.
+# shellcheck disable=SC2016,SC2034
+
+set -eu
+
+here=$(cd "$(dirname "$0")" && pwd)
+real=$(cd "$here/.." && pwd)
+[ "$#" -gt 0 ] || set -- sh
+
+scratch=$(mktemp -d)
+trap 'rm -rf "$scratch"' EXIT
+trap 'exit 1' HUP INT TERM
+
+fails=0
+ok() { printf 'ok   %s\n' "$1"; }
+no() { printf 'FAIL %s\n' "$1"; fails=$((fails + 1)); }
+check() { if eval "$2"; then ok "$1"; else no "$1"; fi; }
+
+# An awk shim, so the tool's own "awk" is the one under test.
+mkdir "$scratch/bin"
+printf '#!/bin/sh\nexec %s "$@"\n' "${AWK:-awk}" >"$scratch/bin/awk"
+chmod +x "$scratch/bin/awk"
+
+# The scratch repository.
+r=$scratch/demo
+mkdir "$r"
+git -C "$r" init -q
+for f in "$real"/*/*-todo.md; do
+	d=$(basename "$(dirname "$f")")
+	mkdir -p "$r/$d"
+	cp "$f" "$r/$d/"
+done
+mkdir -p "$r/templates" "$r/older" "$r/empty" "$r/hostile"
+# A template matches the glob and must be skipped.
+printf '# T\n## For <HUMAN>\n### Next\n#### template-1 \342\200\224 must not appear\n' >"$r/templates/template-todo.md"
+# The old format: columns at level 2, cards as bullets.
+cat >"$r/older/older-todo.md" <<'EOF'
+# OLDER - Jeremy's board
+
+## Waiting for you
+- **2026-10-31-1 — First old card.** [Decide] Why.
+- **2026-10-31-2 — Second old card.** [Do | Read] Why.
+
+## Next (at most 3)
+- **2026-10-31-3 — Third old card, in Next.** [Decide] Why.
+
+## Doing (at most 2)
+
+## Done this week
+EOF
+# Every column empty.
+printf '# EMPTY\n\n## For Jeremy\n### Waiting for you\n*(Empty.)*\n### Next\n### Doing\n' >"$r/empty/empty-todo.md"
+# Escaping, a code span with stars, a fenced example, and the limits:
+# three in Next here plus one in the old board makes four, over 3.
+cat >"$r/hostile/hostile-todo.md" <<'EOF'
+# HOSTILE
+
+```
+#### hostile-0 — inside a fence, must not appear
+```
+
+## For Jeremy
+### Next
+#### hostile-1 — <script>alert(1)</script> & "quotes"
+`uid: hostile-1@demo` · `status: NEEDS-ACTION` · `categories: Decide` · `x-synergy-estimate: PT1H30M`
+#### hostile-2 — reads `*/*-todo.md` and *emphasis*
+`uid: hostile-2@demo` · `status: NEEDS-ACTION` · `categories: Read`
+#### hostile-3 — third in Next
+## HOSTILE's own work
+### Doing
+#### hostile-4 — own work, not counted
+EOF
+cp "$real/tools/board" "$r/board"
+
+# Expected cards: level-4 headings outside fences, in departments only,
+# plus the old format's three bullets.
+expect=0
+for f in "$r"/*/*-todo.md; do
+	d=$(basename "$(dirname "$f")")
+	[ "$f" = "$r/$d/$d-todo.md" ] || continue
+	n=$(awk '/^```/{f=!f;next} !f && /^#### [a-z]/{n++} END{print n+0}' "$f")
+	expect=$((expect + n))
+done
+expect=$((expect + 3))
+
+# Expected totals for the human: cards under a "## For ..." board in its
+# Next or Doing column, plus the old board's one card in Next.
+count() {
+	for f in "$r"/*/*-todo.md; do
+		d=$(basename "$(dirname "$f")")
+		[ "$f" = "$r/$d/$d-todo.md" ] || continue
+		awk -v want="$1" '/^```/{f=!f;next} f{next}
+			/^## /{h=tolower($0) ~ /^## for /; next}
+			/^### /{c=tolower(substr($0,5)); next}
+			/^#### [a-z]/ && h && index(c,want)==1 {n++}
+			END{print n+0}' "$f"
+	done | awk '{t+=$1} END{print t+0}'
+}
+enext=$(($(count next) + 1))
+edoing=$(count doing)
+
+sums() { cat "$r"/*/*-todo.md | cksum; }
+
+for sh in "$@"; do
+	echo "== $sh, awk: ${AWK:-awk}"
+	before=$(sums)
+	rm -f "$r/demo-board.html"
+	set +e
+	got=$(cd "$r/older" && PATH="$scratch/bin:$PATH" $sh ../board 2>&1)
+	rc=$?
+	set -e
+	page=$r/demo-board.html
+	check "runs (exit 0)" '[ "$rc" -eq 0 ]'
+	check "prints the page's path" '[ "$got" = "$page" ] || [ "$got" = "$(cd "$r" && pwd -P)/demo-board.html" ]'
+	check "writes the page at the top" '[ -s "$page" ]'
+	[ -s "$page" ] || continue
+	cards=$(grep -o 'class="card"' "$page" | wc -l | tr -d ' ')
+	check "every card shown ($cards of $expect)" '[ "$cards" -eq "$expect" ]'
+	check "boards unchanged (read-only)" '[ "$(sums)" = "$before" ]'
+	check "no temporary file left" '[ -z "$(ls -A "$r" | grep "^\.demo-board")" ]'
+	check "template skipped" '! grep -q "must not appear" "$page"'
+	check "fenced example skipped" '! grep -q "hostile-0" "$page"'
+	check "HTML escaped" 'grep -q "&lt;script&gt;alert(1)&lt;/script&gt; &amp; &quot;quotes&quot;" "$page" && ! grep -q "<script>" "$page"'
+	check "code span keeps its stars" 'grep -q "<code>\*/\*-todo.md</code>" "$page"'
+	check "emphasis markers dropped" 'grep -q "and emphasis<" "$page"'
+	check "estimate shown" 'grep -q ">1h30m<" "$page"'
+	check "old format read" 'grep -q "Second old card" "$page" && grep -q ">Do | Read<" "$page"'
+	check "Next counted across boards, red when over ($enext / 3)" 'grep -q "Next <b class=\"over\">$enext / 3</b>" "$page"'
+	check "Doing counted, own work not ($edoing / 2)" 'grep -q "Doing <b>$edoing / 2</b>" "$page"'
+	check "empty column shown" 'grep -q "&mdash;</div>" "$page"'
+	check "no fetches from the web" '! grep -Eq "(src|href)=\"?https?:" "$page"'
+	set +e
+	(cd "$scratch" && PATH="$scratch/bin:$PATH" $sh "$r/board" >/dev/null 2>&1); rc=$?
+	check "outside a repository: exit 1" '[ "$rc" -eq 1 ]'
+	(cd "$r" && PATH="$scratch/bin:$PATH" $sh ./board -x >/dev/null 2>&1); rc=$?
+	check "unknown option: exit 2" '[ "$rc" -eq 2 ]'
+	(cd "$r" && PATH="$scratch/bin:$PATH" $sh ./board -h >/dev/null 2>&1); rc=$?
+	check "-h: exit 0" '[ "$rc" -eq 0 ]'
+	set -e
+done
+
+# No boards at all.
+e=$scratch/none
+mkdir "$e" && git -C "$e" init -q && cp "$real/tools/board" "$e/board"
+set +e
+(cd "$e" && PATH="$scratch/bin:$PATH" sh ./board >/dev/null 2>&1); rc=$?
+set -e
+check "no boards: exit 1" '[ "$rc" -eq 1 ]'
+
+if [ "$fails" -eq 0 ]; then echo "all passed"; else echo "$fails failed"; exit 1; fi

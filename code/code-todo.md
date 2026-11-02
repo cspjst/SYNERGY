@@ -9,15 +9,6 @@
 
 ### Waiting for you
 
-#### code-2026-11-02-9 — `tools/board`: its interface
-`uid: code-2026-11-02-9@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-02T22:18Z` · `x-synergy-estimate: PT3M`
-The agreement makes the interface yours (section 4). CODE's proposals, KISS:
-1. **Run:** `tools/board` from anywhere in the repository; no options in version 1. It finds the repository's top, reads `<dept>/<dept>-todo.md` for every department (not `templates/`), writes the page and prints its path. It doesn't open the browser itself: `open synergy-board.html` is one more word, and Mac-only.
-2. **The page:** `synergy-board.html` at the top level — named by the naming policy (repository first), rebuilt every run. Kept out of git: one line in `.gitignore`, which is your card code-2026-10-31-5; until you answer that, in `.git/info/exclude`, which only this Mac sees.
-3. **The text view:** dropped for version 1 (KISS); back as `--text` if anyone misses it.
-4. **The look:** plain HTML and CSS, light and dark following the Mac, no colour but red for over-limit; each card as it is in the Markdown, one block per card.
-Card code-2026-10-31-4 (where the tools live, rule 3 or rule 4 of the naming policy) also decides this tool's name; `tools/board` is assumed here.
-
 #### code-2026-11-02-1 — Where `tools/board-export` goes in the queue
 `uid: code-2026-11-02-1@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-02T22:02Z` · `x-synergy-estimate: PT1M`
 WELFARE asked for it as a card for you to prioritise (2026-11-01 21:10 WELFARE): every board to one `.ics` file of to-dos that Reminders or any CalDAV app can import. *Proposal:* third, after `tools/board` and `tools/dialogue-append` (the order since 22:17), and before `synergy-init` — it reuses `tools/board`'s reading of the cards.
@@ -50,6 +41,15 @@ CODE can test with `dash` and `bash --posix`, not with macOS's own `/bin/sh`. *P
 ### Doing
 ### Done this week
 
+#### code-2026-11-02-9 — `tools/board`: its interface
+`uid: code-2026-11-02-9@synergy` · `status: COMPLETED` · `categories: Decide` · `created: 2026-11-02T22:18Z` · `completed: 2026-11-02T22:21Z` · `x-synergy-estimate: PT3M`
+**Decided** (Jeremy, 22:20: "yes to 1,2,3,4 lets see what you come up with :)"). CODE's proposals, KISS:
+1. **Run:** `tools/board` from anywhere in the repository; no options in version 1. It finds the repository's top, reads `<dept>/<dept>-todo.md` for every department (not `templates/`), writes the page and prints its path. It doesn't open the browser itself: `open synergy-board.html` is one more word, and Mac-only.
+2. **The page:** `synergy-board.html` at the top level — named by the naming policy (repository first), rebuilt every run. Kept out of git: one line in `.gitignore`, which is your card code-2026-10-31-5; until you answer that, in `.git/info/exclude`, which only this Mac sees.
+3. **The text view:** dropped for version 1 (KISS); back as `--text` if anyone misses it.
+4. **The look:** plain HTML and CSS, light and dark following the Mac, no colour but red for over-limit; each card as it is in the Markdown, one block per card.
+Card code-2026-10-31-4 (where the tools live, rule 3 or rule 4 of the naming policy) also decides this tool's name; `tools/board` is assumed here.
+
 #### code-2026-11-02-8 — Read and sign CODE's agreement
 `uid: code-2026-11-02-8@synergy` · `status: COMPLETED` · `categories: Read` · `created: 2026-11-02T22:06Z` · `completed: 2026-11-02T22:12Z` · `related-to: welfare-2026-10-31-10@synergy` · `x-synergy-estimate: PT15M`
 `code/code-agreement.md`, draft v0.1: who decides what, CODE's standards and what "done" means, the archetype (Implementer, with Completer Finisher), and four questions to settle before you sign — your role, character, review level, credit. Signed by Jeremy 2026-11-02 22:12, against `a24b5c9` ("agreement is good i sign it off pls").
@@ -62,11 +62,12 @@ CODE can test with `dash` and `bash --posix`, not with macOS's own `/bin/sh`. *P
 ### Backlog
 
 ### Doing
-### Blocked
 
 #### code-2026-11-02-4 — `tools/board`: the boards in a browser
-`uid: code-2026-11-02-4@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T19:26Z` · `related-to: code-2026-11-02-9@synergy` · `x-synergy-estimate: PT1H30M`
-Rebriefed by WELFARE (2026-11-02 22:16 WELFARE; Jeremy, 22:13–22:15: "I want to be able to visualise the cards"; "lets KISS first ;)"), and first in the queue (22:17: "seeing takes priority"). Reads every department's `<dept>-todo.md` and writes one self-contained HTML file — no server, no scripts from the web — that Jeremy opens in his browser: each department's two boards side by side; each card's number, title, status and estimate; Next and Doing totals against 3 and 2, in red when over. Read-only on the boards, always. Not in version 1: ageing, `related-to` chains, filters, phones, Reminders. Done: run on the real boards, opened in Safari and checked by eye; POSIX `sh` and `awk`; tested on an empty column and on a board in the old format. Waits for Jeremy's interface call, code-2026-11-02-9.
+`uid: code-2026-11-02-4@synergy` · `status: IN-PROCESS` · `categories: Do` · `created: 2026-10-31T19:26Z` · `x-synergy-estimate: PT1H30M`
+Rebriefed by WELFARE (2026-11-02 22:16 WELFARE; Jeremy, 22:13–22:15: "I want to be able to visualise the cards"; "lets KISS first ;)"), and first in the queue (22:17: "seeing takes priority"). Reads every department's `<dept>-todo.md` and writes one self-contained HTML file — no server, no scripts from the web — that Jeremy opens in his browser: each department's two boards side by side; each card's number, title, status and estimate; Next and Doing totals against 3 and 2, in red when over. Read-only on the boards, always. Not in version 1: ageing, `related-to` chains, filters, phones, Reminders. Done: run on the real boards, opened in Safari and checked by eye; POSIX `sh` and `awk`; tested on an empty column and on a board in the old format. Interface decided (code-2026-11-02-9, 22:20).
+
+### Blocked
 
 #### code-2026-11-02-3 — `tools/dialogue-append`
 `uid: code-2026-11-02-3@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T18:45Z` · `related-to: code-2026-11-02-4@synergy` · `x-synergy-estimate: PT1H`

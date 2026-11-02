@@ -1,0 +1,202 @@
+#!/bin/sh
+# tools/board - every department's board on one page, for a browser.
+#
+# Reads <dept>/<dept>-todo.md for each department of this repository
+# (templates/ is skipped) and writes <repo>-board.html at the top level.
+# Read-only on the boards: it never writes one (one writer per file).
+# The page is self-contained: no server, nothing fetched from the web.
+#
+# Usage: tools/board        then: open <repo>-board.html
+#        tools/board -h
+#
+# POSIX sh and awk. Written by Claude-SYNERGY-CODE for synergy, at
+# Jeremy's direction (code/code-agreement.md); the repository's licence.
+
+set -eu
+
+usage() {
+	cat <<'EOF'
+usage: tools/board
+
+Reads <dept>/<dept>-todo.md in every department of this repository and
+writes <repo>-board.html at its top level, then prints its path.
+Read-only on the boards. Open the page with:  open <repo>-board.html
+EOF
+}
+
+case "${1-}" in
+	-h | --help) usage; exit 0 ;;
+	'') ;;
+	*) usage >&2; exit 2 ;;
+esac
+
+top=$(git rev-parse --show-toplevel 2>/dev/null) || {
+	echo "tools/board: not inside a git repository" >&2
+	exit 1
+}
+cd "$top"
+
+repo=$(basename "$top" | tr '[:upper:]' '[:lower:]')
+out=$repo-board.html
+
+# Departments only: <dept>/<dept>-todo.md. templates/template-todo.md
+# matches the glob but not the pattern, so it's skipped.
+set --
+for f in */*-todo.md; do
+	[ -f "$f" ] || continue
+	d=${f%%/*}
+	[ "$f" = "$d/$d-todo.md" ] || continue
+	set -- "$@" "$f"
+done
+if [ "$#" -eq 0 ]; then
+	echo "tools/board: no boards found (<dept>/<dept>-todo.md)" >&2
+	exit 1
+fi
+
+stamp=$(date '+%Y-%m-%d %H:%M')
+rev=$(git rev-parse --short HEAD 2>/dev/null || echo none)
+
+# Write beside the page, then rename: a reader never sees half a page.
+tmp=$(mktemp "./.$out.XXXXXX")
+trap 'rm -f "$tmp"' EXIT
+trap 'exit 1' HUP INT TERM
+
+LC_ALL=C awk -v repo="$repo" -v stamp="$stamp" -v rev="$rev" '
+function esc(s) {
+	gsub(/&/, "\\&amp;", s); gsub(/</, "\\&lt;", s)
+	gsub(/>/, "\\&gt;", s); gsub(/"/, "\\&quot;", s)
+	return s
+}
+# Markdown inline: `code` becomes <code>; * and ** outside code are dropped.
+function md(s,    o, p) {
+	s = esc(s); o = ""
+	while (match(s, /`[^`]*`/)) {
+		p = substr(s, 1, RSTART - 1); gsub(/\*/, "", p)
+		o = o p "<code>" substr(s, RSTART + 1, RLENGTH - 2) "</code>"
+		s = substr(s, RSTART + RLENGTH)
+	}
+	gsub(/\*/, "", s)
+	return o s
+}
+function lc(s) { return tolower(s) }
+function iscol(s) { s = lc(s); return s ~ /^(waiting|next|doing|done|dropped|backlog|blocked)/ }
+function emit(s) { body = body s "\n" }
+
+function closecard() {
+	if (cid == "" && ctitle == "") return
+	m = ""
+	if (cstatus != "") m = m "<span class=\"st\">" esc(cstatus) "</span>"
+	if (ccat != "") m = m "<span class=\"cat\">" esc(ccat) "</span>"
+	if (cest != "") m = m "<span class=\"est\">" esc(cest) "</span>"
+	colbuf = colbuf "<div class=\"card\"><div class=\"id\">" esc(cid) "</div><div class=\"t\">" md(ctitle) "</div>" (m != "" ? "<div class=\"m\">" m "</div>" : "") "</div>\n"
+	colcount++
+	if (forhuman && lc(col) ~ /^next/) nextn++
+	if (forhuman && lc(col) ~ /^doing/) doingn++
+	cid = ctitle = cstatus = ccat = cest = ""; incard = 0
+}
+function closecol() {
+	closecard()
+	if (col == "") return
+	name = col; sub(/ *\(.*$/, "", name)
+	emit("<div class=\"col\"><h4>" md(name) " <span class=\"n\">" colcount "</span></h4>" (colcount ? colbuf : "<div class=\"empty\">&mdash;</div>") "</div>")
+	col = ""; colbuf = ""; colcount = 0
+}
+function openboard(t) {
+	closeboard()
+	board = t; forhuman = (lc(t) ~ /^for /)
+	emit("<div class=\"board\"><h3>" md(t) "</h3><div class=\"cols\">")
+}
+function closeboard() {
+	closecol()
+	if (board == "") return
+	emit("</div></div>"); board = ""
+}
+function opendept(f) {
+	closedept()
+	d = f; sub(/\/.*/, "", d)
+	emit("<section class=\"dept\"><h2>" esc(toupper(d)) " <span class=\"src\">" esc(f) "</span></h2><div class=\"boards\">")
+	indept = 1
+}
+function closedept() {
+	closeboard()
+	if (!indept) return
+	emit("</div></section>"); indept = 0
+}
+function newcol(t) {
+	if (board == "") openboard("For the human")
+	closecol(); col = t
+}
+function props(s,    tok, k, v, i) {
+	while (match(s, /`[^`]*`/)) {
+		tok = substr(s, RSTART + 1, RLENGTH - 2); s = substr(s, RSTART + RLENGTH)
+		i = index(tok, ": "); if (!i) continue
+		k = substr(tok, 1, i - 1); v = substr(tok, i + 2)
+		if (k == "status") cstatus = v
+		else if (k == "categories") ccat = v
+		else if (k == "x-synergy-estimate") { sub(/^PT/, "", v); cest = lc(v) }
+	}
+}
+
+FNR == 1 { opendept(FILENAME); fence = 0 }
+/^```/ { fence = !fence; next }
+fence { next }
+/^# / { next }
+/^## / {
+	t = substr($0, 4)
+	if (iscol(t)) newcol(t)            # the old format: columns at level 2
+	else openboard(t)
+	next
+}
+/^### / { newcol(substr($0, 5)); next }
+/^#### / {
+	if (col == "") next
+	closecard(); t = substr($0, 6); incard = 1
+	i = index(t, " \342\200\224 ")    # " - " as an em dash, in bytes
+	if (i) { cid = substr(t, 1, i - 1); ctitle = substr(t, i + 5) }
+	else ctitle = t
+	next
+}
+incard && /^`/ && /`status: / { props($0); next }
+/^- \*\*/ && col != "" {              # the old format: a card as a bullet
+	closecard(); t = substr($0, 5)
+	i = index(t, "**"); if (i) t = substr(t, 1, i - 1)
+	sub(/\.$/, "", t)
+	i = index(t, " \342\200\224 ")
+	if (i) { cid = substr(t, 1, i - 1); ctitle = substr(t, i + 5) }
+	else ctitle = t
+	if (match($0, /\[[A-Za-z |]+\]/)) ccat = substr($0, RSTART + 1, RLENGTH - 2)
+	incard = 1
+	next
+}
+END {
+	closedept()
+	print "<!doctype html>"
+	print "<html lang=\"en\"><head><meta charset=\"utf-8\">"
+	print "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
+	print "<title>" esc(toupper(repo)) " boards</title>"
+	print "<style>"
+	print ":root{--bg:#f6f6f4;--fg:#1d1d1f;--mute:#6e6e73;--box:#fff;--line:#d8d8d4;--card:#fbfbfa;--red:#c0271c;--code:#efefec}"
+	print "@media (prefers-color-scheme:dark){:root{--bg:#1c1c1e;--fg:#f2f2f2;--mute:#9a9aa0;--box:#262628;--line:#3a3a3c;--card:#2e2e31;--red:#ff6b5e;--code:#3a3a3c}}"
+	print "*{box-sizing:border-box}body{margin:0;padding:16px 20px 40px;background:var(--bg);color:var(--fg);font:14px/1.4 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}"
+	print "header{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;margin-bottom:16px}h1{font-size:20px;margin:0}"
+	print ".tot{font-size:15px}.tot b{font-variant-numeric:tabular-nums}.over{color:var(--red);font-weight:700}.stamp{color:var(--mute);font-size:12px}"
+	print ".dept{margin:0 0 28px}h2{font-size:16px;margin:0 0 8px}.src{font-weight:400;color:var(--mute);font-size:12px}"
+	print ".boards{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:12px}"
+	print ".board{background:var(--box);border:1px solid var(--line);border-radius:8px;padding:10px}h3{font-size:14px;margin:0 0 8px}"
+	print ".cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}"
+	print ".col h4{font-size:12px;margin:0 0 6px;color:var(--mute);text-transform:uppercase;letter-spacing:.03em}.n{font-weight:400}"
+	print ".card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:6px 8px;margin-bottom:6px}"
+	print ".id{font-size:11px;color:var(--mute);font-variant-numeric:tabular-nums}.t{margin:2px 0}"
+	print ".m{display:flex;flex-wrap:wrap;gap:4px 8px;font-size:11px;color:var(--mute)}.cat{font-weight:600}"
+	print ".empty{color:var(--mute)}code{background:var(--code);border-radius:3px;padding:0 3px;font-size:12px}"
+	print "</style></head><body>"
+	print "<header><h1>" esc(toupper(repo)) " &mdash; boards</h1>"
+	print "<div class=\"tot\">For the human, across all boards: Next <b" (nextn > 3 ? " class=\"over\"" : "") ">" nextn+0 " / 3</b> &middot; Doing <b" (doingn > 2 ? " class=\"over\"" : "") ">" doingn+0 " / 2</b></div>"
+	print "<div class=\"stamp\">Made " esc(stamp) " from commit " esc(rev) " by tools/board. Read-only: the Markdown boards are the truth.</div></header>"
+	printf "%s", body
+	print "</body></html>"
+}
+' "$@" >"$tmp"
+
+mv "$tmp" "$out"
+echo "$top/$out"
