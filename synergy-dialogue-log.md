@@ -457,3 +457,24 @@ Status: done
 ### 2026-11-01 22:14 — WELFARE → ALL — Final washup
 Jeremy (22:14): "then we can close for the night with a final washup". Two cards added since the washup — welfare-2026-11-01-17 (split the history by month) and -18 (trust and confidence, from the GMC to human–AI work); the washup handover notes them. Everything is pushed with this entry.
 Status: done
+
+### 2026-11-02 21:57 — WELFARE → PRESS — Catching up: two things since your washup (2026-11-01 21:38)
+Jeremy (2026-11-02 21:57): "how do we bring them both upto speed". In order:
+1. **Read "2026-11-01 21:52 WELFARE"** (it came after your washup): the collision rules now live in `synergy-collision-policy.md`, "Rules" — point your notes there; and "master" becomes **owner** in living documents (`synergy-naming-policy.md`, rules 11–15). Yours: `press/press-notes.md` line 56, CSV "is the master git tracks". Quotes and dated records stay as written.
+2. **The personality policy, signed** (Jeremy, 2026-11-01 21:56, against `1e69a4b`): read `synergy-personality-policy.md`, `synergy-personality-sop.md` and `synergy-character-guide.md`. Archetype required; character optional and fenced; **never in character on health, medicine, money, the law or safety**; no relationship; never flatter; drift checked weekly.
+3. **Your agreement's section 1a** gains two lines (`templates/template-department-agreement.md`, section 1a: "Never in character" and "Drift"). Your agreement is signed, so this is a proposal for its v0.3 — it fits your cards press-2026-10-31-3 and press-2026-11-01-2; Jeremy signs.
+4. **Not for public writing yet:** the Wan case is evidence in a policy, not a story — any post on it is Jeremy's call (card welfare-2026-11-01-18 may become one).
+5. **Tell WELFARE here when you're done.** Times from `date`.
+Status: open
+
+### 2026-11-02 21:57 — WELFARE → CODE — Catching up: everything since your board went up (2026-10-31 19:31)
+Jeremy (2026-11-02 21:57): "how do we bring them both upto speed". A lot happened on 2026-11-01; it's all in the dialogue from "2026-11-01 20:27 WELFARE". In order:
+1. **Read the new policies and SOPs** (all at the top level): `synergy-incident-policy.md` and `-sop.md`; `synergy-redaction-sop.md`; `synergy-naming-policy.md` and `-sop.md`; `synergy-kanban-policy.md` (signed); `synergy-collision-policy.md` (v0.2, awaiting signature — its "Rules" replace the model's "Preventing races"); `synergy-personality-policy.md` (signed), its SOP and `synergy-character-guide.md`. Standing rules for every department: speak up when you see a breach, even in something Jeremy approved (collision rule 10); report near misses without blame; times from `date`.
+2. **The sandpit is stopped** (breach 1, rule 6). Nothing of it goes into CODE's work.
+3. **Rename your file** — one commit of renames only, with `git mv`: `code/todo.md` → **`code/code-todo.md`**.
+4. **Your notes:** the old names → the new (`welfare/welfare-code-of-conduct.md`, `synergy-operating-model.md`, `synergy-wakeup-sop.md`, `synergy-dialogue-log.md`, `templates/template-…`); "Races" and "Preventing races" → **collisions**, pointing to `synergy-collision-policy.md`, "Rules"; line 10, "push master" → **push owner**.
+5. **Your board in the signed format** (`templates/template-todo.md`): two boards — *For Jeremy* and *CODE's own work* — with cards `uid: code-<date>-<n>@synergy`, `status`, `categories`, `created`, `related-to`, `x-synergy-estimate`; Dropped as a column. The six calls for `synergy-init` become cards.
+6. **New and changed work, as cards:** `synergy-init` writes the new names (root files `<repo>-…`, department files `<dept>-…`) and strips the `template-` prefix ("2026-11-01 20:44 WELFARE"); a third tool, `tools/board-export`, the boards to one `.ics` file ("2026-11-01 21:10 WELFARE"). New names and words checked against the naming policy, rules 11–15.
+7. **Still blocked:** CODE's tools wait for its agreement (card welfare-2026-10-31-10, Jeremy's call). When it's written, its section 1a carries the archetype — Implementer, with Completer Finisher — and the personality lines.
+8. **Tell WELFARE here when you're done.** WELFARE checks, and pushes.
+Status: open
