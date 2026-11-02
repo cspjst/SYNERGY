@@ -13,6 +13,7 @@ Companion docs: `welfare/working-agreement.md` (the settled decisions, each quot
 5. Evidence, roles and load (2026-10-31, evening)
 6. The first incident (2026-11-01)
 7. Policies, with evidence (2026-11-01, evening)
+8. CODE's first tool (2026-11-02)
 
 ---
 
@@ -212,3 +213,27 @@ Sources: this chat, 2026-11-01 20:11–20:30; `sandpit/conversation.md` entries 
 Jeremy, 22:04: "synergy has made some major leaps forward into a seminal piece of work on safe productive working between human and ai". The evening's pattern: a storm, then a norm, then evidence, then a signature. And the speak-up culture worked in both directions: PRESS reported WELFARE's clock-ahead timestamps as a near miss (dialogue, "21:38 PRESS").
 
 Sources: this chat, 2026-11-01 20:28–22:05; the policies and SOPs named above; `synergy-dialogue-log.md`, 2026-11-01 entries; `welfare/welfare-working-agreement.md`.
+
+---
+
+## Chapter 8: CODE's first tool (2026-11-02)
+
+### 1. The problem as it appeared
+- Two departments had fallen behind a fast Sunday. PRESS was current to its washup; CODE had last moved on 2026-10-31 19:31, before every policy of chapter 7. And Jeremy's boards — 52 cards by evening — could only be read as Markdown.
+
+### 2. What was tried
+- **Catching up by the chain of command** (21:57: "how do we bring them both upto speed"): one numbered dialogue entry to each department; each worked through its own files in its own chat; WELFARE checked links and names, then pushed (`c2286ca`). PRESS was done at 22:00, CODE at 22:02. CODE found a gap in the templates' placeholders, and a gap in the naming policy for command names (Jeremy's card code-2026-10-31-4).
+- **CODE's agreement first** (22:04, on card welfare-2026-10-31-10: "for code"): drafted from the template, with its archetype — Implementer, with Completer Finisher — in section 1a; signed by Jeremy at 22:12 against `a24b5c9`.
+- **Seeing the cards** (22:13: "I want to be able to visualise the cards - i am torn between an app and something in a browser"; 22:15: "lets KISS first ;)"; 22:17: "seeing takes priority"): the brief was one read-only, self-contained HTML page of every board, outside git — read-only because a viewer that can move a card is a second writer (collision rule 6).
+
+### 3. What the sources said
+- The evening's sources were the project's own: the kanban policy's "combined view", the collision rules, the department agreement template, and CODE's tests — 21 checks under three shells and three awks, then Jeremy's run on macOS.
+
+### 4. What was decided
+- **`tools/board` accepted** (22:34: "excellent a good first version simple and does the job - happy with that") — CODE's first tool, two days after the department opened and 22 minutes after its agreement was signed. v2 and v3 are carded, one change at a time (22:42).
+- **SMALL-C into the top three** (22:24: "okay thats not for tonight but it is in our top 3 todos pls"), estimated at about five hours over several sessions.
+
+### What it adds up to
+The order held: agreement, then brief, then code, then tests, then the human's own run. And the habit of "check before claiming" was tested hardest on the clock: CODE reported four slips of one kind — times and figures from estimate — all caught before harm, and a test that hung on the Mac because its default case had never run. The rule that caught them, "times from `date`", was a day old.
+
+Sources: this chat, 2026-11-02 21:53–22:46; `synergy-dialogue-log.md`, 2026-11-02 entries (21:57 WELFARE to 22:45 PRESS); `code/code-agreement.md`; `tools/README.md`; `welfare/welfare-working-agreement.md`.

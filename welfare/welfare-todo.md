@@ -114,8 +114,8 @@ Done 19:27–19:32: both caught up, boards up.
 
 ### Backlog
 #### welfare-2026-11-01-8 — The first weekly welfare check
-`uid: welfare-2026-11-01-8@synergy` · `status: NEEDS-ACTION` · `created: 2026-11-01`
-At WELFARE's first wakeup of the new week: "How's the balance this week?"; the garbage collector over every board; the review of incident report 001.
+`uid: welfare-2026-11-01-8@synergy` · `status: IN-PROCESS` · `created: 2026-11-01`
+At WELFARE's first wakeup of the new week: "How's the balance this week?"; the garbage collector over every board; the review of incident report 001. **2026-11-02:** asked at 21:54 — "I have eaten dinner and rested"; the collector found no card over 14 days (the oldest is from 2026-10-31). Still to do: the review of report 001, and the pattern CODE named for it (estimates written as facts — WELFARE 2026-11-01, CODE four times 2026-11-02, all caught).
 
 #### welfare-2026-11-01-9 — Propose a `project-bootstrap` skill update
 `uid: welfare-2026-11-01-9@synergy` · `status: NEEDS-ACTION` · `created: 2026-11-01`
