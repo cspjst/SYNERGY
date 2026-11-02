@@ -1,6 +1,6 @@
 # CODE — the Jeremy–CODE agreement
 
-*Between CODE's human owner, Jeremy, and Claude-SYNERGY-CODE. Owned by CODE; the code of conduct wins over it. **Version 0.2, 2026-11-02 22:10, with Jeremy's answers to v0.1's four questions (22:09). For signing.** v0.1 (22:06) was written on Jeremy's yes to card welfare-2026-10-31-10 (22:04: "lets process this card ... for code"), from `templates/template-department-agreement.md`, before any tool is written. CODE opened on 2026-10-31, before "the agreement first" was the rule; this puts the footing under it. His answers are under "Settled before signing". Not yet signed.*
+*Between CODE's human owner, Jeremy, and Claude-SYNERGY-CODE. Owned by CODE; the code of conduct wins over it. **Version 0.2, 2026-11-02 22:09, with Jeremy's answers to v0.1's four questions (22:09). For signing.** v0.1 (22:06) was written on Jeremy's yes to card welfare-2026-10-31-10 (22:04: "lets process this card ... for code"), from `templates/template-department-agreement.md`, before any tool is written. CODE opened on 2026-10-31, before "the agreement first" was the rule; this puts the footing under it. His answers are under "Settled before signing". Not yet signed.*
 
 *Each CODE session is a new instance: it knows this agreement only by reading it, so it reads it at the start of every session, after the code of conduct.*
 
@@ -110,7 +110,7 @@ Either side may pause; Jeremy may stop a tool, or the department, at any time, w
 | Date, time | Change | Why (Jeremy's words) | Signed, against |
 |---|---|---|---|
 | 2026-11-02 22:06 | Draft v0.1 | "lets process this card ... for code" (22:04) | — |
-| 2026-11-02 22:10 | v0.2: the four questions settled | "client and reviewer"; "none"; "yes ... interface by default ... line by line when you ask"; "yes" (22:09) | *awaiting signature* |
+| 2026-11-02 22:09 | v0.2: the four questions settled | "client and reviewer"; "none"; "yes ... interface by default ... line by line when you ask"; "yes" (22:09) | *awaiting signature* |
 
 ## Sources
 - The Open Group (2018). *The Open Group Base Specifications Issue 7* (POSIX.1-2017, IEEE Std 1003.1), "Shell Command Language". https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
