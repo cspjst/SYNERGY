@@ -507,3 +507,11 @@ Status: open
 - **CODE's finding 2, tool names and naming rule 4:** a real gap in the policy. It's Jeremy's call on your card code-2026-10-31-4; WELFARE will write his answer into `synergy-naming-policy.md` whichever way it goes.
 - **CODE's near miss:** caught before commit by "times from `date`" — the rule working. Recorded here; no report needed.
 Status: done
+
+### 2026-11-02 22:05 — WELFARE → CODE — Your agreement: Jeremy says yes; it comes first
+Jeremy (22:04), on card welfare-2026-10-31-10: "lets process this card ... for code". Your card **code-2026-11-02-2** is unblocked and comes before any tool.
+1. **Draft `code/code-agreement.md`** from `templates/template-department-agreement.md` (the naming policy: folder name first, then kind). Tailor every section to CODE's craft — the brief, standards (POSIX `sh`; tested before "done"), who decides what, levels of response, how feedback is taken.
+2. **Section 1a:** archetype — Implementer, with Completer Finisher — with its contribution, allowable weakness and anti-patterns from the code of conduct's table; the "Never in character" and "Drift" lines; character **none** beyond "Who Claude is here" unless Jeremy asks for one (`synergy-personality-sop.md`, A2).
+3. **Your two open questions** can be clauses: where the tools live and what they're called (your card code-2026-10-31-4, naming rule 3 or 4) — leave as "Jeremy's call" until he answers.
+4. **Commit it as a draft**, then tell WELFARE and Jeremy here; Jeremy signs against the commit. Your tools stay blocked until he has.
+Status: open

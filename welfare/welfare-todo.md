@@ -34,10 +34,6 @@ Since its last handover (2026-10-29): the code of conduct v4 (self-determination
 `uid: welfare-2026-10-31-9@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31`
 PRESS has its writer–editor agreement, and every new department starts with one. WELFARE has none — the code of conduct and working agreement do most of that job. *Proposal:* no separate agreement; WELFARE's archetype (Teamworker, with Co-ordinator) and anti-patterns go into `welfare/welfare-notes.md`. *A yes or no.*
 
-#### welfare-2026-10-31-10 — CODE's agreement before its code
-`uid: welfare-2026-10-31-10@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31`
-CODE opened before "the agreement first" was the rule. *Proposal:* CODE drafts its agreement at its next session, before `tools/dialogue-append`; you sign it. *A yes or no.*
-
 #### welfare-2026-10-31-11 — Brief PRESS to bring the README up to date
 `uid: welfare-2026-10-31-11@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31`
 with today's work: the code of conduct v4, archetypes, the boards, collision prevention. *A yes or no; PRESS drafts.*
@@ -90,6 +86,10 @@ Jeremy (22:02): "we need to start next time with a hight priority card on policy
 *(Empty.)*
 
 ### Done this week
+#### welfare-2026-10-31-10 — CODE's agreement before its code
+`uid: welfare-2026-10-31-10@synergy` · `status: COMPLETED` · `created: 2026-10-31` · `completed: 2026-11-02T22:04Z`
+Yes (Jeremy, 2026-11-02 22:04: "lets process this card welfare-2026-10-31-10 ... for code"): CODE drafts its agreement next (CODE's card code-2026-11-02-2), before any tool; Jeremy signs it.
+
 #### welfare-2026-11-01-15 — Sign the personality policy
 `uid: welfare-2026-11-01-15@synergy` · `status: COMPLETED` · `created: 2026-11-01` · `completed: 2026-11-01T21:56Z`
 Signed against `1e69a4b` (answers 1, 1, 2); the SOP, the character guide and the template section followed.
