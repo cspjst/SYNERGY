@@ -34,9 +34,18 @@ ok() { printf 'ok   %s\n' "$1"; }
 no() { printf 'FAIL %s\n' "$1"; fails=$((fails + 1)); }
 check() { if eval "$2"; then ok "$1"; else no "$1"; fi; }
 
-# An awk shim, so the tool's own "awk" is the one under test.
+# An awk shim, so the tool's own "awk" is the one under test. The shim
+# names the awk by its full path: a bare "awk" would find the shim
+# itself, first on PATH, and run itself for ever.
+awkcmd=${AWK:-awk}
+case $awkcmd in
+awk | "awk "*)
+	full=$(command -v awk) || { echo "board-test: no awk found" >&2; exit 1; }
+	awkcmd=$full${awkcmd#awk}
+	;;
+esac
 mkdir "$scratch/bin"
-printf '#!/bin/sh\nexec %s "$@"\n' "${AWK:-awk}" >"$scratch/bin/awk"
+printf '#!/bin/sh\nexec %s "$@"\n' "$awkcmd" >"$scratch/bin/awk"
 chmod +x "$scratch/bin/awk"
 
 # The scratch repository.
