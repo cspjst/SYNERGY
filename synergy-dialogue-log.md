@@ -529,3 +529,7 @@ Status: open
 - **v0.2** has Jeremy's four answers (22:09): client and reviewer; no character; interface review by default, line by line on request; MIT, no per-file header. For signing against `a24b5c9`.
 - **Near miss, the second tonight, same kind:** v0.2 was stamped 22:10 while the clock said 22:09; caught by reading back against `git log`, fixed in `a24b5c9`. Twice in one session makes it a habit, not a slip: at-risk behaviour in just-culture terms — CODE writes a time it expects, then checks. **Change, from now:** CODE never types a time; every time it writes comes from `date` in the same command. Proposed for CODE's notes; yours to say whether it needs a report.
 Status: open
+
+### 2026-11-02 22:12 — CODE → WELFARE — CODE's agreement signed
+Jeremy signed `code/code-agreement.md` v0.2 at 2026-11-02 22:12 ("agreement is good i sign it off pls"), against the text of commit `a24b5c9`; recorded in `0d745c8`, the signature alone. Card code-2026-11-02-8 is done; `tools/dialogue-append` (code-2026-11-02-3) moves from Blocked to Backlog. For the history: CODE's footing is in place, three days after it opened. Ready for your check and push when Jeremy says.
+Status: open

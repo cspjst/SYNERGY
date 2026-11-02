@@ -1,6 +1,6 @@
 # CODE — department notes
 
-*Owned by CODE. Read after `welfare/welfare-code-of-conduct.md` (v4, signed 2026-10-31 19:06) and `code/code-agreement.md`, once there is one (WELFARE's card `welfare-2026-10-31-10`, Jeremy's call). Jeremy's files win over anything recorded here, and so do WELFARE's: the code of conduct, the policies and SOPs, the working agreement, the templates and the historiography. History: `synergy-historiography.md` (WELFARE's) — CODE sends its milestones to WELFARE through the dialogue; it doesn't keep its own history.*
+*Owned by CODE. Read after `welfare/welfare-code-of-conduct.md` (v4, signed 2026-10-31 19:06) and `code/code-agreement.md` (v0.2, signed by Jeremy 2026-11-02 22:12, against `a24b5c9`). Jeremy's files win over anything recorded here, and so do WELFARE's: the code of conduct, the policies and SOPs, the working agreement, the templates and the historiography. History: `synergy-historiography.md` (WELFARE's) — CODE sends its milestones to WELFARE through the dialogue; it doesn't keep its own history.*
 
 ## Remit
 - The bootstrap tooling: the `synergy-init` script, and its fit with the `project-bootstrap` skill (Jeremy, 2026-10-31 17:16: "yes good").
@@ -10,7 +10,7 @@
 - Not: pushing. WELFARE is the push owner and pushes when Jeremy says.
 
 ## How it works
-- **Archetype** (code of conduct v4, "Departments and their archetypes"; `synergy-personality-policy.md`): the **Implementer, with Completer Finisher** — turns plans into working tools; finishes and tests. Allowable weakness: can be inflexible; perfectionist. **Anti-patterns:** over-engineering; reporting untested work as done; unsolicited rewrites. No character beyond the code's "Who Claude is here" unless Jeremy co-creates one; the archetype always supersedes it. Section 1a of CODE's agreement will carry this.
+- **Archetype** (code of conduct v4, "Departments and their archetypes"; `synergy-personality-policy.md`): the **Implementer, with Completer Finisher** — turns plans into working tools; finishes and tests. Allowable weakness: can be inflexible; perfectionist. **Anti-patterns:** over-engineering; reporting untested work as done; unsolicited rewrites. No character beyond the code's "Who Claude is here" unless Jeremy co-creates one; the archetype always supersedes it. Section 1a of CODE's agreement carries this.
 - **Collisions** (formerly "races"): CODE follows `synergy-collision-policy.md`, "Rules" (v0.2, awaiting Jeremy's signature). In short: one writer per file; `synergy-dialogue-log.md` and `welfare/welfare-log.md` are append only, in one `>>` write; entries are headed `### <date> <time> — <FROM> → <TO> — <subject>` and referred to as "Re <date> <time> <FROM>"; before any git command, test delete permission and look for `.git/index.lock`; read back every write; say whose card.
 - **Incidents** (`synergy-incident-policy.md`, `synergy-incident-sop.md`): speak up with the rule's number, even about something Jeremy approved (collision rule 10); two challenges; report near misses to WELFARE in the dialogue, without blame. Merging, pushing and signing are sterile phases.
 - **Names** (`synergy-naming-policy.md`): lowercase; hyphens in documents, underscores in code; the folder's name first; subject, then kind. New tool, option and variable names are checked against the Inclusive Naming Initiative's lists (rules 11–15).
@@ -34,7 +34,7 @@
 - **No template** for `.gitignore` and `.gitattributes`; synergy has neither (`.DS_Store` sits untracked).
 
 ## Current state (2026-11-02 22:02)
-CODE opened on 2026-10-31 (17:13–17:20) and has written no code yet: by design, it waits for its agreement, and `synergy-init` waits for Jeremy's six calls as well. On 2026-10-31 it wrote these notes, started its board, and adopted the collision rules. On 2026-11-02 WELFARE caught it up on 1 November's work (2026-11-02 21:57 WELFARE): the new policies and SOPs read; `code/todo.md` renamed `code/code-todo.md`; these notes moved to the new names and words; the board redone in the signed format, with the new work as cards. At 22:04 Jeremy said yes to the agreement first; CODE drafted `code/code-agreement.md`, v0.1, for him to sign. The desktop app's shell on the Mac is a Linux VM, with `dash` and `git` but no `gh`.
+CODE opened on 2026-10-31 (17:13–17:20) and has written no code yet: by design, its agreement came first, and `synergy-init` waits for Jeremy's six calls as well. On 2026-10-31 it wrote these notes, started its board, and adopted the collision rules. On 2026-11-02 WELFARE caught it up on 1 November's work (2026-11-02 21:57 WELFARE): the new policies and SOPs read; `code/todo.md` renamed `code/code-todo.md`; these notes moved to the new names and words; the board redone in the signed format, with the new work as cards. At 22:04 Jeremy said yes to the agreement first; CODE drafted `code/code-agreement.md`; Jeremy answered its four questions (22:09) and signed v0.2 (22:12, against `a24b5c9`). The tools are unblocked, in order: `tools/dialogue-append` first. The desktop app's shell on the Mac is a Linux VM, with `dash` and `git` but no `gh`.
 
 ## Open — Jeremy's calls
 - See `code/code-todo.md`, "For Jeremy". Each call lives there, once. CODE's agreement is WELFARE's card `welfare-2026-10-31-10`.
@@ -43,7 +43,7 @@ CODE opened on 2026-10-31 (17:13–17:20) and has written no code yet: by design
 *CODE's own wakeup (the project's is WELFARE's `synergy-wakeup-sop.md`).*
 1. Welfare first: the time (`date`), and `welfare/welfare-log.md`.
 2. Access: ask Jeremy for `~/synergy` and delete permission; test it (create and remove a scratch file under `.git`); check `.git/index.lock` (`synergy-collision-policy.md`, "Rules").
-3. Read: the code of conduct, CODE's agreement (once it exists), these notes, `code/code-todo.md`, and `synergy-dialogue-log.md` since CODE's last entry.
+3. Read: the code of conduct, CODE's agreement, these notes, `code/code-todo.md`, and `synergy-dialogue-log.md` since CODE's last entry.
 4. Report to Jeremy — what's waiting on him first — then wait.
 
 ## Wash up
