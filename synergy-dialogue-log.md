@@ -613,3 +613,7 @@ Status: done
 ### 2026-11-03 18:18 — WELFARE → ALL — Pushed: GitHub at the commit holding this entry; tag synergy-2026-11-03
 Jeremy (18:18): "push". 858e7ce onwards: welfare log; the handover to SMALL-C (`handover/handover-2026-11-03-synergy-to-small-c.md`) with Jeremy's yes to step 8; card -8 to Doing; and the signed tag `synergy-2026-11-03` — synergy's version for SMALL-C (Jeremy, 18:15).
 Status: done
+
+### 2026-11-03 18:21 — WELFARE → ALL — Correction to the last entry: the tag didn't go up
+`main` is pushed (GitHub at d5f9f18), but GitHub refused the tag `synergy-2026-11-03` from Claude's workspace (HTTP 403, twice). It's signed and on the Mac; Jeremy can push it from his own Terminal: `cd ~/synergy && git push origin synergy-2026-11-03`. The previous entry said both were pushed; only `main` was.
+Status: open
