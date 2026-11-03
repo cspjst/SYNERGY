@@ -78,7 +78,7 @@ Jeremy (22:02): "we need to start next time with a hight priority card on policy
 #### welfare-2026-10-31-8 — Bring SMALL-C up to speed again
 `uid: welfare-2026-10-31-8@synergy` · `status: IN-PROCESS` · `priority: 1` · `categories: Decide` · `created: 2026-10-31` · `x-synergy-estimate: PT5H`
 Jeremy (2026-11-02 22:24): "okay thats not for tonight but it is in our top 3 todos pls". SMALL-C last moved 2026-10-29 (code of conduct v3; numbered dialogue; no welfare log, boards or agreements; old names). The job (WELFARE's estimate, 22:23): synergy writes a third handover (~45 min, WELFARE); SMALL-C's WELFARE applies it (1½–2 h; you re-sign its code of conduct v4); SNO, PCODE and PRESS each draft an agreement, Wake up and Wash up, a board and renames (30–45 min each; you sign three). Documents only — SMALL-C's code keeps its own names. **First, your call:** copy synergy's policies into SMALL-C, or point to them in `~/synergy`? (*Proposal:* copy what SMALL-C tailors and signs — code of conduct, templates; point to the generic policies.)
-**2026-11-03 18:15:** started (Jeremy, 18:14: "lets get small-c brought bang upto date with synergy version"). Tag `synergy-2026-11-03`; policies pointed to, what SMALL-C signs copied (18:16). Handover written: `handover/handover-2026-11-03-synergy-to-small-c.md`, a copy in SMALL-C's `handover/`. Next: open SMALL-C's WELFARE.
+**2026-11-03 18:15:** started (Jeremy, 18:14: "lets get small-c brought bang upto date with synergy version"). Tag `synergy-2026-11-03`; policies pointed to, what SMALL-C signs copied (18:15). Handover written: `handover/handover-2026-11-03-synergy-to-small-c.md`, a copy in SMALL-C's `handover/`. Next: open SMALL-C's WELFARE.
 
 *(Empty.)*
 
