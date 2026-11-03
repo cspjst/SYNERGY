@@ -9,41 +9,41 @@
 
 ### Waiting for you
 
-#### code-2026-11-02-17 — CODE's agreement v0.3: accessibility in the standards
-`uid: code-2026-11-02-17@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-02T22:42Z` · `x-synergy-estimate: PT5M`
-Jeremy (22:37): "firstly - WCAG - well done". *Proposal:* section 3 gains a line — any tool that makes a page meets WCAG 2.2 level AA where it applies: colour never the only signal (1.4.1), text contrast 4.5:1 (1.4.3), usable at 200% zoom (1.4.4). CODE drafts v0.3; you sign it.
-
-#### code-2026-11-02-1 — Where `tools/board-export` goes in the queue
-`uid: code-2026-11-02-1@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-11-02T22:02Z` · `x-synergy-estimate: PT1M`
-WELFARE asked for it as a card for you to prioritise (2026-11-01 21:10 WELFARE): every board to one `.ics` file of to-dos that Reminders or any CalDAV app can import. *Proposal:* third, after `tools/board` and `tools/dialogue-append` (the order since 22:17), and before `synergy-init` — it reuses `tools/board`'s reading of the cards.
-
-#### code-2026-10-31-1 — `synergy-init`: where the templates come from
-`uid: code-2026-10-31-1@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `x-synergy-estimate: PT2M`
-*Proposal:* a local synergy clone by default (`--kit DIR`, defaulting to the clone the script sits in), with the kit's commit hash written into the new project's first commit and working agreement, so each project records which version built it. Fetching `cspjst/SYNERGY` at a named commit is a later option: the desktop app's shell may not reach GitHub.
-
-#### code-2026-10-31-2 — `synergy-init`: re-running
-`uid: code-2026-10-31-2@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `x-synergy-estimate: PT1M`
-*Proposal:* refuse if the folder exists and isn't empty; add "fill only what's missing" only when a real case needs it.
-
 #### code-2026-10-31-3 — `synergy-init`: GitHub
 `uid: code-2026-10-31-3@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `x-synergy-estimate: PT2M`
-*Proposal:* create the repository and push only with a flag, and only if `gh` is installed and signed in; otherwise print the steps and point to `synergy-connect-github-guide.md`. Pushing a new project's first commit stays the human's call.
-
-#### code-2026-10-31-4 — Where the tools live, and their names
-`uid: code-2026-10-31-4@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `x-synergy-estimate: PT2M`
-*Proposal:* all four in `tools/` — `tools/synergy-init`, `tools/dialogue-append`, `tools/board`, `tools/board-export` — no extension, usage in `tools/README.md` (with the Windows note). A question the naming policy raises: rule 4 puts the folder's name first, which would make `tools/tools-board`. *Proposal:* commands follow rule 3, "code follows its language" — short command names, as Unix has them; the folder already says what they are. Yours to decide; WELFARE owns the policy.
-
-#### code-2026-10-31-5 — `.gitignore` and `.gitattributes`
-`uid: code-2026-10-31-5@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `x-synergy-estimate: PT1M`
-*Proposal:* CODE writes both, for new projects and for synergy (`.DS_Store` is untracked here now): LF for everything in `tools/` and `*.sh`; ignore `.DS_Store`. WELFARE can veto.
-
-#### code-2026-10-31-6 — Testing on macOS and Windows
-`uid: code-2026-10-31-6@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `x-synergy-estimate: PT5M`
-CODE can test with `dash` and `bash --posix`, not with macOS's own `/bin/sh`. *Proposal:* CODE writes one test script; you run it once in Terminal for each tool (about a minute). Whether the Claude desktop app on Windows also has a Linux shell can't be checked from here: leave it until someone on Windows tries.
+*Proposal:* create the repository and push only with a flag, and only if `gh` is installed and signed in; otherwise print the steps and point to `synergy-connect-github-guide.md`. Pushing a new project's first commit stays the human's call. Jeremy (18:45): "gh installed and working can you use it though?" — yes: `synergy-init` runs in his Terminal, as him, so it uses his `gh` and credentials (Claude's side has no `gh`, and GitHub refuses its pushes). Open: on by default when `gh` is ready, or only with `--github`? *Proposal:* the flag.
 
 ### Next
 ### Doing
 ### Done this week
+
+#### code-2026-11-02-17 — CODE's agreement v0.3: accessibility in the standards
+`uid: code-2026-11-02-17@synergy` · `status: COMPLETED` · `categories: Decide` · `created: 2026-11-02T22:42Z` · `completed: 2026-11-03T18:45Z` · `x-synergy-estimate: PT5M`
+Jeremy (22:37): "firstly - WCAG - well done". *Proposal:* section 3 gains a line — any tool that makes a page meets WCAG 2.2 level AA where it applies: colour never the only signal (1.4.1), text contrast 4.5:1 (1.4.3), usable at 200% zoom (1.4.4). CODE drafts v0.3; you sign it. **Decided:** "yes v important" (18:45). CODE drafts v0.3 now, for you to sign: own-work card code-2026-11-03-1.
+
+#### code-2026-11-02-1 — Where `tools/board-export` goes in the queue
+`uid: code-2026-11-02-1@synergy` · `status: COMPLETED` · `categories: Decide` · `created: 2026-11-02T22:02Z` · `completed: 2026-11-03T18:45Z` · `x-synergy-estimate: PT1M`
+WELFARE asked for it as a card for you to prioritise (2026-11-01 21:10 WELFARE): every board to one `.ics` file of to-dos that Reminders or any CalDAV app can import. *Proposal:* third, after `tools/board` and `tools/dialogue-append` (the order since 22:17), and before `synergy-init` — it reuses `tools/board`'s reading of the cards. **Decided:** "proposal accepted" (18:45): after `tools/dialogue-append`, then the v3 cards one at a time.
+
+#### code-2026-10-31-1 — `synergy-init`: where the templates come from
+`uid: code-2026-10-31-1@synergy` · `status: COMPLETED` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `completed: 2026-11-03T18:45Z` · `x-synergy-estimate: PT2M`
+*Proposal:* a local synergy clone by default (`--kit DIR`, defaulting to the clone the script sits in), with the kit's commit hash written into the new project's first commit and working agreement, so each project records which version built it. Fetching `cspjst/SYNERGY` at a named commit is a later option: the desktop app's shell may not reach GitHub. **Decided:** "yes good idea" (18:45): a local synergy clone by default; the kit's commit or tag recorded in the new project.
+
+#### code-2026-10-31-2 — `synergy-init`: re-running
+`uid: code-2026-10-31-2@synergy` · `status: COMPLETED` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `completed: 2026-11-03T18:45Z` · `x-synergy-estimate: PT1M`
+*Proposal:* refuse if the folder exists and isn't empty; add "fill only what's missing" only when a real case needs it. **Decided:** "yes safe" (18:45): refuse if the folder exists and isn't empty.
+
+#### code-2026-10-31-4 — Where the tools live, and their names
+`uid: code-2026-10-31-4@synergy` · `status: COMPLETED` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `completed: 2026-11-03T18:45Z` · `x-synergy-estimate: PT2M`
+*Proposal:* all four in `tools/` — `tools/synergy-init`, `tools/dialogue-append`, `tools/board`, `tools/board-export` — no extension, usage in `tools/README.md` (with the Windows note). A question the naming policy raises: rule 4 puts the folder's name first, which would make `tools/tools-board`. *Proposal:* commands follow rule 3, "code follows its language" — short command names, as Unix has them; the folder already says what they are. Yours to decide; WELFARE owns the policy. **Decided:** "yes and tell welfare" (18:45): `tools/`, short command names under naming rule 3; WELFARE told, to write it into the policy.
+
+#### code-2026-10-31-5 — `.gitignore` and `.gitattributes`
+`uid: code-2026-10-31-5@synergy` · `status: COMPLETED` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `completed: 2026-11-03T18:45Z` · `x-synergy-estimate: PT1M`
+*Proposal:* CODE writes both, for new projects and for synergy (`.DS_Store` is untracked here now): LF for everything in `tools/` and `*.sh`; ignore `.DS_Store`. WELFARE can veto. **Decided:** "yes lets have a tidy repo and LF reliable" (18:45): written by CODE — see code-2026-11-03-2.
+
+#### code-2026-10-31-6 — Testing on macOS and Windows
+`uid: code-2026-10-31-6@synergy` · `status: COMPLETED` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `completed: 2026-11-03T18:45Z` · `x-synergy-estimate: PT5M`
+CODE can test with `dash` and `bash --posix`, not with macOS's own `/bin/sh`. *Proposal:* CODE writes one test script; you run it once in Terminal for each tool (about a minute). Whether the Claude desktop app on Windows also has a Linux shell can't be checked from here: leave it until someone on Windows tries. **Decided:** "yes testing for windows is important but its a late stage action" (18:45): Jeremy runs each tool's test once on the Mac; Windows later.
 
 #### code-2026-11-02-9 — `tools/board`: its interface
 `uid: code-2026-11-02-9@synergy` · `status: COMPLETED` · `categories: Decide` · `created: 2026-11-02T22:18Z` · `completed: 2026-11-02T22:21Z` · `x-synergy-estimate: PT3M`
@@ -65,9 +65,21 @@ Card code-2026-10-31-4 (where the tools live, rule 3 or rule 4 of the naming pol
 
 ### Backlog
 
+#### code-2026-11-03-1 — CODE's agreement v0.3: WCAG 2.2 in the standards
+`uid: code-2026-11-03-1@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-03T18:45Z` · `related-to: code-2026-11-02-17@synergy` · `x-synergy-estimate: PT15M`
+On Jeremy's yes (18:45). Section 3 gains the accessibility line; he signs against the commit.
+
+#### code-2026-11-03-2 — `.gitignore` and `.gitattributes` for synergy
+`uid: code-2026-11-03-2@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-03T18:45Z` · `related-to: code-2026-10-31-5@synergy` · `x-synergy-estimate: PT15M`
+On Jeremy's yes (18:45). Ignore `.DS_Store` and `synergy-board.html`; LF for `tools/*` and `*.sh`; checked with `git check-attr` and a renormalise that changes nothing. `synergy-init` writes the same for new projects.
+
 #### code-2026-11-02-3 — `tools/dialogue-append`
 `uid: code-2026-11-02-3@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T18:45Z` · `x-synergy-estimate: PT1H`
 As 2026-10-31 18:45 WELFARE: stamp the heading from the clock, append in one `>>`, refuse a message without "Status:", read the tail back; perhaps the welfare log too. Tested in a scratch repository, including two appends at once. Second, after `tools/board` (Jeremy, 22:17).
+
+#### code-2026-11-02-5 — `tools/board-export`
+`uid: code-2026-11-02-5@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-01T21:10Z` · `x-synergy-estimate: PT2H`
+As 2026-11-01 21:10 WELFARE: one `.ics` of VTODOs (RFC 5545 text form: CRLF, lines folded at 75 octets), columns to `status` as the kanban policy's table. Tested by importing the result. Read-only on the boards.
 
 #### code-2026-11-02-11 — `tools/board`: WELFARE first
 `uid: code-2026-11-02-11@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-02T22:42Z` · `related-to: code-2026-11-02-4@synergy` · `x-synergy-estimate: PT10M`
@@ -96,10 +108,6 @@ Idea 10, "also v good" (Jeremy, 22:42, on CODE's ten ideas for tools/board); v3,
 ### Doing
 
 ### Blocked
-
-#### code-2026-11-02-5 — `tools/board-export`
-`uid: code-2026-11-02-5@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-01T21:10Z` · `related-to: code-2026-11-02-1@synergy` · `x-synergy-estimate: PT2H`
-As 2026-11-01 21:10 WELFARE: one `.ics` of VTODOs (RFC 5545 text form: CRLF, lines folded at 75 octets), columns to `status` as the kanban policy's table. Tested by importing the result. Read-only on the boards.
 
 #### code-2026-11-02-6 — `synergy-init`
 `uid: code-2026-11-02-6@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T17:20Z` · `related-to: code-2026-10-31-1@synergy` · `x-synergy-estimate: PT3H`

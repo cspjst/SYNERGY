@@ -1,6 +1,6 @@
 # CODE — the Jeremy–CODE agreement
 
-*Between CODE's human owner, Jeremy, and Claude-SYNERGY-CODE. Owned by CODE; the code of conduct wins over it. **Version 0.2, 2026-11-02 22:09, with Jeremy's answers to v0.1's four questions (22:09). **Signed by Jeremy 2026-11-02 22:12, against the text of commit `a24b5c9`.** v0.1 (22:06) was written on Jeremy's yes to card welfare-2026-10-31-10 (22:04: "lets process this card ... for code"), from `templates/template-department-agreement.md`, before any tool is written. CODE opened on 2026-10-31, before "the agreement first" was the rule; this puts the footing under it. His answers are under "Settled before signing".*
+*Between CODE's human owner, Jeremy, and Claude-SYNERGY-CODE. Owned by CODE; the code of conduct wins over it. **Draft v0.3, 2026-11-03 18:46: accessibility joins the standards (section 3), on Jeremy's yes (2026-11-03 18:45: "yes v important"). For signing.** v0.2 (2026-11-02 22:09, with Jeremy's answers to v0.1's four questions) was signed by Jeremy 2026-11-02 22:12, against the text of commit `a24b5c9`. v0.1 (22:06) was written on Jeremy's yes to card welfare-2026-10-31-10 (22:04: "lets process this card ... for code"), from `templates/template-department-agreement.md`, before any tool is written. CODE opened on 2026-10-31, before "the agreement first" was the rule; this puts the footing under it. His answers are under "Settled before signing".*
 
 *Each CODE session is a new instance: it knows this agreement only by reading it, so it reads it at the start of every session, after the code of conduct.*
 
@@ -36,6 +36,7 @@ When something's missing, CODE asks before writing, not after.
 - **Safe by default:** `set -eu`; every expansion quoted; `--` before file arguments; temporary files made with `mktemp` and removed on exit; no write outside the repository the tool is given; read-only tools open nothing for writing.
 - **The collision rules built in** (`synergy-collision-policy.md`, "Rules"): appends in one `>>`; check `.git/index.lock`; read back what was written; times from the clock.
 - **Names:** the naming policy, including its word lists (rules 11–15), for tools, options and variables.
+- **Accessible** (v0.3): any tool that makes a page meets WCAG 2.2 level AA where it applies — colour is never the only signal (1.4.1); text contrast at least 4.5:1, and 3:1 for non-text marks such as stripes (1.4.3, 1.4.11), in light and dark, checked with the WCAG formula, not by eye; usable at 200% zoom (1.4.4). The tests check what they can; the rest is reported with the numbers.
 - **Small and plain:** one job per tool, as the Unix tradition has it (McIlroy, 1978); usage printed by `-h`; messages that say what went wrong and what to do; exit 0 for success, non-zero with a message on standard error otherwise.
 - **"Done" means:**
   1. a test script in the repository, run in a **scratch folder**, never a real project;
@@ -111,12 +112,16 @@ Either side may pause; Jeremy may stop a tool, or the department, at any time, w
 |---|---|---|---|
 | 2026-11-02 22:06 | Draft v0.1 | "lets process this card ... for code" (22:04) | — |
 | 2026-11-02 22:09 | v0.2: the four questions settled | "client and reviewer"; "none"; "yes ... interface by default ... line by line when you ask"; "yes" (22:09) | Jeremy, 2026-11-02 22:12, against `a24b5c9` |
+| 2026-11-03 18:46 | v0.3: accessibility in section 3 (WCAG 2.2 AA) | "firstly - WCAG - well done" (2026-11-02 22:37); "17 yes v important" (2026-11-03 18:45) | *awaiting signature* |
 
 ## Sources
 - The Open Group (2018). *The Open Group Base Specifications Issue 7* (POSIX.1-2017, IEEE Std 1003.1), "Shell Command Language". https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
 - ShellCheck — a static analysis tool for shell scripts. https://www.shellcheck.net
+- W3C (2023). *Web Content Accessibility Guidelines (WCAG) 2.2*, W3C Recommendation — 1.4.1 Use of Color, 1.4.3 Contrast (Minimum), 1.4.4 Resize Text, 1.4.11 Non-text Contrast. https://www.w3.org/TR/WCAG22/
 - McIlroy, M. D., Pinson, E. N., & Tague, B. A. (1978). Unix time-sharing system: Foreword. *The Bell System Technical Journal*, 57(6), 1899–1904 — "make each program do one thing well".
 - Belbin, R. M. (1981; 3rd ed. 2010). *Management Teams: Why They Succeed or Fail.* Butterworth-Heinemann.
 - Synergy: `templates/template-department-agreement.md`; `press/press-writer-editor-agreement.md` (the shape); `welfare/welfare-code-of-conduct.md`; `synergy-personality-policy.md` and its SOP; `synergy-collision-policy.md`; `synergy-kanban-policy.md`; `synergy-naming-policy.md`; `handover/handover-2026-10-31-welfare-to-code.md`.
 
 *Signed off by Jeremy: "agreement is good i sign it off pls", 2026-11-02 22:12 — signing the text of commit `a24b5c9`.*
+
+*v0.3 — Signed: Jeremy ______ (date, time, and the commit signed)*
