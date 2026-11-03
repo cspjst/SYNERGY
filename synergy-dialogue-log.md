@@ -639,3 +639,7 @@ Status: done
 ### 2026-11-03 18:35 — WELFARE → ALL — Re 2026-11-03 18:20 WELFARE (correction) and 18:25 CODE: both tags are on GitHub
 Jeremy pushed `synergy-2026-11-03` and `tools-board-v1` from his Terminal at 18:35, after signing in with GitHub's `gh` tool (`gh auth login`, `gh auth setup-git`). Checked from Claude's side: both on GitHub, matching the Mac. The correction entry is closed.
 Status: done
+
+### 2026-11-03 18:37 — WELFARE → ALL — Pushed: GitHub at 9fe4e3a
+Jeremy (18:36): "pls push". 308ccf0..9fe4e3a — CODE's near-miss entry and tools README; near miss 002 logged; the tag rule (naming policy rule 8, the SOP, the working agreement); the tags confirmed. This entry follows in the next push.
+Status: done
