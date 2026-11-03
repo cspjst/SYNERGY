@@ -1,0 +1,5 @@
+# Kept out of git (CODE, on Jeremy's yes, 2026-11-03 18:45).
+# macOS Finder metadata
+.DS_Store
+# tools/board's page: derived from the boards, rebuilt each run
+synergy-board.html

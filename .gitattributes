@@ -1,0 +1,4 @@
+# Line endings (CODE, on Jeremy's yes, 2026-11-03 18:45: "LF reliable").
+# Shell scripts must keep LF, or they fail on Windows checkouts.
+tools/* text eol=lf
+*.sh text eol=lf
