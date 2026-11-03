@@ -69,10 +69,6 @@ Card code-2026-10-31-4 (where the tools live, rule 3 or rule 4 of the naming pol
 `uid: code-2026-11-02-3@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T18:45Z` · `x-synergy-estimate: PT1H`
 As 2026-10-31 18:45 WELFARE: stamp the heading from the clock, append in one `>>`, refuse a message without "Status:", read the tail back; perhaps the welfare log too. Tested in a scratch repository, including two appends at once. Second, after `tools/board` (Jeremy, 22:17).
 
-#### code-2026-11-02-10 — `tools/board` v2: your board first, in colour
-`uid: code-2026-11-02-10@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-02T22:42Z` · `related-to: code-2026-11-02-4@synergy` · `x-synergy-estimate: PT2H`
-Jeremy's v2 (Jeremy, 22:42, on CODE's ten ideas for tools/board): "card for v2 6, 1, 2, and 8". **(6)** one board at the top for Jeremy: every department's Waiting for you, Next and Doing merged ("concur"); **(1)** Decide, Do and Read as coloured, labelled pills; **(2)** a department accent stripe on each card and section; **(8)** shorter card numbers inside a department's own section. Colour never alone — a word or shape with it (WCAG 2.2, 1.4.1); text contrast 4.5:1 or more in light and dark (1.4.3), checked with a contrast tool, not by eye.
-
 #### code-2026-11-02-11 — `tools/board`: WELFARE first
 `uid: code-2026-11-02-11@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-02T22:42Z` · `related-to: code-2026-11-02-4@synergy` · `x-synergy-estimate: PT10M`
 Idea 7, "yes" (Jeremy, 22:42, on CODE's ten ideas for tools/board), but in neither version list — a card of its own; it can ride with v2 if Jeremy says. WELFARE, the main department, leads the page.
@@ -98,6 +94,10 @@ Idea 9, "yes" (Jeremy, 22:42, on CODE's ten ideas for tools/board); v3, one at a
 Idea 10, "also v good" (Jeremy, 22:42, on CODE's ten ideas for tools/board); v3, one at a time. A Blocked card shows what it waits for (`related-to`), and a click jumps to that card, across boards.
 
 ### Doing
+
+#### code-2026-11-02-10 — `tools/board` v2: your board first, in colour
+`uid: code-2026-11-02-10@synergy` · `status: IN-PROCESS` · `categories: Do` · `created: 2026-11-02T22:42Z` · `x-synergy-estimate: PT2H`
+Jeremy's v2 (Jeremy, 22:42, on CODE's ten ideas for tools/board): "card for v2 6, 1, 2, and 8". **(6)** one board at the top for Jeremy: every department's Waiting for you, Next and Doing merged ("concur"); **(1)** Decide, Do and Read as coloured, labelled pills; **(2)** a department accent stripe on each card and section; **(8)** shorter card numbers inside a department's own section. Colour never alone — a word or shape with it (WCAG 2.2, 1.4.1); text contrast 4.5:1 or more in light and dark (1.4.3), checked with a contrast tool, not by eye. Started on Jeremy's word (2026-11-03 18:26: "ready when are to build v2"), in place on `tools/board`; version 1 is the tag `tools-board-v1`.
 
 ### Blocked
 

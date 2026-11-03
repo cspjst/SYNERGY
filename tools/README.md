@@ -7,7 +7,13 @@ Small POSIX `sh` tools for synergy, written by Claude-SYNERGY-CODE at Jeremy's d
 tools/board
 open synergy-board.html
 ```
-Reads every department's board (`<dept>/<dept>-todo.md`; `templates/` is skipped) and writes one self-contained page, `<repo>-board.html`, at the top of the repository: each department's two boards side by side, every card's number, title, status, category and estimate, and the human's Next and Doing totals across all boards against their limits (3 and 2), red when over. Works from anywhere in the repository.
+Reads every department's board (`<dept>/<dept>-todo.md`; `templates/` is skipped) and writes one self-contained page, `<repo>-board.html`, at the top of the repository. Works from anywhere in the repository.
+
+- **Your board, first:** everything the human owes — every department's Waiting for you, Next and Doing — merged into one board, each card named with its department.
+- **Then each department:** its two boards side by side, card numbers without the department prefix.
+- **On every card:** number, title, status, estimate, and its category as a coloured pill — Decide, Do, Read.
+- **Colour, accessibly** (WCAG 2.2): each department has a stripe, from its name, so it stays the same as departments are added; colour is never the only signal — the department's name and the category's word are always written beside it (1.4.1); text contrast is 4.5:1 or more in light and dark (1.4.3), stripes 3:1 or more (1.4.11), checked with the WCAG formula, not by eye.
+- **The human's load:** Next and Doing totals across all boards against their limits (3 and 2), red when over.
 
 - **Read-only:** it never writes a board. The Markdown boards are the truth; the page is a snapshot, rebuilt each run.
 - **Kept out of git:** the page is derived, so it isn't committed (for now via `.git/info/exclude`, on this machine only).
@@ -21,7 +27,7 @@ sh tools/board-test                                  # under sh
 tools/board-test dash "bash --posix" "busybox sh"    # under several shells
 AWK=mawk tools/board-test                            # with another awk
 ```
-Builds a scratch repository from copies of the real boards, plus a board in the old format, an empty board, a template and a hostile card; runs the tool; and checks the page: every card shown, the totals, escaping, the template and fenced examples skipped, the boards unchanged, and the exit statuses. Never touches the real boards.
+Builds a scratch repository from copies of the real boards, plus a board in the old format, an empty board, a template and a hostile card; runs the tool; and checks the page: every card shown, your board on top, the totals, the pills and colours, short numbers, escaping, the template and fenced examples skipped, the boards unchanged, and the exit statuses. Never touches the real boards.
 
 ## Keeping a version
 Don't copy or rename a file to keep it — git already keeps every version. Mark the one you want with a tag:

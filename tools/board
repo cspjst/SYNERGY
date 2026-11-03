@@ -2,7 +2,9 @@
 # tools/board - every department's board on one page, for a browser.
 #
 # Reads <dept>/<dept>-todo.md for each department of this repository
-# (templates/ is skipped) and writes <repo>-board.html at the top level.
+# (templates/ is skipped) and writes <repo>-board.html at the top level:
+# first one board of everything the human owes, merged from every
+# department; then each department's own two boards.
 # Read-only on the boards: it never writes one (one writer per file).
 # The page is self-contained: no server, nothing fetched from the web.
 #
@@ -81,17 +83,44 @@ function md(s,    o, p) {
 function lc(s) { return tolower(s) }
 function iscol(s) { s = lc(s); return s ~ /^(waiting|next|doing|done|dropped|backlog|blocked)/ }
 function emit(s) { body = body s "\n" }
+# The colour of a department: d0-d5 from its name, so it stays the same when
+# another department is added. Colour is never the only signal: the
+# name of the department is always written beside it (WCAG 2.2, 1.4.1).
+function dhash(s,    i, n) {
+	n = 0
+	for (i = 1; i <= length(s); i++) n += index("abcdefghijklmnopqrstuvwxyz0123456789-", substr(s, i, 1))
+	return "d" (n % 6)
+}
+# Categories as labelled pills: Decide, Do, Read, each its own colour.
+function pills(c,    n, a, i, k, o) {
+	n = split(c, a, / *\| */); o = ""
+	for (i = 1; i <= n; i++) {
+		if (a[i] == "") continue
+		k = lc(a[i]); if (k != "decide" && k != "do" && k != "read") k = "other"
+		o = o "<span class=\"cat cat-" k "\">" esc(a[i]) "</span>"
+	}
+	return o
+}
 
-function closecard() {
+function closecard(    m, short, card, full, k) {
 	if (cid == "" && ctitle == "") return
 	m = ""
 	if (cstatus != "") m = m "<span class=\"st\">" esc(cstatus) "</span>"
-	if (ccat != "") m = m "<span class=\"cat\">" esc(ccat) "</span>"
+	if (ccat != "") m = m pills(ccat)
 	if (cest != "") m = m "<span class=\"est\">" esc(cest) "</span>"
-	colbuf = colbuf "<div class=\"card\"><div class=\"id\">" esc(cid) "</div><div class=\"t\">" md(ctitle) "</div>" (m != "" ? "<div class=\"m\">" m "</div>" : "") "</div>\n"
+	# Inside its own department, a card drops the department prefix.
+	short = cid
+	if (index(cid, dname "-") == 1) short = substr(cid, length(dname) + 2)
+	card = "<div class=\"t\">" md(ctitle) "</div>" (m != "" ? "<div class=\"m\">" m "</div>" : "") "</div>\n"
+	colbuf = colbuf "<div class=\"card " dcls "\"><div class=\"id\">" esc(short) "</div>" card
 	colcount++
-	if (forhuman && lc(col) ~ /^next/) nextn++
-	if (forhuman && lc(col) ~ /^doing/) doingn++
+	k = lc(col)
+	if (forhuman) {
+		full = "<div class=\"card " dcls "\"><div class=\"id\"><span class=\"dn\">" esc(toupper(dname)) "</span> " esc(cid) "</div>" card
+		if (k ~ /^waiting/) { mw = mw full; mwn++ }
+		if (k ~ /^next/) { mn = mn full; nextn++ }
+		if (k ~ /^doing/) { md2 = md2 full; doingn++ }
+	}
 	cid = ctitle = cstatus = ccat = cest = ""; incard = 0
 }
 function closecol() {
@@ -113,8 +142,8 @@ function closeboard() {
 }
 function opendept(f) {
 	closedept()
-	d = f; sub(/\/.*/, "", d)
-	emit("<section class=\"dept\"><h2>" esc(toupper(d)) " <span class=\"src\">" esc(f) "</span></h2><div class=\"boards\">")
+	d = f; sub(/\/.*/, "", d); dname = lc(d); dcls = dhash(dname)
+	emit("<section class=\"dept " dcls "\"><h2>" esc(toupper(d)) " <span class=\"src\">" esc(f) "</span></h2><div class=\"boards\">")
 	indept = 1
 }
 function closedept() {
@@ -135,6 +164,10 @@ function props(s,    tok, k, v, i) {
 		else if (k == "categories") ccat = v
 		else if (k == "x-synergy-estimate") { sub(/^PT/, "", v); cest = lc(v) }
 	}
+}
+
+function mcol(name, n, buf) {
+	return "<div class=\"col\"><h4>" name " <span class=\"n\">" n+0 "</span></h4>" (n ? buf : "<div class=\"empty\">&mdash;</div>") "</div>"
 }
 
 FNR == 1 { opendept(FILENAME); fence = 0 }
@@ -175,24 +208,34 @@ END {
 	print "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
 	print "<title>" esc(toupper(repo)) " boards</title>"
 	print "<style>"
-	print ":root{--bg:#f6f6f4;--fg:#1d1d1f;--mute:#6e6e73;--box:#fff;--line:#d8d8d4;--card:#fbfbfa;--red:#c0271c;--code:#efefec}"
-	print "@media (prefers-color-scheme:dark){:root{--bg:#1c1c1e;--fg:#f2f2f2;--mute:#9a9aa0;--box:#262628;--line:#3a3a3c;--card:#2e2e31;--red:#ff6b5e;--code:#3a3a3c}}"
+	print ":root{--bg:#f6f6f4;--fg:#1d1d1f;--mute:#626267;--box:#fff;--line:#d8d8d4;--card:#fbfbfa;--red:#b42318;--code:#ececE8;"
+	print "--cd-b:#fdefc8;--cd-f:#6b3a06;--co-b:#dce8fd;--co-f:#1c3a7a;--cr-b:#ece6fd;--cr-f:#4a2391;--cx-b:#e6e7ea;--cx-f:#2a2f38;"
+	print "--d0:#0f766e;--d1:#be123c;--d2:#b45309;--d3:#1d4ed8;--d4:#15803d;--d5:#7e22ce}"
+	print "@media (prefers-color-scheme:dark){:root{--bg:#1c1c1e;--fg:#f2f2f2;--mute:#a3a3a8;--box:#262628;--line:#3a3a3c;--card:#2e2e31;--red:#ff7b6e;--code:#3a3a3c;"
+	print "--cd-b:#5a3a0a;--cd-f:#fde9b8;--co-b:#1d3566;--co-f:#d6e4ff;--cr-b:#3d2470;--cr-f:#e6dcff;--cx-b:#3a3d44;--cx-f:#e6e7ea;"
+	print "--d0:#2dd4bf;--d1:#fb7185;--d2:#fbbf24;--d3:#60a5fa;--d4:#4ade80;--d5:#c084fc}}"
 	print "*{box-sizing:border-box}body{margin:0;padding:16px 20px 40px;background:var(--bg);color:var(--fg);font:14px/1.4 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif}"
 	print "header{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;margin-bottom:16px}h1{font-size:20px;margin:0}"
 	print ".tot{font-size:15px}.tot b{font-variant-numeric:tabular-nums}.over{color:var(--red);font-weight:700}.stamp{color:var(--mute);font-size:12px}"
-	print ".dept{margin:0 0 28px}h2{font-size:16px;margin:0 0 8px}.src{font-weight:400;color:var(--mute);font-size:12px}"
+	print ".d0{--dc:var(--d0)}.d1{--dc:var(--d1)}.d2{--dc:var(--d2)}.d3{--dc:var(--d3)}.d4{--dc:var(--d4)}.d5{--dc:var(--d5)}"
+	print ".dept,.mine{margin:0 0 28px}.dept{border-left:4px solid var(--dc);padding-left:10px}h2{font-size:16px;margin:0 0 8px}.src{font-weight:400;color:var(--mute);font-size:12px}"
 	print ".boards{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:12px}"
 	print ".board{background:var(--box);border:1px solid var(--line);border-radius:8px;padding:10px}h3{font-size:14px;margin:0 0 8px}"
-	print ".cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}"
+	print ".cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}.mine .cols{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}"
 	print ".col h4{font-size:12px;margin:0 0 6px;color:var(--mute);text-transform:uppercase;letter-spacing:.03em}.n{font-weight:400}"
-	print ".card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:6px 8px;margin-bottom:6px}"
-	print ".id{font-size:11px;color:var(--mute);font-variant-numeric:tabular-nums}.t{margin:2px 0}"
-	print ".m{display:flex;flex-wrap:wrap;gap:4px 8px;font-size:11px;color:var(--mute)}.cat{font-weight:600}"
+	print ".card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--dc,var(--line));border-radius:6px;padding:6px 8px;margin-bottom:6px}"
+	print ".id{font-size:11px;color:var(--mute);font-variant-numeric:tabular-nums}.dn{font-weight:700}.t{margin:2px 0}"
+	print ".m{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;font-size:11px;color:var(--mute)}"
+	print ".cat{font-weight:600;border-radius:999px;padding:0 7px}.cat-decide{background:var(--cd-b);color:var(--cd-f)}.cat-do{background:var(--co-b);color:var(--co-f)}"
+	print ".cat-read{background:var(--cr-b);color:var(--cr-f)}.cat-other{background:var(--cx-b);color:var(--cx-f)}"
 	print ".empty{color:var(--mute)}code{background:var(--code);border-radius:3px;padding:0 3px;font-size:12px}"
 	print "</style></head><body>"
 	print "<header><h1>" esc(toupper(repo)) " &mdash; boards</h1>"
 	print "<div class=\"tot\">For the human, across all boards: Next <b" (nextn > 3 ? " class=\"over\"" : "") ">" nextn+0 " / 3</b> &middot; Doing <b" (doingn > 2 ? " class=\"over\"" : "") ">" doingn+0 " / 2</b></div>"
 	print "<div class=\"stamp\">Made " esc(stamp) " from commit " esc(rev) " by tools/board. Read-only: the Markdown boards are the truth.</div></header>"
+	print "<section class=\"mine\"><h2>Your board &mdash; every department</h2><div class=\"board\"><div class=\"cols\">"
+	print mcol("Waiting for you", mwn, mw) mcol("Next", nextn, mn) mcol("Doing", doingn, md2)
+	print "</div></div></section>"
 	printf "%s", body
 	print "</body></html>"
 }

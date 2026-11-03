@@ -125,6 +125,10 @@ count() {
 }
 enext=$(($(count next) + 1))
 edoing=$(count doing)
+# The merged board at the top: every Waiting, Next and Doing card for the
+# human, from every department (the old board adds two waiting, one next).
+ewait=$(($(count waiting) + 2))
+emerged=$((ewait + enext + edoing))
 
 sums() { cat "$r"/*/*-todo.md | cksum; }
 
@@ -141,8 +145,16 @@ for sh in "$@"; do
 	check "prints the page's path" '[ "$got" = "$page" ] || [ "$got" = "$(cd "$r" && pwd -P)/demo-board.html" ]'
 	check "writes the page at the top" '[ -s "$page" ]'
 	[ -s "$page" ] || continue
-	cards=$(grep -o 'class="card"' "$page" | wc -l | tr -d ' ')
-	check "every card shown ($cards of $expect)" '[ "$cards" -eq "$expect" ]'
+	cards=$(grep -o 'class="card d[0-5]"' "$page" | wc -l | tr -d ' ')
+	merged=$(grep -o 'class="dn"' "$page" | wc -l | tr -d ' ')
+	check "every card shown in its department, and the human's again on top ($cards of $((expect + emerged)))" '[ "$cards" -eq $((expect + emerged)) ]'
+	check "your board on top: every department's Waiting, Next and Doing ($merged of $emerged)" '[ "$merged" -eq "$emerged" ] && grep -q "Your board &mdash; every department" "$page"'
+	check "your board: Waiting for you counted ($ewait)" 'grep -q "<h4>Waiting for you <span class=\"n\">$ewait</span>" "$page"'
+	check "categories as pills (Decide, Do, Read)" 'grep -q "cat cat-decide\">Decide<" "$page" && grep -q "cat cat-read\">Read<" "$page"'
+	check "each department has a colour" '[ "$(grep -o "<section class=\"dept d[0-5]\">" "$page" | wc -l | tr -d " ")" -eq "$(grep -o "<section class=\"dept" "$page" | wc -l | tr -d " ")" ]'
+	check "colour never alone: the department named on every card on top" 'grep -q "<span class=\"dn\">HOSTILE</span> hostile-1<" "$page"'
+	check "short numbers inside a department" 'grep -q "<div class=\"id\">1</div>" "$page"'
+	check "same name, same colour, every run" '[ "$(grep -o "<section class=\"dept d[0-5]\"><h2>HOSTILE" "$page")" = "<section class=\"dept d4\"><h2>HOSTILE" ]'
 	check "boards unchanged (read-only)" '[ "$(sums)" = "$before" ]'
 	check "no temporary file left" '[ -z "$(ls -A "$r" | grep "^\.demo-board")" ]'
 	check "template skipped" '! grep -q "must not appear" "$page"'
@@ -151,7 +163,7 @@ for sh in "$@"; do
 	check "code span keeps its stars" 'grep -q "<code>\*/\*-todo.md</code>" "$page"'
 	check "emphasis markers dropped" 'grep -q "and emphasis<" "$page"'
 	check "estimate shown" 'grep -q ">1h30m<" "$page"'
-	check "old format read" 'grep -q "Second old card" "$page" && grep -q ">Do | Read<" "$page"'
+	check "old format read" 'grep -q "Second old card" "$page" && grep -q "cat-do\">Do<" "$page" && grep -q "cat-read\">Read<" "$page"'
 	check "Next counted across boards, red when over ($enext / 3)" 'grep -q "Next <b class=\"over\">$enext / 3</b>" "$page"'
 	check "Doing counted, own work not ($edoing / 2)" 'grep -q "Doing <b>$edoing / 2</b>" "$page"'
 	check "empty column shown" 'grep -q "&mdash;</div>" "$page"'
