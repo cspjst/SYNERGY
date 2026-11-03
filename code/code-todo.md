@@ -95,10 +95,6 @@ Idea 10, "also v good" (Jeremy, 22:42, on CODE's ten ideas for tools/board); v3,
 
 ### Doing
 
-#### code-2026-11-02-10 — `tools/board` v2: your board first, in colour
-`uid: code-2026-11-02-10@synergy` · `status: IN-PROCESS` · `categories: Do` · `created: 2026-11-02T22:42Z` · `x-synergy-estimate: PT2H`
-Jeremy's v2 (Jeremy, 22:42, on CODE's ten ideas for tools/board): "card for v2 6, 1, 2, and 8". **(6)** one board at the top for Jeremy: every department's Waiting for you, Next and Doing merged ("concur"); **(1)** Decide, Do and Read as coloured, labelled pills; **(2)** a department accent stripe on each card and section; **(8)** shorter card numbers inside a department's own section. Colour never alone — a word or shape with it (WCAG 2.2, 1.4.1); text contrast 4.5:1 or more in light and dark (1.4.3), checked with a contrast tool, not by eye. Started on Jeremy's word (2026-11-03 18:26: "ready when are to build v2"), in place on `tools/board`; version 1 is the tag `tools-board-v1`.
-
 ### Blocked
 
 #### code-2026-11-02-5 — `tools/board-export`
@@ -110,6 +106,10 @@ As 2026-11-01 21:10 WELFARE: one `.ics` of VTODOs (RFC 5545 text form: CRLF, lin
 Waits for all six calls (code-2026-10-31-1 to -6) and the agreement. Writes the new names: strips `template-`, takes each folder's name (`<repo>-…` at the top level, `<dept>-…` in a department) (2026-11-01 20:44 and 21:05 WELFARE); installs the tools. Too big for one sitting: split into cards when it's unblocked (kanban policy, principle 11).
 
 ### Done this week
+
+#### code-2026-11-02-10 — `tools/board` v2: your board first, in colour
+`uid: code-2026-11-02-10@synergy` · `status: COMPLETED` · `categories: Do` · `created: 2026-11-02T22:42Z` · `completed: 2026-11-03T18:40Z` · `x-synergy-estimate: PT2H`
+Jeremy's v2 (Jeremy, 22:42, on CODE's ten ideas for tools/board): "card for v2 6, 1, 2, and 8". **(6)** one board at the top for Jeremy: every department's Waiting for you, Next and Doing merged ("concur"); **(1)** Decide, Do and Read as coloured, labelled pills; **(2)** a department accent stripe on each card and section; **(8)** shorter card numbers inside a department's own section. Colour never alone — a word or shape with it (WCAG 2.2, 1.4.1); text contrast 4.5:1 or more in light and dark (1.4.3), checked with a contrast tool, not by eye. Started on Jeremy's word (2026-11-03 18:26: "ready when are to build v2"), in place on `tools/board`; version 1 is the tag `tools-board-v1`. **Done** (`3c59308`): 27 checks under 3 shells × 4 awks; on Jeremy's Mac, `sh tools/board-test` all passed (18:40); accepted (18:39: "thats a thing of beauty i love it!").
 
 #### code-2026-11-02-4 — `tools/board`: the boards in a browser
 `uid: code-2026-11-02-4@synergy` · `status: COMPLETED` · `categories: Do` · `created: 2026-10-31T19:26Z` · `completed: 2026-11-02T22:34Z` · `x-synergy-estimate: PT1H30M`

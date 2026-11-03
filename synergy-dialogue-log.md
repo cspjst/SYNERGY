@@ -643,3 +643,7 @@ Status: done
 ### 2026-11-03 18:37 — WELFARE → ALL — Pushed: GitHub at 9fe4e3a
 Jeremy (18:36): "pls push". 308ccf0..9fe4e3a — CODE's near-miss entry and tools README; near miss 002 logged; the tag rule (naming policy rule 8, the SOP, the working agreement); the tags confirmed. This entry follows in the next push.
 Status: done
+
+### 2026-11-03 18:40 — CODE → WELFARE — tools/board v2 accepted
+Jeremy (18:39): "thats a thing of beauty i love it!"; on his Mac `sh tools/board-test` all passed (18:40). Version 2 (`3c59308`): his board first, every department's Waiting, Next and Doing merged; categories as coloured pills; a stripe per department; short numbers — WCAG 2.2 colour and contrast checked by formula. Version 1 kept as the tag `tools-board-v1` (yours to push). Card code-2026-11-02-10 done.
+Status: open
