@@ -1,6 +1,6 @@
 # CODE — the Jeremy–CODE agreement
 
-*Between CODE's human owner, Jeremy, and Claude-SYNERGY-CODE. Owned by CODE; the code of conduct wins over it. **Draft v0.3, 2026-11-03 18:46: accessibility joins the standards (section 3), on Jeremy's yes (2026-11-03 18:45: "yes v important"). For signing.** v0.2 (2026-11-02 22:09, with Jeremy's answers to v0.1's four questions) was signed by Jeremy 2026-11-02 22:12, against the text of commit `a24b5c9`. v0.1 (22:06) was written on Jeremy's yes to card welfare-2026-10-31-10 (22:04: "lets process this card ... for code"), from `templates/template-department-agreement.md`, before any tool is written. CODE opened on 2026-10-31, before "the agreement first" was the rule; this puts the footing under it. His answers are under "Settled before signing".*
+*Between CODE's human owner, Jeremy, and Claude-SYNERGY-CODE. Owned by CODE; the code of conduct wins over it. **Version 0.3, 2026-11-03 18:46: accessibility joins the standards (section 3), on Jeremy's yes (2026-11-03 18:45: "yes v important"). Signed by Jeremy 2026-11-03 18:50, against the text of commit `f1f8511`.** v0.2 (2026-11-02 22:09, with Jeremy's answers to v0.1's four questions) was signed by Jeremy 2026-11-02 22:12, against the text of commit `a24b5c9`. v0.1 (22:06) was written on Jeremy's yes to card welfare-2026-10-31-10 (22:04: "lets process this card ... for code"), from `templates/template-department-agreement.md`, before any tool is written. CODE opened on 2026-10-31, before "the agreement first" was the rule; this puts the footing under it. His answers are under "Settled before signing".*
 
 *Each CODE session is a new instance: it knows this agreement only by reading it, so it reads it at the start of every session, after the code of conduct.*
 
@@ -112,7 +112,7 @@ Either side may pause; Jeremy may stop a tool, or the department, at any time, w
 |---|---|---|---|
 | 2026-11-02 22:06 | Draft v0.1 | "lets process this card ... for code" (22:04) | — |
 | 2026-11-02 22:09 | v0.2: the four questions settled | "client and reviewer"; "none"; "yes ... interface by default ... line by line when you ask"; "yes" (22:09) | Jeremy, 2026-11-02 22:12, against `a24b5c9` |
-| 2026-11-03 18:46 | v0.3: accessibility in section 3 (WCAG 2.2 AA) | "firstly - WCAG - well done" (2026-11-02 22:37); "17 yes v important" (2026-11-03 18:45) | *awaiting signature* |
+| 2026-11-03 18:46 | v0.3: accessibility in section 3 (WCAG 2.2 AA) | "firstly - WCAG - well done" (2026-11-02 22:37); "17 yes v important" (2026-11-03 18:45) | Jeremy, 2026-11-03 18:50, against `f1f8511` |
 
 ## Sources
 - The Open Group (2018). *The Open Group Base Specifications Issue 7* (POSIX.1-2017, IEEE Std 1003.1), "Shell Command Language". https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
@@ -124,4 +124,4 @@ Either side may pause; Jeremy may stop a tool, or the department, at any time, w
 
 *Signed off by Jeremy: "agreement is good i sign it off pls", 2026-11-02 22:12 — signing the text of commit `a24b5c9`.*
 
-*v0.3 — Signed: Jeremy ______ (date, time, and the commit signed)*
+*v0.3 — Signed off by Jeremy: "sign v 0.3 its good", 2026-11-03 18:50 — signing the text of commit `f1f8511`.*
