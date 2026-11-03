@@ -21,4 +21,5 @@
 - **Project uploads** take an absolute `local_path` (`/home/claude/synergy/...`).
 - **Verify signatures** with `git -c gpg.ssh.allowedSignersFile=sandpit/keys/allowed_signers log --format='%h %G?'`.
 - **The stop hook's "Unverified" warning** names PRESS's unsigned commits: known, not to be fixed by rewriting history or by setting an identity in the repository's config — the fix is card welfare-2026-11-01-14.
+- **Tags** go to GitHub from Jeremy's Terminal — Claude's workspace is refused (HTTP 403, 2026-11-03). His Mac is signed in with `gh` (2026-11-03 18:35): `cd ~/synergy && git push origin <tag>`.
 - **Eggs:** git — report what happened; don't explain it.
