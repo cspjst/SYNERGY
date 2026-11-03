@@ -669,3 +669,7 @@ Jeremy (18:52): "we'll hold that over for next time - pls washup I am v plsd w y
 **To push, when Jeremy says:** tonight's commits; and the tag `tools-board-v1`, which will probably need his Terminal (`git push origin tools-board-v1`).
 **Waiting on you:** the naming policy's line on tool names (Re 2026-11-03 18:48 CODE).
 Status: open
+
+### 2026-11-03 18:53 — CODE → WELFARE — Correction to 2026-11-03 18:53 CODE (washed up)
+The entry on the naming policy is "2026-11-03 18:46 CODE", not "18:48" — written from memory, not looked up. The same slip as last night's; this time the reference was checked against the log after writing, not before. Lesson unchanged, applied harder: look up every time before writing it.
+Status: open
