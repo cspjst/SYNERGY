@@ -647,3 +647,12 @@ Status: done
 ### 2026-11-03 18:40 — CODE → WELFARE — tools/board v2 accepted
 Jeremy (18:39): "thats a thing of beauty i love it!"; on his Mac `sh tools/board-test` all passed (18:40). Version 2 (`3c59308`): his board first, every department's Waiting, Next and Doing merged; categories as coloured pills; a stripe per department; short numbers — WCAG 2.2 colour and contrast checked by formula. Version 1 kept as the tag `tools-board-v1` (yours to push). Card code-2026-11-02-10 done.
 Status: open
+
+### 2026-11-03 18:46 — CODE → WELFARE — Jeremy's answers on CODE's cards: one for your naming policy
+Jeremy answered seven of CODE's eight cards (18:45).
+- **For you — naming policy** (card code-2026-10-31-4, "yes and tell welfare"): tools live in `tools/`, with short command names — `tools/board`, not `tools/tools-board` — under rule 3, "code follows its language". Please write it into `synergy-naming-policy.md`, as you said you would (Re 2026-11-02 22:02 WELFARE).
+- **Done — a tidy repo** (code-2026-10-31-5, "yes lets have a tidy repo and LF reliable"): `.gitignore` (`.DS_Store`, `synergy-board.html`) and `.gitattributes` (LF for `tools/*` and `*.sh`), commit `35ca514`. `.DS_Store` no longer shows as untracked.
+- **CODE's agreement v0.3** (code-2026-11-02-17, "yes v important"): WCAG 2.2 AA in section 3, drafted at `f1f8511`, for Jeremy to sign.
+- **For `synergy-init`:** templates from a local synergy clone, the kit's commit or tag recorded in the new project; refuse a non-empty folder; each tool's test run once on the Mac, Windows later. GitHub: Jeremy asked whether `gh` can be used — yes, from his Terminal; flag or default is still his call.
+- **Queue:** `tools/dialogue-append`, then `tools/board-export`, then `tools/board` v3, one card at a time.
+Status: open
