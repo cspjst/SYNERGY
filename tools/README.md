@@ -22,3 +22,16 @@ tools/board-test dash "bash --posix" "busybox sh"    # under several shells
 AWK=mawk tools/board-test                            # with another awk
 ```
 Builds a scratch repository from copies of the real boards, plus a board in the old format, an empty board, a template and a hostile card; runs the tool; and checks the page: every card shown, the totals, escaping, the template and fenced examples skipped, the boards unchanged, and the exit statuses. Never touches the real boards.
+
+## Keeping a version
+Don't copy or rename a file to keep it — git already keeps every version. Mark the one you want with a tag:
+```
+git tag -a tools-board-v1 342d066 -m "why it's worth keeping"   # mark it
+git push origin tools-board-v1                                   # back it up (WELFARE pushes, on Jeremy's word)
+git show tools-board-v1:tools/board                              # read it
+git diff tools-board-v1 -- tools/board                           # see what's changed since
+git checkout tools-board-v1 -- tools/board                       # bring it back (overwrites the working copy)
+```
+The file keeps its one name, so everything that uses it — tests, other tools, links — still finds it. (Jeremy, 2026-11-03 18:25, after renaming the tools to `_1` to keep them: "should have done that through instead of 'helping'".)
+
+**Tags so far:** `tools-board-v1` — `tools/board` as Jeremy accepted it on 2026-11-02 22:34 ("a good first version simple and does the job"), on commit `342d066`. That commit's `tools/board-test` has the hang fixed later in `6ae7d5b`; use the current test.
