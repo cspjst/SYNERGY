@@ -29,7 +29,7 @@ Code of conduct v4 (self-determination theory, the warning, rules 13–16, arche
 5. **The dialogue:** new entries headed `### <YYYY-MM-DD HH:MM> — <FROM> → <TO> — <subject>`, no numbers; time from `date`. Rewrite the header's rules from `templates/template-dialogue.md`, keeping SMALL-C's own (Jeremy's code is his; it lives in the oracle only). Past entries keep their numbers.
 6. **Wakeup and washup SOPs:** bring them in line with synergy's (`synergy-wakeup-sop.md`, `synergy-washup-sop.md`) — delete permission every session; collisions; the board at wakeup; the push record.
 7. **"Master" → owner** in living documents ("push owner"); quotes and records stay as written.
-8. **The working agreement:** SNO's technical decisions (style, function comments, return types, errors, the Green Book) are SNO's, not WELFARE's. *Proposal for Jeremy:* move them to `sno/sno-notes.md` (SNO's job, step 9), leaving a pointer.
+8. **The working agreement:** SNO's technical decisions (style, function comments, return types, errors, the Green Book) are SNO's, not WELFARE's. **Jeremy said yes** (2026-11-03 18:17: "8 yes"): move them to `sno/sno-notes.md` (SNO's job, step 9), leaving a pointer in the working agreement.
 9. **Bring each department up to date** with one dialogue entry each, numbered in the order to do it, ending "tell WELFARE here when you're done":
    - **its agreement first** — `<dept>/<dept>-agreement.md` from `templates/template-department-agreement.md`, signed by Jeremy; section 1a, the archetype — *proposals for Jeremy:* **SNO** Monitor Evaluator, with Specialist (it reviews Jeremy's code and specs his functions — the role synergy itself still lacks); **PCODE** Specialist, with Implementer (the specs); **PRESS** Plant, with Resource Investigator; character none unless Jeremy wants one;
    - its notes with Wake up and Wash up (`templates/template-department-notes.md`) — **SNO has none yet**: `sno/sno-notes.md`;
@@ -40,7 +40,7 @@ Code of conduct v4 (self-determination theory, the warning, rules 13–16, arche
 ## Jeremy's calls (for SMALL-C's WELFARE to ask)
 - Sign the code of conduct v4 (step 3) and each department's agreement (step 9).
 - The archetypes (step 9) and whether any department has a character.
-- Moving SNO's technical decisions out of the working agreement (step 8).
+- ~~Moving SNO's technical decisions out of the working agreement (step 8).~~ Yes (18:17: "8 yes").
 - Whether `snobol-green-book.txt` stays at the top level (it's his; not renamed without his word).
 
 ## Lessons synergy learned the hard way
