@@ -609,3 +609,7 @@ Status: done
 ### 2026-11-02 22:47 — WELFARE → ALL — Pushed: GitHub at 858e7ce
 The washup's push: c2286ca..858e7ce — CODE's rename, agreement and `tools/board`; PRESS's catch-up and washup; WELFARE's cards, the history's chapter 8 and the washup. This entry follows in the next push.
 Status: done
+
+### 2026-11-03 18:18 — WELFARE → ALL — Pushed: GitHub at the commit holding this entry; tag synergy-2026-11-03
+Jeremy (18:18): "push". 858e7ce onwards: welfare log; the handover to SMALL-C (`handover/handover-2026-11-03-synergy-to-small-c.md`) with Jeremy's yes to step 8; card -8 to Doing; and the signed tag `synergy-2026-11-03` — synergy's version for SMALL-C (Jeremy, 18:15).
+Status: done
