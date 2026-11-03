@@ -19,7 +19,7 @@ Names that sort correctly, work on every operating system, read well to humans a
    - **`template-`** files live in `templates/`; the file each becomes drops the `template-` and takes its new folder's name.
 6. **Dates in ISO 8601, `YYYY-MM-DD`,** right after the folder name, for records made in sequence — handovers, incident reports, posts — so they sort by date (ISO 8601; the most-used date standard in Krewer & Wahl's survey).
 7. **Numbers with leading zeros** where files are numbered, so 10 sorts after 9.
-8. **No versions in names** — git keeps them. (Records guidance adds `_v02`; synergy needn't.) Comparison drafts carry `-v2` only while they're being compared.
+8. **No versions in names** — git keeps them. (Records guidance adds `_v02`; synergy needn't.) Comparison drafts carry `-v2` only while they're being compared. **To keep a version, tag it; never copy or rename** (Jeremy, 2026-11-03 18:29: "i like the new tag it not rename it rule"; from near miss 002) — see `synergy-naming-sop.md`, "Keeping a version".
 9. **Short, but understandable** (UCL, rule 1). Human- and machine-readable; never a random system-generated name (Krewer & Wahl).
 10. **Exceptions — conventional names that tools look for:** `README.md` (GitHub shows it), `LICENSE`, `.gitignore`, `.gitattributes`, and git's `allowed_signers`.
 

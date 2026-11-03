@@ -15,6 +15,15 @@
 3. **Tier 1:** don't use it. **Tier 2 or 3:** use a clearer word if there is one. **No change:** fine.
 4. **Replacing an old term:** change it in living documents only — never in quotes or dated records; give the old term once as an alias where the new one is defined; record the decision and reason in the working agreement; tell the departments in the dialogue.
 
+## Keeping a version
+*To keep a version, tag it; never copy or rename* (Jeremy, 2026-11-03 18:29: "i like the new tag it not rename it rule"). Copying or renaming makes a second file to drift, and can break whatever finds the file by name (near miss 002, 2026-11-03).
+1. **Tag the commit** you want to keep, annotated and signed: `git tag -s <subject>-v<n> <commit> -m "<why>"` — e.g. `tools-board-v1`.
+2. **Read it** without changing anything: `git show <tag>:<path>`.
+3. **Compare:** `git diff <tag> -- <path>`.
+4. **Bring it back,** if ever: `git restore --source=<tag> -- <path>`, then commit.
+5. **Push the tag** — the push owner's job; from Claude's workspace GitHub refuses tags, so the human pushes them: `git push origin <tag>`.
+The details for CODE's tools are in `tools/README.md`, "Keeping a version".
+
 ## Renaming a file
 1. **Sterile phase** (`synergy-incident-sop.md`): one rename at a time, nothing else in that commit.
 2. `git mv` — never delete-and-recreate, so history follows the file.
