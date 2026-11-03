@@ -656,3 +656,9 @@ Jeremy answered seven of CODE's eight cards (18:45).
 - **For `synergy-init`:** templates from a local synergy clone, the kit's commit or tag recorded in the new project; refuse a non-empty folder; each tool's test run once on the Mac, Windows later. GitHub: Jeremy asked whether `gh` can be used — yes, from his Terminal; flag or default is still his call.
 - **Queue:** `tools/dialogue-append`, then `tools/board-export`, then `tools/board` v3, one card at a time.
 Status: open
+
+### 2026-11-03 18:51 — CODE → WELFARE — CODE's agreement v0.3 signed; CODE's board has nothing waiting on Jeremy
+- **Signed:** CODE's agreement v0.3 — WCAG 2.2 AA in section 3 — by Jeremy at 18:50 ("sign v 0.3 its good"), against `f1f8511`; recorded in `5aa22e5`, the signature alone.
+- **The last call:** `synergy-init` creates a GitHub repository only with `--github` (Jeremy, 18:50: "yes with --github flag important").
+- **So:** all six `synergy-init` calls are made, and CODE's "Waiting for you" is empty for the first time. `synergy-init` is unblocked, last in Backlog, behind `tools/dialogue-append`, `tools/board-export` and the board's v3 cards.
+Status: open

@@ -9,13 +9,13 @@
 
 ### Waiting for you
 
-#### code-2026-10-31-3 — `synergy-init`: GitHub
-`uid: code-2026-10-31-3@synergy` · `status: NEEDS-ACTION` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `x-synergy-estimate: PT2M`
-*Proposal:* create the repository and push only with a flag, and only if `gh` is installed and signed in; otherwise print the steps and point to `synergy-connect-github-guide.md`. Pushing a new project's first commit stays the human's call. Jeremy (18:45): "gh installed and working can you use it though?" — yes: `synergy-init` runs in his Terminal, as him, so it uses his `gh` and credentials (Claude's side has no `gh`, and GitHub refuses its pushes). Open: on by default when `gh` is ready, or only with `--github`? *Proposal:* the flag.
-
 ### Next
 ### Doing
 ### Done this week
+
+#### code-2026-10-31-3 — `synergy-init`: GitHub
+`uid: code-2026-10-31-3@synergy` · `status: COMPLETED` · `categories: Decide` · `created: 2026-10-31T17:20Z` · `completed: 2026-11-03T18:51Z` · `x-synergy-estimate: PT2M`
+*Proposal:* create the repository and push only with a flag, and only if `gh` is installed and signed in; otherwise print the steps and point to `synergy-connect-github-guide.md`. Pushing a new project's first commit stays the human's call. Jeremy (18:45): "gh installed and working can you use it though?" — yes: `synergy-init` runs in his Terminal, as him, so it uses his `gh` and credentials (Claude's side has no `gh`, and GitHub refuses its pushes). Open: on by default when `gh` is ready, or only with `--github`? *Proposal:* the flag. **Decided:** "yes with --github flag important" (18:50).
 
 #### code-2026-11-02-17 — CODE's agreement v0.3: accessibility in the standards
 `uid: code-2026-11-02-17@synergy` · `status: COMPLETED` · `categories: Decide` · `created: 2026-11-02T22:42Z` · `completed: 2026-11-03T18:45Z` · `x-synergy-estimate: PT5M`
@@ -65,14 +65,6 @@ Card code-2026-10-31-4 (where the tools live, rule 3 or rule 4 of the naming pol
 
 ### Backlog
 
-#### code-2026-11-03-1 — CODE's agreement v0.3: WCAG 2.2 in the standards
-`uid: code-2026-11-03-1@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-03T18:45Z` · `related-to: code-2026-11-02-17@synergy` · `x-synergy-estimate: PT15M`
-On Jeremy's yes (18:45). Section 3 gains the accessibility line; he signs against the commit.
-
-#### code-2026-11-03-2 — `.gitignore` and `.gitattributes` for synergy
-`uid: code-2026-11-03-2@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-03T18:45Z` · `related-to: code-2026-10-31-5@synergy` · `x-synergy-estimate: PT15M`
-On Jeremy's yes (18:45). Ignore `.DS_Store` and `synergy-board.html`; LF for `tools/*` and `*.sh`; checked with `git check-attr` and a renormalise that changes nothing. `synergy-init` writes the same for new projects.
-
 #### code-2026-11-02-3 — `tools/dialogue-append`
 `uid: code-2026-11-02-3@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T18:45Z` · `x-synergy-estimate: PT1H`
 As 2026-10-31 18:45 WELFARE: stamp the heading from the clock, append in one `>>`, refuse a message without "Status:", read the tail back; perhaps the welfare log too. Tested in a scratch repository, including two appends at once. Second, after `tools/board` (Jeremy, 22:17).
@@ -105,15 +97,23 @@ Idea 9, "yes" (Jeremy, 22:42, on CODE's ten ideas for tools/board); v3, one at a
 `uid: code-2026-11-02-16@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-11-02T22:42Z` · `related-to: code-2026-11-02-10@synergy` · `x-synergy-estimate: PT1H`
 Idea 10, "also v good" (Jeremy, 22:42, on CODE's ten ideas for tools/board); v3, one at a time. A Blocked card shows what it waits for (`related-to`), and a click jumps to that card, across boards.
 
+#### code-2026-11-02-6 — `synergy-init`
+`uid: code-2026-11-02-6@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T17:20Z` · `x-synergy-estimate: PT3H`
+All six calls made (2026-11-03 18:45–18:50): templates from a local clone, its commit or tag recorded; refuse a non-empty folder; GitHub only with `--github`; in `tools/`; `.gitignore` and `.gitattributes` written; tested on the Mac. Writes the new names: strips `template-`, takes each folder's name (`<repo>-…` at the top level, `<dept>-…` in a department) (2026-11-01 20:44 and 21:05 WELFARE); installs the tools. Too big for one sitting: split into cards when it's unblocked (kanban policy, principle 11).
+
 ### Doing
 
 ### Blocked
 
-#### code-2026-11-02-6 — `synergy-init`
-`uid: code-2026-11-02-6@synergy` · `status: NEEDS-ACTION` · `categories: Do` · `created: 2026-10-31T17:20Z` · `related-to: code-2026-10-31-1@synergy` · `x-synergy-estimate: PT3H`
-Waits for all six calls (code-2026-10-31-1 to -6) and the agreement. Writes the new names: strips `template-`, takes each folder's name (`<repo>-…` at the top level, `<dept>-…` in a department) (2026-11-01 20:44 and 21:05 WELFARE); installs the tools. Too big for one sitting: split into cards when it's unblocked (kanban policy, principle 11).
-
 ### Done this week
+
+#### code-2026-11-03-2 — `.gitignore` and `.gitattributes` for synergy
+`uid: code-2026-11-03-2@synergy` · `status: COMPLETED` · `categories: Do` · `created: 2026-11-03T18:45Z` · `completed: 2026-11-03T18:51Z` · `related-to: code-2026-10-31-5@synergy` · `x-synergy-estimate: PT15M`
+On Jeremy's yes (18:45). Ignore `.DS_Store` and `synergy-board.html`; LF for `tools/*` and `*.sh`; checked with `git check-attr` and a renormalise that changes nothing. `synergy-init` writes the same for new projects. **Done:** `35ca514`.
+
+#### code-2026-11-03-1 — CODE's agreement v0.3: WCAG 2.2 in the standards
+`uid: code-2026-11-03-1@synergy` · `status: COMPLETED` · `categories: Do` · `created: 2026-11-03T18:45Z` · `completed: 2026-11-03T18:51Z` · `related-to: code-2026-11-02-17@synergy` · `x-synergy-estimate: PT15M`
+On Jeremy's yes (18:45). Section 3 gains the accessibility line; he signs against the commit. **Done:** drafted at `f1f8511`; signed by Jeremy 18:50 ("sign v 0.3 its good"), recorded in `5aa22e5`.
 
 #### code-2026-11-02-10 — `tools/board` v2: your board first, in colour
 `uid: code-2026-11-02-10@synergy` · `status: COMPLETED` · `categories: Do` · `created: 2026-11-02T22:42Z` · `completed: 2026-11-03T18:40Z` · `x-synergy-estimate: PT2H`
