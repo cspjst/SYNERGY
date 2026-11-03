@@ -5,3 +5,4 @@
 | No. | Date | Class | Title | Status | Review | Report |
 |---|---|---|---|---|---|---|
 | 001 | 2026-11-01 | Incident | Personal information in the sandpit (rule 6) | Open — sandpit stopped | First weekly welfare check | `welfare/near-misses/near-miss-2026-11-01-sandpit-rule-6.md` |
+| 002 | 2026-11-03 | Near miss | Tools renamed by hand to keep version 1 | Contained (renamed back; tag `tools-board-v1`) | Next weekly welfare check | CODE's report: `synergy-dialogue-log.md`, "2026-11-03 18:25 CODE" |
