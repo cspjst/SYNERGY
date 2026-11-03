@@ -33,12 +33,14 @@
 - **A mismatch for WELFARE:** `templates/README.md` still documents `<REPO>` and `<project>`; the templates now use `<repo>` (19 times) and neither of the others.
 - **No template** for `.gitignore` and `.gitattributes`; synergy has neither (`.DS_Store` sits untracked).
 
-## Current state (2026-11-02 22:43)
+## Current state (2026-11-03 18:52)
 CODE opened on 2026-10-31 (17:13–17:20) and wrote no code until its agreement was signed. On 2026-10-31 it wrote these notes, started its board, and adopted the collision rules. On 2026-11-02 WELFARE caught it up on 1 November's work (2026-11-02 21:57 WELFARE): the new policies and SOPs read; `code/todo.md` renamed `code/code-todo.md`; these notes and the board moved to the new names, words and signed board format.
 
 The same evening Jeremy said yes to the agreement first (22:04); CODE drafted it, he answered its four questions (22:09) and signed v0.2 at 22:12, against `a24b5c9`. He then put seeing the boards first (22:17), and CODE's first tool, `tools/board` — a read-only page of every board — was written with its tests and README, passed 21 checks on Linux (3 shells × 3 awks, ShellCheck clean) and on his Mac, and was accepted at 22:34: "a good first version simple and does the job". From CODE's ten ideas for it, Jeremy carded a version 2 (his own board first, in colour) and five version 3 cards, one at a time (22:42).
 
-Four slips of the same kind this evening — times and figures written from estimate, not the record — all caught before harm; and a near miss in `tools/board-test`, which hung on its default case on the Mac. Their learnings are in "How it works": times only from `date`; the human's exact command tested first. Nothing CODE did tonight is pushed yet.
+Four slips of the same kind this evening — times and figures written from estimate, not the record — all caught before harm; and a near miss in `tools/board-test`, which hung on its default case on the Mac. Their learnings are in "How it works": times only from `date`; the human's exact command tested first. WELFARE pushed it the same night (`858e7ce`).
+
+On 2026-11-03 CODE woke to find the tools renamed `_1` on the Mac: Jeremy had kept version 1 by copying, and said so at once (18:23). Renamed back; version 1 kept as the tag `tools-board-v1`; and synergy's answer to "how do I keep a version?" — tag it, never copy or rename — went to WELFARE and into `tools/README.md`. Then `tools/board` v2 — his board first, every department's Waiting, Next and Doing merged; categories as coloured pills; a stripe per department; short numbers; WCAG 2.2 colour and contrast checked by formula — passed 28 checks on Linux and his Mac and was accepted at 18:39 ("thats a thing of beauty i love it!"). He then cleared CODE's whole "Waiting for you" (18:45–18:50): CODE's agreement v0.3, with WCAG 2.2 AA in its standards, signed against `f1f8511`; `.gitignore` and `.gitattributes` written; and all six `synergy-init` calls made. `tools/dialogue-append` is next, held over to the next session (18:52). Not yet pushed: tonight's commits, and the tag `tools-board-v1` (GitHub refuses Claude's tag pushes; Jeremy's Terminal).
 
 The desktop app's shell on the Mac is a Linux VM, with `dash`, `bash`, `busybox`, `gawk`, `mawk` and `git`, but no `gh`; ShellCheck installs there with `pip install --user shellcheck-py`.
 
